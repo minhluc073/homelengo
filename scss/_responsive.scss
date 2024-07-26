@@ -1,7 +1,31 @@
 /* Media Queries
 -------------------------------------------------------------- */
+@media (min-width: 576px){
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 1150px){
+
+}
+
+@media (min-width: 1441px){
+    .main-header{
+        padding-left: 100px;
+        padding-right: 100px;
+        .inner-header-left{
+            gap: 100px;
+        }
+    }
+}
+
 // min-width:
 @media only screen and (min-width: 1520px) {
+   
     .tf-sw-testimonial:hover {
         cursor: url("../images/avatar/cursor-sw.png"), auto;
     }
@@ -76,7 +100,7 @@
     }
 }
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1519px) {
     .main-header .main-menu {
         position: relative;
         margin-left: 1px;

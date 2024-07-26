@@ -34,12 +34,12 @@
 .main-header {
     z-index: 999;
     width: 100%;
-    height: 80px;
+    height: 78px;
     position: relative;
-    border-bottom: 1px solid $outline;
+    box-shadow: $shadow-1;
     background-color: $white;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     &.header-style-2 {
         margin-bottom: -80px;
         border: 0;
@@ -56,6 +56,14 @@
                 color: $on-surface !important;
             }
         }
+    }
+    .inner-header-left{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .inner-header{
+        @include flex(center, space-between);
     }
 }
 
@@ -225,7 +233,6 @@
 
 .main-header .main-menu {
     position: relative;
-    margin-left: 140px;
     -webkit-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
