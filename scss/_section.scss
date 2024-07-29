@@ -65,7 +65,6 @@
         left: 0;
         bottom: 0;
         display: inline-block;
-        font-family: $font-2;
         padding: 6px 12px;
         background-color: $primary;
         color: $white;
@@ -141,7 +140,6 @@
 }
 .post-author {
     span {
-        font-family: $font-2;
         &:not(:first-child) {
             color: $variant-1;
             margin-left: 4px;
@@ -239,7 +237,7 @@
                     letter-spacing: 0.8px;
                     text-transform: uppercase;
                     color: $variant-1;
-                    font-family: $font-2;
+
                     font-weight: 600;
                 }
                 .title {
@@ -318,7 +316,7 @@
             position: relative;
             font-size: 12px;
             line-height: 19px;
-            font-family: $font-2;
+
             text-transform: uppercase;
             font-weight: 600;
             color: $variant-1;
@@ -444,7 +442,7 @@
     font-size: 12px;
     line-height: 19px;
     letter-spacing: 0.8px;
-    font-family: $font-2;
+
     font-weight: 600;
     &:hover {
         background-color: $primary;
@@ -769,7 +767,7 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                font-family: $font-2;
+
                 .icon {
                     font-size: 24px;
                     color: $variant-1;
@@ -1416,7 +1414,6 @@
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 12px;
         li {
-            font-family: $font-2;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -1596,12 +1593,11 @@
         .number {
             font-size: 64px;
             line-height: 66px;
-            font-family: $font-2;
+
             color: $primary;
             font-weight: 600;
         }
         .title-count {
-            font-family: $font-2;
             font-size: 24px;
             line-height: 30px;
             font-weight: 700;
@@ -2071,7 +2067,7 @@
                 color: $white;
             }
         }
-        &.style-1{
+        &.style-1 {
             .box-img {
                 .agent-social {
                     right: 16px;
@@ -2214,7 +2210,7 @@
         .box-icon {
             background-color: $white;
             @include transition4;
-            .icon{
+            .icon {
                 @include transition4;
             }
         }
@@ -2583,7 +2579,7 @@
         }
         .title {
             font-weight: 600;
-            font-family: $font-2;
+
             margin-bottom: 20px;
         }
     }
@@ -3764,7 +3760,6 @@
         text-transform: uppercase;
         letter-spacing: 0.8px;
         font-weight: 600;
-        font-family: $font-2;
     }
 }
 .check-icon {

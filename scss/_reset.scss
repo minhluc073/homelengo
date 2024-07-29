@@ -215,14 +215,13 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-    font-family: $font-2;
     border: 1px solid $outline;
     outline: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 19.6px;
     border-radius: 8px;
     padding: 14px 16px;
     width: 100%;
@@ -251,6 +250,8 @@ input[type="tel"]::placeholder,
 input[type="color"]::placeholder {
     color: $variant-2;
     @include transition3;
+    font-size: 10px;
+    line-height: 19.6px;
 }
 textarea {
     height: 112px;
@@ -311,7 +312,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-2;
     font-weight: 600;
     text-rendering: optimizeLegibility;
     color: $on-surface;
@@ -369,8 +369,7 @@ a {
         // color: $primary;
     }
 }
-label{
-    font-family: $font-2;
+label {
     font-weight: 600;
 }
 .link {
@@ -381,7 +380,6 @@ label{
 }
 
 .h7 {
-    font-family: $font-2;
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
@@ -424,7 +422,6 @@ label{
     line-height: 26px;
 }
 .text-subheading {
-    font-family: $font-2;
     font-size: 12px;
     line-height: 19px;
     font-weight: 600;
@@ -432,7 +429,6 @@ label{
     text-transform: uppercase;
 }
 .text-subtitle {
-    font-family: $font-2;
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
@@ -569,7 +565,7 @@ label{
 }
 
 // gap
-.gap-0{
+.gap-0 {
     gap: 0 !important;
 }
 .gap-4 {

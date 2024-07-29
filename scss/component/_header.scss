@@ -4,19 +4,13 @@
 .header-account {
     display: flex;
     align-items: center;
-    ul {
-        margin-right: 20px;
-        li {
-            font-weight: 700;
-            a {
-                font-family: $font-2;
-                color: $on-surface;
-                font-weight: 600;
-                &:hover {
-                    color: $primary;
-                }
-            }
-        }
+    gap: 16px;
+
+    .tf-btn {
+        min-width: 206px;
+    }
+    .btn-login {
+        min-width: 140px;
     }
 }
 .header-style-2 .header-account {
@@ -57,12 +51,12 @@
             }
         }
     }
-    .inner-header-left{
+    .inner-header-left {
         display: flex;
         gap: 30px;
         align-items: center;
     }
-    .inner-header{
+    .inner-header {
         @include flex(center, space-between);
     }
 }
@@ -320,16 +314,15 @@
 }
 
 .main-header .main-menu .navigation > li > a {
-    font-family: $font-2;
     position: relative;
     display: block;
     text-align: center;
-    line-height: 26px;
     font-weight: 600;
     padding: 27px 0px;
     letter-spacing: 0px;
     color: $on-surface;
     font-size: 16px;
+    line-height: 21.86px;
     text-transform: capitalize;
     transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -399,8 +392,9 @@
 }
 
 .main-header .main-menu .navigation > li > ul {
+    margin-top: 17px;
     position: absolute;
-    left: -24px;
+    left: -35px;
     width: 280px;
     z-index: 1;
     // transform: translateY(10px);
@@ -413,10 +407,35 @@
     -o-transition: all 300ms ease;
     background-color: $white;
     border: 1px solid $outline;
-    border-top: 0;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-radius: 16px;
     pointer-events: none;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        right: 0;
+        height: 60px;
+        top: -25px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: calc(100% - 14px);
+        left: 45px;
+        border-top: 20px solid #fff;
+        border-right: 20px solid transparent;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    li {
+        &:first-child {
+            padding-top: 8px;
+        }
+        &:last-child {
+            padding-bottom: 8px;
+        }
+    }
 }
 .main-header .main-menu .navigation > .home > ul {
     width: 204px;
@@ -459,7 +478,6 @@
 }
 
 .main-header .main-menu .navigation > li > ul > li > a {
-    font-family: $font-2;
     position: relative;
     padding: 16px 24px;
     display: block;
@@ -571,72 +589,6 @@
     margin-bottom: 0;
 }
 
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li {
-    opacity: 1;
-    transform: translateY(0px);
-    -webkit-transition-delay: 70ms;
-    -moz-transition-delay: 70ms;
-    -ms-transition-delay: 70ms;
-    -o-transition-delay: 70ms;
-    transition-delay: 70ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(2) {
-    -webkit-transition-delay: 140ms;
-    -moz-transition-delay: 140ms;
-    -ms-transition-delay: 140ms;
-    -o-transition-delay: 140ms;
-    transition-delay: 140ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(3) {
-    -webkit-transition-delay: 210ms;
-    -moz-transition-delay: 210ms;
-    -ms-transition-delay: 210ms;
-    -o-transition-delay: 210ms;
-    transition-delay: 210ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(4) {
-    -webkit-transition-delay: 280ms;
-    -moz-transition-delay: 280ms;
-    -ms-transition-delay: 280ms;
-    -o-transition-delay: 280ms;
-    transition-delay: 280ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(5) {
-    -webkit-transition-delay: 350ms;
-    -moz-transition-delay: 350ms;
-    -ms-transition-delay: 350ms;
-    -o-transition-delay: 350ms;
-    transition-delay: 350ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(6) {
-    -webkit-transition-delay: 420ms;
-    -moz-transition-delay: 420ms;
-    -ms-transition-delay: 420ms;
-    -o-transition-delay: 420ms;
-    transition-delay: 420ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(7) {
-    -webkit-transition-delay: 490ms;
-    -moz-transition-delay: 490ms;
-    -ms-transition-delay: 490ms;
-    -o-transition-delay: 490ms;
-    transition-delay: 490ms;
-}
-
-.main-header .main-menu .navigation > li > ul > li.dropdown2:hover > ul > li:nth-child(8) {
-    -webkit-transition-delay: 560ms;
-    -moz-transition-delay: 560ms;
-    -ms-transition-delay: 560ms;
-    -o-transition-delay: 560ms;
-    transition-delay: 560ms;
-}
-
 .main-header .main-menu .navigation > li > ul > li > ul > li:last-child a {
     border-bottom: none;
 }
@@ -723,7 +675,7 @@
 }
 
 .main-header .main-menu .navigation > li.dropdown2 > a::after {
-    content: "\e904";
+    content: "\e92a";
     font-family: $fontIcon;
     font-weight: 600;
     font-size: 16px;
@@ -972,7 +924,6 @@
 }
 
 .mobile-menu .navigation li > a {
-    font-family: $font-2;
     position: relative;
     display: block;
     font-weight: 600;
@@ -1089,7 +1040,6 @@
         }
         a,
         span {
-            font-family: $font-2;
             font-weight: 600;
         }
     }
@@ -1225,7 +1175,6 @@
                 color: $variant-2;
             }
         }
-        
     }
     .btn-search {
         flex-shrink: 0;
@@ -1244,7 +1193,7 @@
             color: $white;
         }
     }
-    .btn-search-mb{
+    .btn-search-mb {
         display: none;
     }
     .btn-menu-nav {
@@ -1260,7 +1209,6 @@
         padding-bottom: 20px;
         margin-bottom: 20px;
         .nav-link {
-            font-family: $font-2;
             padding: 10px 0px;
             font-size: 16px;
             line-height: 26px;
@@ -1296,7 +1244,7 @@
             .sub-nav-link {
                 padding: 7px 0px;
                 display: block;
-                font-family: $font-2;
+
                 font-weight: 500;
                 color: $variant-1;
                 &.current,

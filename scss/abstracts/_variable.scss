@@ -1,12 +1,11 @@
 //settings
 
 $font-1: "Manrope", sans-serif;
-$font-2: "Josefin Sans", sans-serif;
 $fontIcon: "icomoon";
 
 // color
-$primary: #ED2027;
-$primary-hover: #cd380f;
+$primary: #1563df;
+$primary-hover: #115bd0;
 $critical: #c72929;
 $yellow: #f4d118;
 $success: #198754;
@@ -15,7 +14,7 @@ $surface: #f7f7f7;
 $outline: #e4e4e4;
 $on-surface: #161e2d;
 $variant-1: #5c6368;
-$variant-2: #a3abb0;
+$variant-2: #A3ABB0;
 
 $backdrop: rgba(22, 30, 45, 0.3);
 
@@ -24,11 +23,9 @@ $garden-2: linear-gradient(180deg, rgba(11, 33, 50, 0) 0%, rgba(11, 33, 50, 0.9)
 $garden-3: linear-gradient(89.9deg, #0f4e98 0.07%, #ee6742 99.9%);
 $garden-4: linear-gradient(180deg, rgba(11, 33, 50, 0) 0%, #161e2d 100%);
 
-
-
-
 $rgba-white: rgba(255, 255, 255, 0.1);
 $rgba-black: rgba(11, 33, 50, 0.4);
+$rgba-black-2: rgba(255, 255, 255, 0.08);
 $rgba-black-hover: rgba(0, 0, 0, 0.5019607843);
-$shadow-1:  0px 4px 18px 0px #00000014;
+$shadow-1: 0px 4px 18px 0px #00000014;
 $shadow-2: 0px 10px 25px 0px #365f681a;

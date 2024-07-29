@@ -75,7 +75,6 @@
     flex-wrap: wrap;
     gap: 12px;
     .nav-link-item {
-        font-family: $font-2;
         font-size: 16px;
         line-height: 26px;
         font-weight: 600;
@@ -90,7 +89,6 @@
     }
 }
 .nav-tab-privacy {
-    
     border-left: 1px solid $outline;
     .nav-link-item {
         font-size: 24px;
@@ -114,7 +112,7 @@
         }
         &.active,
         &:hover {
-            &::before{
+            &::before {
                 opacity: 1;
             }
         }
@@ -128,7 +126,7 @@
     }
 }
 
-.nav-tab-filter{
+.nav-tab-filter {
     display: flex;
     align-items: center;
     gap: 12px;

@@ -235,7 +235,6 @@
                 }
             }
             .nice-select {
-                font-family: $font-2;
                 color: $on-surface;
                 font-weight: 600;
                 font-size: 18px;
@@ -268,7 +267,7 @@
                 flex-direction: column;
                 align-items: center;
                 color: $on-surface;
-                font-family: $font-2;
+
                 font-weight: 600;
             }
             .icon {
@@ -676,7 +675,7 @@
         background-color: $surface;
 
         .inner-group {
-            border: 0 ;
+            border: 0;
             border-radius: 0;
             display: block;
             padding: 0;
@@ -695,26 +694,26 @@
                 font-weight: 600;
             }
         }
-        .form-style{
+        .form-style {
             border: 0;
         }
         .form-style:not(:last-child) {
             margin-bottom: 20px;
         }
-        .box-title-price{
+        .box-title-price {
             margin-bottom: 22px;
         }
-        .amenities-item{
+        .amenities-item {
             display: flex;
             gap: 8px;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 8px;
             }
-            label{
+            label {
                 margin-bottom: 0;
             }
         }
-        .group-amenities{
+        .group-amenities {
             margin-top: 20px;
         }
         .title-price {
