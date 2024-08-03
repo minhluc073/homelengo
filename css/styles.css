@@ -1173,11 +1173,11 @@ label {
   position: relative;
   padding: 16px 24px;
   display: block;
-  line-height: 26px;
+  line-height: 19.6px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
-  color: #5c6368;
+  color: #161e2d;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
