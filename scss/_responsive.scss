@@ -7,7 +7,10 @@
 
 }
 @media (min-width: 992px){
-
+    .flat-title-page{
+        margin-top: 50px;
+       
+    }
 }
 @media (min-width: 1150px){
 
@@ -20,6 +23,13 @@
         .inner-header-left{
             gap: 100px;
         }
+    }
+    .flat-title-page{
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 15px;
+        padding-top: 123px;
+        padding-bottom: 123px;
     }
 }
 
