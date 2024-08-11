@@ -886,6 +886,17 @@
         grid-template-columns: 1fr 1fr;
         gap: 8px;
     }
+    .wd-navigation{
+        gap: 8px;
+        .nav-item{
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+            .icon{
+                font-size: 12px;
+            }
+        }
+    }
     .single-property-gallery .box-navigation .navigation {
         width: 40px;
         height: 40px;

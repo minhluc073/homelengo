@@ -854,7 +854,7 @@
         cursor: pointer;
         z-index: 5;
         &::before {
-            content: "\e904";
+            content: "\e92a";
             font-family: $fontIcon;
             font-size: 12px;
             font-weight: 600;
@@ -892,7 +892,7 @@
 .mobile-menu .navigation li > ul,
 .mobile-menu .navigation li > ul > li > ul {
     display: none;
-    background: rgba(237, 32, 39, 0.1);
+    background: rgba(21, 99, 223, 0.1);
     padding: 15px 20px;
     border-radius: 10px;
 }

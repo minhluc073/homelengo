@@ -120,8 +120,8 @@ html {
 
 body {
     font-family: $font-1;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 19.6px;
     font-weight: 400;
     color: $on-surface;
     background-color: $white;
@@ -250,7 +250,7 @@ input[type="tel"]::placeholder,
 input[type="color"]::placeholder {
     color: $variant-2;
     @include transition3;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 19.6px;
 }
 textarea {
@@ -543,6 +543,9 @@ label {
 .mt-16 {
     margin-top: 16px;
 }
+.pt-26{
+    padding-top: 26px;
+}
 // radius
 .round-8 {
     border-radius: 8px;
@@ -591,6 +594,9 @@ label {
 }
 .pt-0 {
     padding-top: 0px !important;
+}
+.line-t{
+    border-top: 1px solid $outline;
 }
 
 .no-line {

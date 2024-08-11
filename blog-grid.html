@@ -16,7 +16,6 @@
    <!-- Icons -->
    <link rel="stylesheet" href="fonts/font-icons.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
 
@@ -212,12 +211,12 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-1.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-1.jpg" src="images/blog/blog-1.jpg" alt="img-blog">
                                     <span class="date-post">January 28, 2024</span>
                                 </div>
                                 <div class="content-box">
                                     <div class="post-author">
-                                        <span class="fw-7">Esther</span>
+                                        <span class="fw-6">Jerome Bell</span>
                                         <span>Furniture</span>
                                     </div>
                                     <h6 class="title">Building gains into housing stocks and how to trade the sector</h6>
@@ -229,7 +228,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-2.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-2.jpg" src="images/blog/blog-2.jpg" alt="img-blog">
                                     <span class="date-post">January 31, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -246,7 +245,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-3.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-3.jpg" src="images/blog/blog-3.jpg" alt="img-blog">
                                     <span class="date-post">January 28, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -263,7 +262,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-4.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-4.jpg" src="images/blog/blog-4.jpg" alt="img-blog">
                                     <span class="date-post">February 01, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -280,7 +279,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-5.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-1.jpg" src="images/blog/blog-5.jpg" alt="img-blog">
                                     <span class="date-post">February 06, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -297,7 +296,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-6.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-6.jpg" src="images/blog/blog-6.jpg" alt="img-blog">
                                     <span class="date-post">February 09, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -314,7 +313,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-7.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-7.jpg" src="images/blog/blog-7.jpg" alt="img-blog">
                                     <span class="date-post">February 16, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -331,7 +330,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-8.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-8.jpg" src="images/blog/blog-8.jpg" alt="img-blog">
                                     <span class="date-post">February 18, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -348,7 +347,7 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="blog-detail.html" class="flat-blog-item hover-img">
                                 <div class="img-style">
-                                    <img src="images/blog/blog-9.jpg" alt="img-blog">
+                                    <img class="lazyload" data-src="images/blog/blog-9.jpg" src="images/blog/blog-9.jpg" alt="img-blog">
                                     <span class="date-post">February 22, 2024</span>
                                 </div>
                                 <div class="content-box">
@@ -362,8 +361,16 @@
 
                             </a>
                         </div>
-                        <div class="col-12 text-center">
-                            <a href="#" class="tf-btn size-1 primary">Load More</a>
+                        <div class="col-12 text-center pt-26 line-t">
+                            <ul class="justify-content-center wd-navigation">
+                                <li><a href="#" class="nav-item"><i class="icon icon-arr-l"></i></a></li>
+                                <li><a href="#" class="nav-item">1</a></li>
+                                <li><a href="#" class="nav-item">2</a></li>
+                                <li><a href="#" class="nav-item active">3</a></li>
+                                <li><a href="#" class="nav-item">4</a></li>
+                                <li><a href="#" class="nav-item">...</a></li>
+                                <li><a href="#" class="nav-item"><i class="icon icon-arr-r"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -630,6 +637,7 @@
     <script type="text/javascript" src="js/plugin.js"></script>
     <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
     <script type="text/javascript" src="js/shortcodes.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
