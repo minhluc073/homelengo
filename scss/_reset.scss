@@ -286,11 +286,7 @@ textarea {
     color: #8a8aa0;
 }
 
-p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-}
+
 
 .p-12 {
     font-size: 12px;
@@ -419,7 +415,7 @@ label {
 .caption-2 {
     font-size: 12px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 16px;
 }
 .text-subheading {
     font-size: 12px;
@@ -505,6 +501,9 @@ label {
 .text-black {
     color: $on-surface !important;
 }
+.text-black-2{
+    color: #1C1C1E;
+}
 .text-white {
     color: $white !important;
 }
@@ -542,6 +541,9 @@ label {
 }
 .mt-16 {
     margin-top: 16px;
+}
+.mt-20{
+    margin-top: 20px;
 }
 .pt-26{
     padding-top: 26px;
