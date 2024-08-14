@@ -335,9 +335,19 @@
     }
 }
 .flat-blog-detail {
-    h3 {
-        margin-top: 12px;
+    h4 {
         margin-bottom: 16px;
+    }
+    .meta-blog{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        .item{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
     }
     .post-navigation {
         display: grid;

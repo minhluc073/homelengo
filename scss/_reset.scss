@@ -522,6 +522,19 @@ label {
 }
 
 // margin-top
+.my-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
 .my-40 {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -545,8 +558,14 @@ label {
 .mt-20{
     margin-top: 20px;
 }
+.mt-30{
+    margin-top: 30px;
+}
 .pt-26{
     padding-top: 26px;
+}
+.pb-30{
+    padding-bottom: 30px;
 }
 // radius
 .round-8 {
@@ -554,6 +573,12 @@ label {
 }
 .round-12 {
     border-radius: 12px;
+}
+.round-30{
+    border-radius: 30px
+}
+.o-hidden{
+    overflow: hidden;
 }
 // grid
 .grid-2 {
@@ -596,6 +621,9 @@ label {
 }
 .pt-0 {
     padding-top: 0px !important;
+}
+.line-b{
+    border-bottom: 1px solid $outline;
 }
 .line-t{
     border-top: 1px solid $outline;

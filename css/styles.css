@@ -597,6 +597,23 @@ label {
   background-color: #f7f7f7;
 }
 
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .my-40 {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -626,8 +643,16 @@ label {
   margin-top: 20px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .pt-26 {
   padding-top: 26px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
 }
 
 .round-8 {
@@ -636,6 +661,14 @@ label {
 
 .round-12 {
   border-radius: 12px;
+}
+
+.round-30 {
+  border-radius: 30px;
+}
+
+.o-hidden {
+  overflow: hidden;
 }
 
 .grid-2 {
@@ -692,6 +725,10 @@ label {
 
 .pt-0 {
   padding-top: 0px !important;
+}
+
+.line-b {
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .line-t {
@@ -4688,9 +4725,19 @@ label {
   width: 100%;
 }
 
-.flat-blog-detail h3 {
-  margin-top: 12px;
+.flat-blog-detail h4 {
   margin-bottom: 16px;
+}
+.flat-blog-detail .meta-blog {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.flat-blog-detail .meta-blog .item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .flat-blog-detail .post-navigation {
   display: grid;
