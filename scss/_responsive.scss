@@ -16,6 +16,9 @@
             padding-right: 60px;
         }
     }
+    .flat-quote{
+        padding-right: 50px;
+    }
 }
 @media (min-width: 1150px){
 
@@ -1005,12 +1008,7 @@
         }
     }
     .flat-quote {
-        padding: 24px;
-        padding-left: 32px;
-        .quote {
-            font-size: 22px;
-            line-height: 28px;
-        }
+        padding: 15px;
     }
 
     .wd-search-form {

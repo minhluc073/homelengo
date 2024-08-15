@@ -491,10 +491,16 @@ label {
     font-size: 40px;
 }
 
+.font-rubik{
+    font-family: $font-2;
+}
 // color text
 .text-primary {
     color: $primary !important;
 }
+// .text-primary-new{
+//     color: $primary-new;
+// }
 .text-danger {
     color: $critical !important;
 }
@@ -521,7 +527,12 @@ label {
     background-color: $surface;
 }
 
-// margin-top
+// margin
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .my-30{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -606,6 +617,9 @@ label {
 }
 .gap-8 {
     gap: 8px;
+}
+.gap-9{
+    gap: 9px;
 }
 .gap-12 {
     gap: 12px;

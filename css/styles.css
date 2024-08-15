@@ -561,6 +561,10 @@ label {
   font-size: 40px;
 }
 
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
 .text-primary {
   color: #1563df !important;
 }
@@ -595,6 +599,11 @@ label {
 
 .bg-surface {
   background-color: #f7f7f7;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .my-30 {
@@ -705,6 +714,10 @@ label {
 
 .gap-8 {
   gap: 8px;
+}
+
+.gap-9 {
+  gap: 9px;
 }
 
 .gap-12 {
@@ -4042,6 +4055,17 @@ label {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.box-icon .icon {
+  font-size: 18px;
+}
+.box-icon.line {
+  border: 1px solid #e4e4e4;
+  color: #A3ABB0;
+}
+.box-icon.line:hover {
+  background-color: transparent;
+  color: #1563df;
+}
 .box-icon.w-28 {
   width: 28px;
   height: 28px;
@@ -4056,6 +4080,10 @@ label {
 .box-icon.w-40 {
   width: 40px;
   height: 40px;
+}
+.box-icon.w-44 {
+  width: 44px;
+  height: 44px;
 }
 .box-icon.w-52 {
   width: 52px;
@@ -4783,51 +4811,28 @@ label {
 }
 
 .flat-quote {
-  padding: 32px 40px;
-  border-radius: 12px;
-  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f3f7fd;
   border-left: 4px solid #1563df;
 }
 .flat-quote .quote {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #161e2d;
-  margin-bottom: 16px;
+  font-family: "Rubik", sans-serif;
 }
 .flat-quote .author {
-  text-transform: uppercase;
-  color: #5c6368;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.8px;
-  font-weight: 700;
-  position: relative;
-  padding-left: 28px;
-}
-.flat-quote .author::before {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 20px;
-  left: 10px;
-  top: 50%;
-  transform: translateX(-50%);
-  background-color: #5c6368;
+  margin-top: 30px;
+  display: block;
+  font-family: "Rubik", sans-serif;
 }
 
 .blog-tag {
-  padding: 8px 16px;
-  text-transform: uppercase;
-  background-color: #f7f7f7;
-  font-size: 12px;
-  line-height: 19px;
-  letter-spacing: 0.8px;
-  font-weight: 600;
+  padding: 8px 10px;
+  color: #5c6368;
+  border-radius: 999px;
+  border: 1px solid #e4e4e4;
 }
 .blog-tag:hover {
-  background-color: #1563df;
-  color: #ffffff;
+  color: #1563df;
 }
 .blog-tag.primary {
   background-color: #1563df;
@@ -9108,6 +9113,9 @@ tr {
   .sidebar-blog .recent {
     padding-right: 60px;
   }
+  .flat-quote {
+    padding-right: 50px;
+  }
 }
 @media (min-width: 1441px) {
   .main-header {
@@ -9870,12 +9878,7 @@ tr {
     line-height: 22px;
   }
   .flat-quote {
-    padding: 24px;
-    padding-left: 32px;
-  }
-  .flat-quote .quote {
-    font-size: 22px;
-    line-height: 28px;
+    padding: 15px;
   }
   .wd-search-form .group-checkbox .group-amenities {
     grid-template-columns: repeat(2, 1fr);
