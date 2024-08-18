@@ -383,7 +383,7 @@
         }
     }
     .wrap-review {
-        margin-top: 80px;
+        margin-top: 40px;
         .box-review {
             margin-top: 20px;
         }
@@ -475,12 +475,30 @@
     gap: 20px;
     .avatar {
         flex-shrink: 0;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+    .name{
+        font-size: 18px;
+        line-height: 25.2px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .action{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        span{
+            color: #7C818B;
+            font-size: 12px;
+            line-height: 16.8px;
+        }
     }
 
     &:not(:last-child) {
         .content {
-            padding-bottom: 28px;
-            margin-bottom: 28px;
+            padding-bottom: 34px;
+            margin-bottom: 34px;
             border-bottom: 1px solid $outline;
         }
     }

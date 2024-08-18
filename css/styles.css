@@ -254,9 +254,9 @@ input[type=color] {
   -moz-box-shadow: none;
   box-shadow: none;
   font-size: 14px;
-  line-height: 19.6px;
-  border-radius: 8px;
-  padding: 14px 16px;
+  line-height: 22px;
+  border-radius: 99px;
+  padding: 14px 18px;
   width: 100%;
   background: #ffffff;
   color: #161e2d;
@@ -308,6 +308,7 @@ input[type=color]::placeholder {
 textarea {
   height: 112px;
   resize: none;
+  border-radius: 16px;
 }
 
 /* Placeholder color */
@@ -658,6 +659,10 @@ label {
 
 .pt-26 {
   padding-top: 26px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
 }
 
 .pb-30 {
@@ -3124,7 +3129,7 @@ label {
   margin-top: 20px;
 }
 .wrap-form-comment .sub-ip {
-  color: #5c6368;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -4801,7 +4806,7 @@ label {
   letter-spacing: 0.8px;
 }
 .flat-blog-detail .wrap-review {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .flat-blog-detail .wrap-review .box-review {
   margin-top: 20px;
@@ -4892,10 +4897,28 @@ label {
 }
 .list-review-item .avatar {
   flex-shrink: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.list-review-item .name {
+  font-size: 18px;
+  line-height: 25.2px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.list-review-item .action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.list-review-item .action span {
+  color: #7C818B;
+  font-size: 12px;
+  line-height: 16.8px;
 }
 .list-review-item:not(:last-child) .content {
-  padding-bottom: 28px;
-  margin-bottom: 28px;
+  padding-bottom: 34px;
+  margin-bottom: 34px;
   border-bottom: 1px solid #e4e4e4;
 }
 .list-review-item .box-img-review {
