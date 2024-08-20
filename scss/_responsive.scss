@@ -22,6 +22,16 @@
 }
 @media (min-width: 1150px){
 
+    .flat-slider{
+        &.home-1 {
+            .slider-content{
+                .heading{
+                    margin-bottom: 108px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1441px){

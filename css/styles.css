@@ -364,7 +364,7 @@ h6 {
 h1 {
   font-size: 80px;
   line-height: 88px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
@@ -450,9 +450,9 @@ label {
 }
 
 .body-2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 22.4px;
 }
 
 .text-1 {
@@ -2188,25 +2188,40 @@ label {
 .flat-tab-form .nav-tab-form {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 .flat-tab-form .nav-tab-form .nav-link-item {
-  padding: 15px 28px;
-  border-radius: 8px 8px 0px 0px;
-  text-transform: uppercase;
+  padding: 14px 55px;
+  border-radius: 99px;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.8px;
+  line-height: 21.86px;
   text-align: center;
-  font-weight: 700;
-}
-.flat-tab-form .nav-tab-form.style-1 .nav-link-item {
-  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
+.flat-tab-form .nav-tab-form.style-1 .nav-link-item {
+  position: relative;
+}
 .flat-tab-form .nav-tab-form.style-1 .nav-link-item.active, .flat-tab-form .nav-tab-form.style-1 .nav-link-item:hover {
-  background-color: #ffffff;
-  color: #161e2d;
+  background-color: #1563df;
+  border-color: #1563df;
+}
+.flat-tab-form .nav-tab-form.style-1 .nav-link-item.active::after, .flat-tab-form .nav-tab-form.style-1 .nav-link-item:hover::after {
+  display: block;
+}
+.flat-tab-form .nav-tab-form.style-1 .nav-link-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #1563df;
+  display: none;
 }
 .flat-tab-form .nav-tab-form.style-2 .nav-link-item {
   background-color: #e4e4e4;
@@ -2214,7 +2229,6 @@ label {
 }
 .flat-tab-form .nav-tab-form.style-2 .nav-link-item.active, .flat-tab-form .nav-tab-form.style-2 .nav-link-item:hover {
   background-color: #ffffff;
-  color: #161e2d;
 }
 .flat-tab-form .nav-tab-form.style-3 .nav-link-item {
   background-color: #ffffff;
@@ -2328,19 +2342,19 @@ label {
 }
 .flat-slider.home-1 .overlay {
   background: #161e2d;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .flat-slider.home-1 .slider-content {
   position: relative;
   z-index: 1;
-  padding: 233px 0px;
+  padding: 155px 0px 246px;
 }
 .flat-slider.home-1 .slider-content .heading {
   margin-bottom: 40px;
 }
 .flat-slider.home-1 .slider-content .subtitle {
   margin-top: 20px;
-  padding: 0px 280px;
+  padding: 0px 330px;
 }
 .flat-slider .overlay {
   content: "";
@@ -3137,6 +3151,9 @@ label {
   display: flex;
   border-radius: 12px;
   background-color: #ffffff;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius: 999px;
 }
 .wd-find-select .tf-btn {
   display: flex;
@@ -3147,9 +3164,13 @@ label {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+.wd-find-select .box-btn-advanced {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .wd-find-select .inner-group {
-  padding: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
   flex-wrap: nowrap;
   display: flex;
   gap: 20px;
@@ -3157,7 +3178,6 @@ label {
 }
 .wd-find-select .inner-group .form-style {
   width: 100%;
-  border-right: 1px solid #e4e4e4;
 }
 .wd-find-select .inner-group .form-style .form-control,
 .wd-find-select .inner-group .form-style .nice-select {
@@ -3188,6 +3208,9 @@ label {
   font-size: 14px;
   line-height: 24px;
   color: #5c6368;
+}
+.wd-find-select .inner-group .form-style:not(:last-child) {
+  border-right: 1px solid #e4e4e4;
 }
 .wd-find-select .inner-group .group-ip {
   position: relative;
@@ -9138,6 +9161,11 @@ tr {
   }
   .flat-quote {
     padding-right: 50px;
+  }
+}
+@media (min-width: 1150px) {
+  .flat-slider.home-1 .slider-content .heading {
+    margin-bottom: 108px;
   }
 }
 @media (min-width: 1441px) {

@@ -2,25 +2,40 @@
     .nav-tab-form {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 10px;
+        margin-bottom: 18px;
         .nav-link-item {
-            padding: 15px 28px;
-            border-radius: 8px 8px 0px 0px;
-            text-transform: uppercase;
+            padding: 14px 55px;
+            border-radius: 99px;
             font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.8px;
+            line-height: 21.86px;
             text-align: center;
-            font-weight: 700;
+            font-weight: 600;
+            background-color: transparent;
+            border: 1px solid $white;
+            color: $white;
         }
         &.style-1 {
             .nav-link-item {
-                background-color: $rgba-white;
-                color: $white;
+                position: relative;
                 &.active,
                 &:hover {
-                    background-color: $white;
-                    color: $on-surface;
+                    background-color: $primary;
+                    border-color: $primary;
+                    &::after{
+                        display: block;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-top: 6px solid $primary;
+                    display: none;
                 }
             }
         }
@@ -31,7 +46,6 @@
                 &.active,
                 &:hover {
                     background-color: $white;
-                    color: $on-surface;
                 }
             }
         }
