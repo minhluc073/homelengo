@@ -7,7 +7,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    min-width: 244px;
+    min-width: 162px;
     min-height: 54px;
     border-radius: 9999px;
     background-color: $white;
@@ -24,14 +24,20 @@
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    svg path{
+    svg path {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
-    &:hover{
+    svg {
+        width: 20px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    &:hover {
         background-color: $primary;
         color: $white;
         border-color: $primary;
@@ -50,7 +56,6 @@
     &.size-2 {
         padding: 11px 40px;
     }
-   
 }
 
 .btn-read-more {
@@ -67,7 +72,6 @@
 .tag {
     display: inline-block;
 }
-
 
 .hover-btn-view:hover {
     .btn-view.style-1 {
@@ -131,17 +135,17 @@
     }
 }
 
-.btn-light{
+.btn-line {
     @include flex(center, center);
     gap: 8px;
     border: 1px solid $primary;
     background-color: $white;
-    
-    &:hover{
+
+    &:hover {
         background-color: $primary;
         color: $white;
-        svg{
-            path{
+        svg {
+            path {
                 stroke: $white;
             }
         }

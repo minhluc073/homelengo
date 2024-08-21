@@ -2,16 +2,14 @@
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;
     border: 1px solid $outline;
-    border-radius: 3px;
-    padding: 9px 8px 9px 12px;
+    padding: 15px 18px;
     box-sizing: border-box;
     clear: both;
     cursor: pointer;
     display: block;
     /* float: left; */
-    font-family: var(--paraFont);
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 22px;
     font-weight: 400;
     /* text-transform: capitalize; */
     outline: none;
@@ -20,7 +18,7 @@
     user-select: none;
     white-space: nowrap;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 99px;
     color: $on-surface;
 }
 

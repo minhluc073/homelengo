@@ -3612,7 +3612,7 @@ fieldset:disabled .btn {
     --bs-btn-disabled-border-color: #dc3545
 }
 
-.btn-light {
+.btn-line {
     --bs-btn-color: #000;
     --bs-btn-bg: #f8f9fa;
     --bs-btn-border-color: #f8f9fa;

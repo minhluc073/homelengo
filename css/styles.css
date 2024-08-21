@@ -458,7 +458,7 @@ label {
 .text-1 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 25.2px;
 }
 
 .text-2 {
@@ -2696,7 +2696,7 @@ label {
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  min-width: 244px;
+  min-width: 162px;
   min-height: 54px;
   border-radius: 9999px;
   background-color: #ffffff;
@@ -2720,6 +2720,12 @@ label {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.tf-btn svg {
+  width: 20px;
+}
+.tf-btn .icon {
+  font-size: 20px;
 }
 .tf-btn:hover {
   background-color: #1563df;
@@ -2808,7 +2814,7 @@ label {
   background-color: #161e2d;
 }
 
-.btn-light {
+.btn-line {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2816,11 +2822,11 @@ label {
   border: 1px solid #1563df;
   background-color: #ffffff;
 }
-.btn-light:hover {
+.btn-line:hover {
   background-color: #1563df;
   color: #ffffff;
 }
-.btn-light:hover svg path {
+.btn-line:hover svg path {
   stroke: #ffffff;
 }
 
@@ -2890,14 +2896,14 @@ label {
 
 .noUi-horizontal .noUi-handle {
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   left: 0px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
-  border: 2px solid #161e2d;
+  background-color: #1563df;
+  border: 2px solid #ffffff;
   cursor: pointer;
 }
 
@@ -2907,11 +2913,11 @@ label {
 
 /* Styling; */
 .noUi-background {
-  background: #e4e4e4;
+  background: #E7F0FF;
 }
 
 .noUi-connect {
-  background: #161e2d;
+  background: #1563df;
   -webkit-transition: background 450ms;
   transition: background 450ms;
 }
@@ -2996,34 +3002,30 @@ label {
 
 .tf-checkbox {
   position: relative;
-  border: 1px solid #161e2d;
+  border: 1px solid #e4e4e4;
   background: none;
   cursor: pointer;
   outline: 0;
   width: 12px;
   height: 12px;
-  border-radius: 2px;
+  border-radius: 6px;
   -webkit-appearance: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .tf-checkbox::before {
-  content: "\e93b";
+  content: "\e945";
   position: absolute;
   font-family: "icomoon";
-  font-size: 8px;
+  font-size: 10px;
   line-height: 12px;
   color: #ffffff;
 }
 .tf-checkbox.style-1 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-color: #e4e4e4;
-}
-.tf-checkbox.style-1::before {
-  font-size: 8px;
-  line-height: 15px;
 }
 .tf-checkbox.primary {
   border-color: #A3ABB0;
@@ -3036,8 +3038,8 @@ label {
   border-color: #5c6368;
 }
 .tf-checkbox:checked {
-  border-color: #161e2d;
-  background-color: #161e2d;
+  border-color: #1563df;
+  background-color: #1563df;
 }
 
 .tf-radio {
@@ -3153,16 +3155,9 @@ label {
   background-color: #ffffff;
   padding: 20px;
   padding-left: 40px;
-  border-radius: 999px;
 }
 .wd-find-select .tf-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 11px 40px;
-  border-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 .wd-find-select .box-btn-advanced {
   display: flex;
@@ -3183,14 +3178,15 @@ label {
 .wd-find-select .inner-group .form-style .nice-select {
   border: 0;
   padding: 0;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .wd-find-select .inner-group .form-style .form-control {
   color: #161e2d;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 21.86px;
   padding-right: 45px;
+  border-radius: 0;
 }
 .wd-find-select .inner-group .form-style .form-control::placeholder {
   color: #161e2d;
@@ -3198,16 +3194,15 @@ label {
 .wd-find-select .inner-group .form-style .nice-select {
   color: #161e2d;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 21.86px;
 }
 .wd-find-select .inner-group .form-style .nice-select::after {
-  right: 24px;
+  right: 20px;
 }
 .wd-find-select .inner-group .form-style label {
-  font-size: 14px;
-  line-height: 24px;
-  color: #5c6368;
+  font-weight: 600;
+  color: #A3ABB0;
 }
 .wd-find-select .inner-group .form-style:not(:last-child) {
   border-right: 1px solid #e4e4e4;
@@ -3312,8 +3307,8 @@ label {
   z-index: 10;
   width: 100%;
   background: #ffffff;
-  border: 1px solid #e4e4e4;
-  border-radius: 12px;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 16px;
   padding: 28px 20px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -3333,27 +3328,19 @@ label {
   gap: 80px;
 }
 .wd-search-form .group-price {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 .wd-search-form .box-title-price {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
-  margin-bottom: 22px;
-}
-.wd-search-form .box-title-price .title-price {
-  font-size: 14px;
-  line-height: 24px;
-  color: #5c6368;
-  font-weight: 500;
+  margin-bottom: 10px;
 }
 .wd-search-form .group-select {
-  gap: 40px;
+  gap: 30px;
 }
 .wd-search-form .group-select .title-select {
-  margin-bottom: 4px;
-  font-size: 14px;
-  line-height: 24px;
+  margin-bottom: 8px;
 }
 .wd-search-form .group-checkbox {
   margin-top: 20px;
@@ -3361,14 +3348,15 @@ label {
 .wd-search-form .group-checkbox .amenities-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 .wd-search-form .group-checkbox .amenities-item .text-cb-amenities {
-  color: #5c6368;
-  cursor: pointer;
-}
-.wd-search-form .group-checkbox .amenities-item .tf-checkbox:checked ~ .text-cb-amenities {
   color: #161e2d;
+  cursor: pointer;
+  font-weight: 400;
+}
+.wd-search-form .group-amenities {
+  margin-top: 14px;
 }
 .wd-search-form.style-2 {
   padding: 24px 30px 30px;
@@ -3653,16 +3641,14 @@ label {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   border: 1px solid #e4e4e4;
-  border-radius: 3px;
-  padding: 9px 8px 9px 12px;
+  padding: 15px 18px;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
   display: block;
   /* float: left; */
-  font-family: var(--paraFont);
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 400;
   /* text-transform: capitalize; */
   outline: none;
@@ -3671,7 +3657,7 @@ label {
   user-select: none;
   white-space: nowrap;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 99px;
   color: #161e2d;
 }
 
@@ -9153,6 +9139,9 @@ tr {
 /* Media Queries
 -------------------------------------------------------------- */
 @media (min-width: 992px) {
+  .wd-find-select {
+    border-radius: 999px;
+  }
   .flat-title-page {
     margin-top: 50px;
   }
