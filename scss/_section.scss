@@ -478,18 +478,18 @@
         border-radius: 14px;
         overflow: hidden;
     }
-    .name{
+    .name {
         font-size: 18px;
         line-height: 25.2px;
         font-weight: 600;
         margin-bottom: 12px;
     }
-    .action{
+    .action {
         display: flex;
         align-items: center;
         gap: 16px;
-        span{
-            color: #7C818B;
+        span {
+            color: #7c818b;
             font-size: 12px;
             line-height: 16.8px;
         }
@@ -528,13 +528,12 @@
 .flag-tag {
     font-weight: 600;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 28px;
     letter-spacing: 0.8px;
-    text-transform: uppercase;
     text-align: center;
     display: inline-block;
-    padding: 0px 8px;
-    border-radius: 4px;
+    padding: 0px 10px;
+    border-radius: 99px;
     background-color: rgba(11, 33, 50, 0.4);
     color: $white;
     @include transition3;
@@ -656,7 +655,7 @@
 // widget home box
 .homeya-box {
     display: block;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     border: 1px solid $outline;
     .images-group {
@@ -674,36 +673,16 @@
             gap: 8px;
             flex-wrap: wrap;
         }
-        .box-icon {
-            background-color: $rgba-black;
-            border-radius: 4px;
-            &.w-40 {
-                .icon {
-                    color: $white;
-                    font-size: 24px;
-                }
-            }
-            &.w-32 {
-                .icon {
-                    color: $white;
-                    font-size: 20px;
-                }
-            }
-            &.w-28 {
-                .icon {
-                    color: $white;
-                    font-size: 16px;
-                }
-            }
-            &:hover {
-                background-color: $primary;
-            }
-        }
+        
         .bottom {
             position: absolute;
-            left: 16px;
-            bottom: 16px;
+            left: 20px;
+            bottom: 12px;
             z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: $white;
         }
         &:after {
             position: absolute;
@@ -712,8 +691,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: $rgba-black-hover;
-            opacity: 0;
+            background: $rgba-black-hover;
             @include transition3;
         }
     }
@@ -725,41 +703,27 @@
             width: 100%;
         }
     }
-    .content {
-        padding: 16px 20px;
+    .content-top {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
         border-bottom: 1px solid $outline;
-        .desc {
-            display: flex;
-            gap: 4px;
-            margin-top: 8px;
-            color: $variant-1;
-            .icon {
-                margin-top: 4px;
-            }
-            p {
-                font-size: 16px;
-                line-height: 26px;
-            }
-        }
+       
         .meta-list {
             margin-top: 12px;
             display: flex;
             align-items: center;
-            column-gap: 30px;
-            row-gap: 15px;
+            gap: 16px;
             flex-wrap: wrap;
             .item {
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 4px;
 
                 .icon {
-                    font-size: 24px;
-                    color: $variant-1;
+                    font-size: 16px;
+                    color: $variant-2;
                 }
-                span {
-                    font-weight: 600;
-                }
+                
             }
         }
         .archive-bottom {
@@ -767,17 +731,16 @@
         }
     }
     .archive-bottom {
-        padding: 16px 20px;
-        flex-wrap: wrap;
-        gap: 5px;
+        padding: 20px;
+        .content-bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+       
     }
 
     &:hover {
-        .images-group {
-            &::after {
-                opacity: 1;
-            }
-        }
         .images-style {
             img {
                 transform: scale(1.05);
