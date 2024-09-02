@@ -6,7 +6,7 @@
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0px 8px;
+    margin: 0px 5px;
 }
 
 .sw-auto {
@@ -54,7 +54,7 @@
     .swiper-pagination-bullet {
         width: 8px;
         height: 8px;
-        background-color: $variant-2;
+        background-color: $outline;
         opacity: 1;
         position: relative;
         @include transition5;
@@ -66,8 +66,8 @@
             left: 50%;
             border-radius: 50%;
             content: "";
-            width: 18px;
-            height: 18px;
+            width: 14px;
+            height: 14px;
             border: 1px solid $primary;
             overflow: visible;
             opacity: 0;
@@ -80,5 +80,9 @@
         &::before {
             opacity: 1;
         }
+    }
+
+    &:not(.swiper-pagination-lock) {
+        margin-top: 15px;
     }
 }

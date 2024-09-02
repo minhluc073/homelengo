@@ -198,13 +198,11 @@
     background-color: $white;
     padding: 20px;
     padding-left: 40px;
-    .tf-btn {
-        padding: 11px 40px;
-    }
+
     .box-btn-advanced {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
-        align-items: center;
     }
     .inner-group {
         padding-right: 20px;

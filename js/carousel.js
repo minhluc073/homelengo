@@ -68,46 +68,45 @@ if ($(".slider-sw-home2").length > 0) {
 }
 
 if ($(".tf-sw-location").length > 0) {
-  var previewLg = $(".tf-sw-location").data("preview-lg");
-  var previewMd = $(".tf-sw-location").data("preview-md");
-  var previewSm = $(".tf-sw-location").data("preview-sm");
+  var preview = $(".tf-sw-location").data("preview");
+  var tablet = $(".tf-sw-location").data("tablet");
+  var mobile = $(".tf-sw-location").data("mobile");
+  var mobileSm = $(".tf-sw-location").data("mobile-sm");
+  var spacingLg = $(".tf-sw-location").data("space-lg");
+  var spacingMd = $(".tf-sw-location").data("space-md");
   var spacing = $(".tf-sw-location").data("space");
-  var centered = $(".tf-sw-location").data("centered");
-  var loop = $(".tf-sw-location").data("loop");
+  var perGroup = $(".tf-sw-location").data("pagination-sm");
+  var perGroupSm = $(".tf-sw-location").data("pagination");
+  var perGroupMd = $(".tf-sw-location").data("pagination-md");
+  var perGroupLg = $(".tf-sw-location").data("pagination-lg");
   var swiper = new Swiper(".tf-sw-location", {
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
+    slidesPerView: mobile,
+    spaceBetween: spacing,
+    pagination: {
+      el: ".sw-pagination-location",
+      clickable: true,
     },
-    speed: 2000,
+    slidesPerGroup: perGroup,
     navigation: {
       clickable: true,
       nextEl: ".nav-prev-location",
       prevEl: ".nav-next-location",
     },
-    pagination: {
-      el: ".swiper-pagination1",
-      clickable: true,
-    },
-    slidesPerView: 1,
-    loop: loop,
-    spaceBetween: spacing,
-    centeredSlides: centered,
     breakpoints: {
-      600: {
-        slidesPerView: previewSm,
-        spaceBetween: 20,
-        centeredSlides: false,
-      },
-      991: {
-        slidesPerView: previewMd,
-        spaceBetween: 20,
-        centeredSlides: false,
-      },
-
-      1520: {
-        slidesPerView: previewLg,
+      575: {
+        slidesPerView: mobileSm,
         spaceBetween: spacing,
+        slidesPerGroup: perGroupSm,
+      },
+      768: {
+        slidesPerView: tablet,
+        spaceBetween: spacingMd,
+        slidesPerGroup: perGroupMd,
+      },
+      1150: {
+        slidesPerView: preview,
+        spaceBetween: spacingLg,
+        slidesPerGroup: perGroupLg,
       },
     },
   });

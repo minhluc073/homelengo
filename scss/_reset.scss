@@ -287,8 +287,6 @@ textarea {
     color: #8a8aa0;
 }
 
-
-
 .p-12 {
     font-size: 12px;
     line-height: 18px;
@@ -339,8 +337,8 @@ h4 {
 }
 
 h5 {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 h6 {
@@ -492,7 +490,7 @@ label {
     font-size: 40px;
 }
 
-.font-rubik{
+.font-rubik {
     font-family: $font-2;
 }
 // color text
@@ -508,8 +506,8 @@ label {
 .text-black {
     color: $on-surface !important;
 }
-.text-black-2{
-    color: #1C1C1E;
+.text-black-2 {
+    color: #1c1c1e;
 }
 .text-white {
     color: $white !important;
@@ -524,32 +522,42 @@ label {
     color: $variant-2;
 }
 // background color
-.bg-surface { 
+.bg-surface {
     background-color: $surface;
+}
+.bg-primary {
+    background-color: $primary;
+}
+.bg-primary-2 {
+    background-color: #f3f7fd;
 }
 
 // margin
-.my-20{
+.my-20 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.my-30{
+.my-30 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.mb-16{
+.mb-16 {
     margin-bottom: 16px;
 }
-.mb-20{
+.mb-20 {
     margin-bottom: 20px;
 }
-.mb-30{
+.mb-30 {
     margin-bottom: 30px;
 }
 .my-40 {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+.mx-5 {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 }
 .mt-4 {
     margin-top: 4px !important;
@@ -567,19 +575,27 @@ label {
 .mt-16 {
     margin-top: 16px;
 }
-.mt-20{
+.mt-20 {
     margin-top: 20px;
 }
-.mt-30{
+.mt-30 {
     margin-top: 30px;
 }
-.pt-26{
+.pt-26 {
     padding-top: 26px;
 }
-.pb-12{
+.px-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pb-12 {
     padding-bottom: 12px;
 }
-.pb-30{
+.pb-30 {
     padding-bottom: 30px;
 }
 // radius
@@ -589,10 +605,10 @@ label {
 .round-12 {
     border-radius: 12px;
 }
-.round-30{
-    border-radius: 30px
+.round-30 {
+    border-radius: 30px;
 }
-.o-hidden{
+.o-hidden {
     overflow: hidden;
 }
 // grid
@@ -622,7 +638,7 @@ label {
 .gap-8 {
     gap: 8px;
 }
-.gap-9{
+.gap-9 {
     gap: 9px;
 }
 .gap-12 {
@@ -640,13 +656,42 @@ label {
 .pt-0 {
     padding-top: 0px !important;
 }
-.line-b{
+.line-b {
     border-bottom: 1px solid $outline;
 }
-.line-t{
+.line-t {
     border-top: 1px solid $outline;
 }
 
 .no-line {
     border: 0 !important;
+}
+
+.text-line-clamp-1 {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.text-line-clamp-2 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.tf-grid-layout {
+    display: grid;
+    gap: 15px;
+}
+
+.cus-layout-left {
+    width: calc(100vw - (100vw - 1290px) / 2);
+    max-width: 100%;
+    margin-left: unset;
+    margin-right: auto;
+}
+
+.radius-30 {
+    border-radius: 30px;
+    overflow: hidden;
 }

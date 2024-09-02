@@ -1,14 +1,64 @@
 /* Media Queries
 -------------------------------------------------------------- */
 @media (min-width: 576px){
-
+    .tf-grid-layout {
+        gap: 15px;
+        
+        &.sm-col-4{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.sm-col-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &.sm-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }   
+    }
 }
 @media (min-width: 768px){
 
+    .tf-grid-layout {
+        gap: 15px;
+        
+        &.md-col-4{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.md-col-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &.md-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }   
+    }
+
 }
 @media (min-width: 992px){
+    .cus-layout-left{
+        .content-left{
+            width: 60%;
+        }
+        .content-right{
+            width: 40%;
+        }
+    }
+    .flat-img-with-text{
+        
+        flex-direction: row;
+        .content-left{
+            width: 51%;
+        }
+        .content-right{
+            width: 49%;
+            padding: 50px;
+            .box-title{
+            }
+        }
+    }
     .wd-find-select {
         border-radius: 999px;
+        .tf-btn {
+            padding: 11px 40px;
+        }
     }
     .flat-title-page{
         margin-top: 50px;
@@ -22,9 +72,71 @@
     .flat-quote{
         padding-right: 50px;
     }
-}
-@media (min-width: 1150px){
+    .sw-pagination{
+        &:not(.swiper-pagination-lock) {
+            margin-top: 30px;
+        }
+    }
 
+    .flat-property-detail-v4 {
+        .single-property-video {
+            .btn-video {
+                width: 80px;
+                height: 80px;
+                .icon {
+                    font-size: 42px;
+                }
+            }
+        }
+        .single-property-feature {
+            .wrap-feature {
+                padding-right: 100px;
+            }
+        }
+    }
+    .flat-slider {
+        .heading {
+            br {
+                display: none;
+            }
+        }
+    }
+
+
+    .tf-grid-layout {
+        gap: 30px;
+        
+        &.lg-col-4{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.lg-col-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &.lg-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }   
+    }
+    .box-benefit {
+        gap: 30px;
+        padding: 30px;
+        .icon-box{
+            .icon{
+                font-size: 60px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+    .flat-img-with-text{
+        
+        .content-right{
+            padding: 100px 95px;
+            padding-right: 300px;
+        }
+    }
     .flat-slider{
         &.home-1 {
             .slider-content{
@@ -34,7 +146,25 @@
             }
         }
     }
+    .sw-pagination{
+        &:not(.swiper-pagination-lock) {
+            margin-top: 50px;
+        }
+    }
+    .tf-grid-layout {
+        gap: 30px;
 
+        &.xl-col-4{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.xl-col-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &.xl-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }   
+    }
+    
 }
 
 @media (min-width: 1441px){
@@ -95,31 +225,8 @@
         }
     }
 }
-@media only screen and (min-width: 991px) {
-    .flat-property-detail-v4 {
-        .single-property-video {
-            .btn-video {
-                width: 80px;
-                height: 80px;
-                .icon {
-                    font-size: 42px;
-                }
-            }
-        }
-        .single-property-feature {
-            .wrap-feature {
-                padding-right: 100px;
-            }
-        }
-    }
-    .flat-slider {
-        .heading {
-            br {
-                display: none;
-            }
-        }
-    }
-}
+
+
 
 // max-width:
 @media only screen and (max-width: 1800px) {
@@ -561,6 +668,15 @@
         font-size: 46px;
         line-height: 58px;
     }
+    h4 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 26px;
+
+    }
     .flat-slider {
         &.home-1 {
             .slider-content {
@@ -634,6 +750,7 @@
         }
         .tf-btn {
             width: 100%;
+            min-width: 100%;
             border-radius: 4px;
         }
     }
@@ -1349,10 +1466,7 @@
         font-size: 40px;
         line-height: 58px;
     }
-    h4 {
-        font-size: 32px;
-        line-height: 40px;
-    }
+   
 
     .layout-wrap .box-agent-avt {
         flex-wrap: wrap;

@@ -1,22 +1,27 @@
 /*------------ section ---------------- */
 
 .flat-section {
-    padding: 100px 0px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .flat-section-v2 {
     padding-top: 80px;
 }
 .flat-section-v3 {
-    padding: 80px 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .flat-section-v4 {
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .flat-section-v5 {
-    padding: 120px 0px 80px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
 .flat-section-v6 {
-    padding: 80px 0px 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .flat-title-page {
@@ -673,7 +678,7 @@
             gap: 8px;
             flex-wrap: wrap;
         }
-        
+
         .bottom {
             position: absolute;
             left: 20px;
@@ -707,7 +712,7 @@
         padding-bottom: 24px;
         margin-bottom: 24px;
         border-bottom: 1px solid $outline;
-       
+
         .meta-list {
             margin-top: 12px;
             display: flex;
@@ -723,7 +728,6 @@
                     font-size: 16px;
                     color: $variant-2;
                 }
-                
             }
         }
         .archive-bottom {
@@ -732,12 +736,11 @@
     }
     .archive-bottom {
         padding: 20px;
-        .content-bottom{
+        .content-bottom {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-       
     }
 
     &:hover {
@@ -940,7 +943,7 @@
 
 // box title
 .box-title {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     &.style-1 {
         @include flex(center, space-between);
         flex-wrap: wrap;
@@ -977,22 +980,26 @@
     @include transition6;
     .content {
         position: absolute;
-        bottom: 18px;
-        left: 16px;
-        right: 16px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
         z-index: 12;
-        padding: 17px 24px;
+        padding: 16px;
         border-radius: 12px;
-        @include transition6;
-        .sub-title {
-            font-size: 16px;
-            line-height: 26px;
-            color: $white;
-            @include transition6;
-        }
+        background-color: $white;
+        @include flex(center, space-between);
+        gap: 10px;
+
         .title {
-            color: $white;
-            @include transition6;
+            margin-top: 4px;
+        }
+        .box-icon {
+            background-color: $white;
+            flex-shrink: 0;
+            .icon {
+                @include transition3;
+                color: $on-surface;
+            }
         }
     }
     .image {
@@ -1001,21 +1008,7 @@
             width: 100%;
         }
     }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 270px;
-        -webkit-transition: all 0.4s ease-out 0s;
-        -moz-transition: all 0.4s ease-out 0s;
-        -ms-transition: all 0.4s ease-out 0s;
-        -o-transition: all 0.4s ease-out 0s;
-        transition: all 0.4s ease-out 0s;
-        background: $garden-2;
-    }
+
     &.style-1 {
         .content {
             bottom: 12px;
@@ -1048,16 +1041,13 @@
     }
     &:hover {
         .content {
-            background-color: $white;
-            .sub-title {
-                color: $variant-2;
+            .box-icon {
+                background-color: $primary;
+                border-color: $primary;
+                .icon {
+                    color: $white;
+                }
             }
-            .title {
-                color: $on-surface;
-            }
-        }
-        &::after {
-            opacity: 0;
         }
     }
 }
@@ -1226,261 +1216,73 @@
 .box-service {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    @include transition5;
-    .icon-box {
-        .icon {
-            font-size: 80px;
-            transition: all 0.8s ease;
-            display: inline-block;
-        }
+    @include transition3;
+    padding: 50px 30px;
+    border: 1px solid $outline;
+    border-radius: 16px;
+    .image {
+        display: block;
+        transition: all 0.8s ease;
+        display: inline-block;
     }
-
     .content {
+        text-align: center;
         .title {
             text-transform: capitalize;
+            margin-bottom: 20px;
         }
         .description {
-            margin-top: 12px;
-            font-size: 16px;
-            line-height: 26px;
             color: $variant-1;
-        }
-        .btn-view {
-            margin-top: 12px;
+            margin-bottom: 30px;
         }
     }
-    &.style-1 {
-        flex-direction: row;
-        align-items: center;
-        padding: 28px;
-        background-color: $white;
-        box-shadow: 0px 10px 25px 0px #365f681a;
-        border-radius: 16px;
-        .content {
-            .btn-view {
-                margin-top: 10px;
-            }
-        }
+    .tf-btn {
+        padding-left: 45px;
+        padding-right: 45px;
     }
 
     &:hover {
-        .icon-box {
+        box-shadow: 0px 30px 60px 0px #0000001a;
+        border-color: transparent;
+        .image {
+            transform: rotateY(360deg);
+        }
+        .tf-btn {
+            background-color: $primary;
+            color: $white;
+            padding-left: 65px;
+            padding-right: 65px;
             .icon {
-                transform: rotateY(360deg);
-            }
-        }
-    }
-    &.style-2 {
-        align-items: center;
-        padding: 40px 30px;
-        border-radius: 16px;
-        .content {
-            text-align: center;
-            .tf-btn {
-                margin-top: 20px;
-            }
-        }
-        &.active,
-        &:hover {
-            background-color: $surface;
-            .tf-btn {
-                background-color: $primary;
                 color: $white;
-                border-color: $primary;
-            }
-        }
-    }
-    &.style-3 {
-        padding: 40px 30px;
-        align-items: center;
-        border-radius: 20px;
-        .content {
-            text-align: center;
-        }
-        &.active,
-        &:hover {
-            background-color: $white;
-            .btn-view {
-                .text {
-                    color: $on-surface;
-                    &::before {
-                        width: 100%;
-                        left: 0;
-                        right: auto;
-                    }
-                }
-            }
-        }
-    }
-    &.style-4 {
-        flex-direction: row;
-        .icon-box {
-            width: 100px;
-            height: 100px;
-            @include flex(center, center);
-            border-radius: 1000px;
-            background-color: rgba(224, 80, 40, 0.1);
-            flex-shrink: 0;
-            .icon {
-                color: $primary;
-                font-size: 52px;
-            }
-        }
-        .content {
-            .btn-view {
-                margin-top: 8px;
+                // animation: 0.3s link-icon linear;
             }
         }
     }
 }
-.wrap-service {
+
+.flat-img-with-text{
+ 
     display: flex;
-    gap: 60px;
-}
-.flat-service {
-    padding-bottom: 60px;
-    margin-bottom: 60px;
-    border-bottom: 1px solid $outline;
-}
-.wrap-service-v2 {
-    align-items: center;
-    .box-left {
-        padding-right: 100px;
-        p {
-            font-size: 16px;
-            line-height: 26px;
-            color: $variant-1;
-        }
-        .list-view {
-            margin-top: 28px;
-            margin-bottom: 28px;
+    flex-direction: column;
+    .content-right{
+        padding: 15px;
+    }
+    .content-left{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
-    .list-view {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 12px;
-        li {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 700;
-            &:last-child,
-            &:nth-child(2) {
-                padding-left: 45px;
-            }
-        }
-    }
-    .box-title {
-        margin-bottom: 28px;
-    }
-    .box-right {
-        padding-left: 80px;
-        padding-right: 40px;
-        .box-service:not(:last-child) {
-            margin-bottom: 20px;
-        }
-        .box-service {
-            cursor: pointer;
-            @include transition5;
-            &:hover,
-            &.active {
-                // margin-left: -20px;
-                // margin-right: -20px;
-                // padding: 40px;
-                transform: scale(1.08);
-            }
-            &.active {
-                margin: 30px 0px;
-            }
+    .box-title{
+        .desc{
+            margin-top: 20px;
         }
     }
 }
-.wrap-service-v4 {
-    display: flex;
-    gap: 36px;
-    .inner-service-left {
-        padding-top: 8px;
-        padding-right: 94px;
-        flex-shrink: 0;
-        .img-service {
-            position: relative;
-            img {
-                border-radius: 1000px 1000px 0px 0px;
-            }
-        }
-    }
-    .box-avatar {
-        position: absolute;
-        left: -111px;
-        top: 25%;
-        transform: rotate(-16deg);
-        display: inline-flex;
-        padding: 16px 24px 16px 16px;
-        border-radius: 73px;
-        gap: 16px;
-        background-color: $white;
-        box-shadow: $shadow-2;
-        -webkit-animation: ani1 7s infinite ease-in-out alternate;
-        animation: ani1 7s infinite ease-in-out alternate;
-        .avatar {
-            position: relative;
-            img {
-                border-radius: 50%;
-            }
-            .status {
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                background-color: $primary;
-                border: 2px solid $white;
-                border-radius: 50%;
-                bottom: 0;
-                right: -2px;
-            }
-        }
-    }
-    .box-trader {
-        position: absolute;
-        right: -50px;
-        bottom: 13%;
-        transform: rotate(16deg);
-        background-color: transparent;
-        padding: 8px;
-        border: 4px solid $primary;
-        border-radius: 20px;
-        display: inline-flex;
-        -webkit-animation: ani2 7s infinite ease-in-out alternate;
-        animation: ani2 7s infinite ease-in-out alternate;
-        .content {
-            background-color: $white;
-            border-radius: 20px;
-            padding: 8px 36px;
-            text-align: center;
-            box-shadow: $shadow-2;
-        }
-    }
-    .inner-service-right {
-        padding-right: 89px;
-        .box-title {
-            margin-bottom: 50px;
-            p {
-                margin-top: 12px;
-                font-size: 16px;
-                line-height: 26px;
-                color: $variant-1;
-            }
-        }
-        .box-service {
-            &:not(:last-child) {
-                margin-bottom: 40px;
-            }
-        }
-    }
-}
+
 
 @keyframes ani1 {
     0%,
@@ -1559,54 +1361,51 @@
 // widget benefit
 .box-benefit {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    border-radius: 16px;
+    gap: 15px;
+    padding: 15px;
+    background-color: $white;
     .icon-box {
+        flex-shrink: 0;
         .icon {
-            font-size: 80px;
+            font-size: 40px;
             transition: all 0.8s ease;
             display: inline-block;
+            color: $primary;
         }
     }
     .content {
         .description {
             margin-top: 12px;
-            font-size: 16px;
-            line-height: 26px;
             color: $variant-1;
+        }
+        .btn-view{
+            margin-top: 12px;
         }
     }
     &:hover {
         .icon-box {
             .icon {
-                transform: rotateY(180deg);
+                transform: rotateY(360deg);
             }
         }
+        transform: scale(1.05);
     }
-    &.style-1 {
-        align-items: flex-start;
-        .icon-box {
-            .icon {
-                font-size: 60px;
-                color: $white;
-            }
-        }
-        .content {
-            .link {
-                color: $white;
-            }
-            .description {
-                margin-top: 9px;
-                color: $white;
-            }
+
+}
+// .wrap-benefit {
+//     display: flex;
+//     gap: 60px;
+// }
+
+.flat-service{
+    .box-benefit{
+        &:not(:last-child){
+            margin-bottom: 20px;
         }
     }
 }
-.wrap-benefit {
-    display: flex;
-    gap: 60px;
-}
+
 .flat-benefit-v2 {
     background: $on-surface;
     padding: 80px 0px;
