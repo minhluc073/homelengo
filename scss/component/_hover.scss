@@ -12,21 +12,21 @@
             -webkit-transition: transform 0.3s cubic-bezier(0, 0, 0.44, 1.18);
             transition: transform 0.3s cubic-bezier(0, 0, 0.44, 1.18);
         }
-        &::after {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5019607843);
-            opacity: 0;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-        }
+        // &::after {
+        //     position: absolute;
+        //     content: "";
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     background-color: rgba(0, 0, 0, 0.5019607843);
+        //     opacity: 0;
+        //     -webkit-transition: all 0.3s ease;
+        //     -moz-transition: all 0.3s ease;
+        //     -ms-transition: all 0.3s ease;
+        //     -o-transition: all 0.3s ease;
+        //     transition: all 0.3s ease;
+        // }
     }
     &:hover {
         img {

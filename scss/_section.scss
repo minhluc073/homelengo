@@ -944,6 +944,9 @@
 // box title
 .box-title {
     margin-bottom: 50px;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
     &.style-1 {
         @include flex(center, space-between);
         flex-wrap: wrap;
@@ -1568,170 +1571,57 @@
 
 // testimonial
 .box-tes-item {
-    padding: 40px;
-    padding-left: 32px;
+    padding: 30px;
     border-radius: 20px;
     background-color: $white;
+    .icon-quote{
+        font-size: 60px;
+        color: $primary;
+    }
     .note {
         margin-top: 12px;
     }
     .box-avt {
         margin-top: 24px;
     }
-    &.style-1 {
-        box-shadow: 0px 5px 15px 0px #365f681a;
-    }
-    &.style-2 {
-        background-color: $surface;
-    }
-}
-.box-test-left {
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    height: 100%;
-    overflow: hidden;
-    .img-style {
-        position: relative;
-        border-radius: 0;
-        .title {
-            position: absolute;
-            z-index: 12;
-            bottom: 24px;
-            left: 40px;
-            right: 60px;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 127px;
-            -webkit-transition: all 0.4s ease-out 0s;
-            -moz-transition: all 0.4s ease-out 0s;
-            -ms-transition: all 0.4s ease-out 0s;
-            -o-transition: all 0.4s ease-out 0s;
-            transition: all 0.4s ease-out 0s;
-            background: $garden-2;
-            opacity: 0.7;
+    .list-star{
+        margin-top: 12px;
+        gap: 4px;
+        .icon{
+            font-size: 14px;
         }
     }
-    .content-box {
-        padding: 30px 40px 40px;
-        background-color: $on-surface;
-        height: 100%;
-        .tf-btn {
-            margin-top: 20px;
-        }
-    }
-    &:hover {
-        .img-style {
-            &::after {
-                height: 100%;
-            }
-        }
-    }
-}
-.box-test-right {
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    overflow: hidden;
-    background-color: $surface;
-    height: 100%;
-    margin-left: -30px;
-    padding: 60px 60px 30px 60px;
-    .tf-sw-testimonial {
-        padding-bottom: 38px;
-        border-bottom: 1px solid $outline;
-        .sw-pagination {
-            margin-top: 4px;
-        }
-    }
-    .box-tes-item-v2 {
-        text-align: center;
-        .list-star {
-            justify-content: center;
-            margin-bottom: 24px;
-        }
-        h5 {
-            text-transform: capitalize;
-        }
-    }
-    .wrap-partner {
-        margin-top: 30px;
-    }
+
 }
 
-.flat-testimonial {
-    overflow: hidden;
-    .box-title {
-        margin-bottom: 20px;
-    }
-    .box-navigation {
-        margin-top: 30px;
-    }
-    .swiper-slide {
-        .box-tes-item {
-            opacity: 0.4;
-        }
-    }
-    .swiper-slide-prev,
-    .swiper-slide-active,
-    .swiper-slide-next {
-        .box-tes-item {
-            opacity: 1;
-        }
-    }
-}
-.tf-sw-testimonial {
-    .sw-pagination {
-        margin-top: 40px;
-        text-align: center;
-    }
-}
-.flat-testimonial-v2 {
-    position: relative;
 
-    .tf-sw-testimonial {
-        padding: 15px;
-        margin: -15px;
-    }
-    &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 400px;
-        background: $on-surface;
-    }
-}
+
 // widget agent
 .box-agent {
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 30px;
     .box-img {
         position: relative;
         .agent-social {
             position: absolute;
             z-index: 1;
             bottom: 0px;
-            background-color: $white;
+            background-color: rgb(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
             padding: 12px 0px;
             border-radius: 8px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            left: 37px;
-            right: 37px;
+            left: 45px;
+            right: 45px;
             opacity: 0;
             visibility: hidden;
             @include transition3;
             .icon {
                 @include flex(center, center);
-                color: $variant-2;
-                font-size: 20px;
+                color: $white;
+                font-size: 18px;
             }
             li {
                 &:not(:last-child) {
@@ -1754,15 +1644,19 @@
             font-size: 16px;
             line-height: 26px;
         }
-        .icon-phone {
+        .box-icon{
+            gap: 8px;
+            
+        }
+        .icon {
             @include flex(center, center);
-            width: 48px;
-            height: 48px;
+            width: 38px;
+            height: 38px;
             border-radius: 1000px;
-            background-color: $surface;
-            font-size: 28px;
-            color: $variant-1;
-            @include transition6;
+            font-size: 14px;
+            color: $variant-2;
+            border: 1px solid $outline;
+            @include transition3;
         }
         .list-info {
             margin-top: 16px;
@@ -1809,7 +1703,7 @@
             }
         }
         .content {
-            .icon-phone {
+            .icon {
                 background-color: $primary;
                 color: $white;
             }
@@ -1864,29 +1758,20 @@
     }
 }
 
-.tf-sw-partner {
-    .partner-item {
-        cursor: pointer;
-        svg {
-            g,
-            path {
-                @include transition3;
-            }
-        }
-
-        &:hover {
-            svg {
-                g {
-                    opacity: 1;
-                }
-                path {
-                    fill: $primary;
-                }
+.partner-item{
+    width: 100%;
+    height: 100%;
+    svg path{
+        @include transition3;
+    }
+    &:hover{
+        svg{
+            path{
+                fill: $primary;
             }
         }
     }
 }
-
 // categories
 .homeya-categories {
     padding: 30px 24px 24px 24px;

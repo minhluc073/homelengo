@@ -156,34 +156,25 @@ li {
     text-align: center;
 }
 
-.container4 {
-    max-width: 1710px;
-}
 
-.container3 {
-    max-width: 660px;
-}
 
 .container2 {
-    max-width: 1100px;
+    max-width: 1110px;
 }
 
 .container {
     max-width: 1320px;
 }
 
-.container4,
-.container3,
+
 .container2,
 .container {
     width: 100%;
     margin: auto;
 }
 
-.container4,
-.container3,
+
 .container2,
-.container-fluid,
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -591,6 +582,10 @@ label {
 .px-10 {
     padding-left: 10px;
     padding-right: 10px;
+}
+.px-15{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .pb-12 {
     padding-bottom: 12px;
