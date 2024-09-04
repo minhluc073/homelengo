@@ -156,8 +156,6 @@ li {
     text-align: center;
 }
 
-
-
 .container2 {
     max-width: 1110px;
 }
@@ -166,13 +164,11 @@ li {
     max-width: 1320px;
 }
 
-
 .container2,
 .container {
     width: 100%;
     margin: auto;
 }
-
 
 .container2,
 .container {
@@ -519,8 +515,8 @@ label {
 .bg-primary {
     background-color: $primary;
 }
-.bg-primary-2 {
-    background-color: #f3f7fd;
+.bg-primary-new {
+    background-color: $primary-new;
 }
 
 // margin
@@ -583,7 +579,7 @@ label {
     padding-left: 10px;
     padding-right: 10px;
 }
-.px-15{
+.px-15 {
     padding-left: 15px;
     padding-right: 15px;
 }

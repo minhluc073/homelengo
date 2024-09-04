@@ -198,10 +198,12 @@
     background-color: $white;
     padding: 20px;
     padding-left: 40px;
+    .tf-btn{
+        min-height: 52px;
+    }
 
     .box-btn-advanced {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
         gap: 10px;
     }
     .inner-group {
@@ -280,57 +282,10 @@
         }
     }
     &.style-2 {
-        padding: 20px;
-        gap: 20px;
-
-        .inner-group {
-            padding: 0px;
-            .form-style {
-                label {
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    color: $on-surface;
-                    letter-spacing: 0.8px;
-                }
-                .form-control {
-                    color: $variant-2;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 26px;
-                    padding-right: 45px;
-                    &::placeholder {
-                        color: $variant-2;
-                    }
-                }
-                .nice-select {
-                    color: $on-surface;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 26px;
-                    &::after {
-                        right: 24px;
-                    }
-                }
-            }
-            .box-filter {
-                display: flex;
-                .filter-advanced {
-                    flex-direction: row;
-                    gap: 4px;
-                }
-                .text-advanced {
-                    font-size: 14px;
-                    line-height: 24px;
-                    letter-spacing: 0.8px;
-                    color: $on-surface;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
-            }
-        }
-        .tf-btn {
-            border-radius: 4px;
-        }
+        border-radius: 16px;
+        border-top-left-radius: 0;
+       
+        
     }
     &.shadow-st {
         box-shadow: $shadow-1;

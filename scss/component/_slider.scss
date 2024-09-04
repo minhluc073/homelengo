@@ -33,7 +33,6 @@
         bottom: 0;
     }
     &.home-2 {
-        background-color: $surface;
         .img-banner-left {
             position: absolute;
             bottom: 0;
@@ -53,7 +52,7 @@
             // background-image: url(../images/slider/slider-2.jpg);
         }
         .slider-content {
-            padding: 114px 0px;
+            padding: 150px 0px;
             position: relative;
             z-index: 10;
             .heading {
@@ -61,11 +60,9 @@
                     padding-right: 54%;
                 }
                 .subtitle {
-                    padding-right: 48%;
-
+                    padding-right: 60%;
                     margin-top: 12px;
                     margin-bottom: 40px;
-                    color: $variant-1;
                 }
             }
         }
@@ -73,37 +70,24 @@
             margin-top: 24px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 20px;
             flex-wrap: wrap;
-            p,
-            a {
-                color: $variant-1;
+            .categories-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                .icon {
+                    font-size: 14px;
+                    color: $primary;
+                }
             }
             a {
-                position: relative;
-                &::after {
-                    content: "";
-                    width: 0;
-                    height: 1px;
-                    bottom: 0px;
-                    position: absolute;
-                    left: auto;
-                    right: 0;
-                    z-index: 1;
-                    -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-                    -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-                    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-                    background: $on-surface;
-                }
-                &:hover,
-                &.current {
-                    color: $on-surface;
-                    &::after {
-                        width: 100%;
-                        left: 0;
-                        right: auto;
-                    }
-                }
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 6px;
             }
         }
     }
@@ -259,4 +243,3 @@
         transition: all 0.3s ease;
     }
 }
-

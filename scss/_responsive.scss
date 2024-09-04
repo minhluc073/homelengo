@@ -56,8 +56,9 @@
     }
     .wd-find-select {
         border-radius: 999px;
-        .tf-btn {
+        .filter-advanced {
             padding: 11px 40px;
+            
         }
     }
     .flat-title-page{
@@ -718,7 +719,7 @@
         }
     }
     .wd-find-select {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 16px;
         padding: 20px;
         .inner-group {
@@ -749,8 +750,8 @@
             }
         }
         .tf-btn {
-            width: 100%;
-            min-width: 100%;
+            // width: 100%;
+            min-width: 100px;
             border-radius: 4px;
         }
     }
