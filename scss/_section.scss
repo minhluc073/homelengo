@@ -968,6 +968,9 @@
     .tf-btn {
         margin-top: 10px;
     }
+    .box-title {
+        margin-bottom: 32px;
+    }
 }
 .flat-recommended-v2 {
     margin-top: -55px;
@@ -1278,8 +1281,89 @@
         }
     }
     .box-title {
+        margin-left: 0;
+        margin-right: 0;
         .desc {
             margin-top: 20px;
+        }
+    }
+}
+
+.flat-img-with-text-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .box-title {
+        margin-left: 0;
+        margin-right: 0;
+        .desc {
+            margin-top: 20px;
+        }
+    }
+}
+.grid-img-group{
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 12%;
+}
+.tf-image-wrap {
+    
+    position: relative;
+    .img-style{
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    &.item-2 {
+        left: 14%;
+        width: 76.67%;
+        &:hover{
+            z-index: 2;
+        }
+    }
+    &.item-3,
+    &.item-1{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        width: 51%;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        height: max-content;
+    }
+    &.item-1{
+        right: 0;
+        top: 0;
+        width: 44%;
+        box-shadow: $shadow-3;
+        .tag-item{
+            bottom: 20%;
+            z-index: 4;
+            left: -50%;
+        }
+    }
+    &.item-3{
+        left: 0;
+        bottom: 0;
+        width: 33.5%;
+        box-shadow: $shadow-3;
+    }
+    .tag-item{
+        position: absolute;
+        box-shadow: $shadow-3;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: $white;
+        border-radius: 999px;
+        .icon{
+            font-size: 30px;
+            color: $primary;
         }
     }
 }
@@ -1596,6 +1680,7 @@
     gap: 30px;
     .box-img {
         position: relative;
+        border-radius: 16px;
         .agent-social {
             position: absolute;
             z-index: 1;
@@ -1764,10 +1849,8 @@
         }
     }
 }
-.sw-over {
-    margin: -100px;
-    padding: 100px;
-}
+
+
 
 // categories
 .homeya-categories {
@@ -1788,9 +1871,8 @@
             @include transition4;
             font-size: 80px;
         }
-        svg path{
+        svg path {
             @include transition4;
-
         }
     }
     .content {
@@ -1802,13 +1884,12 @@
     &.active,
     &:hover {
         // background-color: $primary;
-        box-shadow: 0px 30px 60px 0px #0000001a;
         border-color: transparent;
-        .icon-box{
-            .icon{
+        .icon-box {
+            .icon {
                 color: $primary;
             }
-            svg path{
+            svg path {
                 fill: $primary;
             }
         }
@@ -1876,7 +1957,7 @@
 .tf-sw-categories {
     .sw-pagination {
         .swiper-pagination-bullet {
-            background-color: #ACC6EC;
+            background-color: #acc6ec;
         }
     }
 }
