@@ -138,10 +138,26 @@
         }
     }
 
+
+
 }
 
 
 @media only screen and (min-width: 1200px){
+
+    .tf-image-wrap{
+        .tag-item{
+            padding: 16px 20px;
+            span{
+                font-size: 18px;
+                line-height: 25.2px;
+                font-weight: 600;
+            }
+            .icon{
+                font-size: 30px;
+            }
+        }
+    }
 
     .hover-img-wrap {
         position: relative;
@@ -1150,6 +1166,16 @@
     }
     .single-property-overview .info-box {
         gap: 20px;
+    }
+    .tf-image-wrap{
+        border-radius: 15px;
+        .img-style{
+            border-radius: 15px;
+        }
+        .tag-item{
+            display: none;
+            
+        }
     }
 }
 

@@ -1310,6 +1310,7 @@
 .tf-image-wrap {
     
     position: relative;
+    border-radius: 30px;
     .img-style{
         overflow: hidden;
         border-radius: 30px;
@@ -1319,6 +1320,14 @@
         width: 76.67%;
         &:hover{
             z-index: 2;
+        }
+        .tag-item-1{
+            top: 35%;
+            left: -15%;
+        }
+        .tag-item-2{
+            top: 55%;
+            right: -20%;
         }
     }
     &.item-3,
@@ -1342,7 +1351,6 @@
         box-shadow: $shadow-3;
         .tag-item{
             bottom: 20%;
-            z-index: 4;
             left: -50%;
         }
     }
@@ -1351,19 +1359,28 @@
         bottom: 0;
         width: 33.5%;
         box-shadow: $shadow-3;
+        border-radius: 30px;
+        .tag-item{
+           bottom: 20%;
+           right: -80%;
+        }
     }
     .tag-item{
         position: absolute;
+        z-index: 4;
         box-shadow: $shadow-3;
-        padding: 16px 20px;
+        padding: 10px;
         display: flex;
         align-items: center;
         gap: 8px;
         background-color: $white;
         border-radius: 999px;
         .icon{
-            font-size: 30px;
+            font-size: 20px;
             color: $primary;
+        }
+        span{
+            font-weight: 600;
         }
     }
 }
