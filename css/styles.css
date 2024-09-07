@@ -4207,8 +4207,8 @@ label {
   transition: transform 1.5s cubic-bezier(0, 0, 0.44, 1.18);
 }
 .hover-img:hover img {
-  -webkit-transform: scale(1.06);
-  transform: scale(1.06);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
 }
 .hover-img.not-overlay .img-style::after {
   content: none;
@@ -5534,8 +5534,8 @@ label {
 .grid-location {
   display: grid;
   grid-template-areas: "item1 item2 item3 item4" "item5 item5 item6 item6";
-  grid-column-gap: 30px;
-  grid-row-gap: 28px;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid-location .item-1 {
   grid-area: item1;
@@ -5561,12 +5561,6 @@ label {
 }
 .box-location-v2 .content {
   padding-top: 20px;
-}
-.box-location-v2 .content p {
-  color: #5c6368;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 8px;
 }
 
 .grid-location-v2 {

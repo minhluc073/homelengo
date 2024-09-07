@@ -1127,9 +1127,8 @@
     grid-template-areas:
         "item1 item2 item3 item4"
         "item5 item5 item6 item6";
-    grid-column-gap: 30px;
-    grid-row-gap: 28px;
-
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
     .item-1 {
         grid-area: item1;
     }
@@ -1155,12 +1154,6 @@
     }
     .content {
         padding-top: 20px;
-        p {
-            color: $variant-1;
-            font-size: 16px;
-            line-height: 26px;
-            margin-top: 8px;
-        }
     }
 }
 .grid-location-v2 {
