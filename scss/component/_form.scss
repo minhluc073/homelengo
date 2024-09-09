@@ -411,14 +411,17 @@
 }
 .wd-filter-select {
     background-color: $white;
-    border-radius: 12px;
+    border-radius: 10px;
     border-top-left-radius: 0;
-    padding: 24px 30px 30px;
+    padding: 22px;
     .inner-group {
     }
     .form-style {
+        .icon-right{
+            right: 18px;
+        }
         &:not(:first-child) {
-            margin-top: 24px;
+            margin-top: 12px;
         }
         label {
             margin-bottom: 8px;
@@ -431,9 +434,9 @@
         }
         .form-control,
         .nice-select {
-            font-size: 18px;
-            line-height: 28px;
-            padding: 10px 16px;
+            font-size: 14px;
+            line-height: 22px;
+            padding: 15px 18px;
             padding-right: 40px;
         }
     }

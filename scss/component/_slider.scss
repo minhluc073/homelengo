@@ -56,38 +56,10 @@
             position: relative;
             z-index: 10;
             .heading {
-                .title {
-                    padding-right: 54%;
-                }
                 .subtitle {
-                    padding-right: 60%;
                     margin-top: 12px;
                     margin-bottom: 40px;
                 }
-            }
-        }
-        .wrap-search-link {
-            margin-top: 24px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            .categories-list {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 16px;
-                .icon {
-                    font-size: 14px;
-                    color: $primary;
-                }
-            }
-            a {
-                font-size: 14px;
-                line-height: 22px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                gap: 6px;
             }
         }
     }
@@ -103,26 +75,26 @@
     &.home-3 {
         background-image: url(../images/slider/slider-3.jpg);
         background-attachment: fixed;
+        padding: 168px 0px;
         .slider-content {
-            padding-top: 184px;
-            padding-bottom: 184px;
+            position: relative;
+            z-index: 1;
             .heading {
-                margin-bottom: 30px;
-                .title {
-                    padding-right: 52%;
-                }
+                margin-bottom: 50px;
                 .subtitle {
-                    padding-right: 44%;
-
-                    margin-top: 8px;
-                    color: $variant-1;
+                    margin-top: 20px;
                 }
             }
         }
         .flat-tab-form {
-            padding: 75px 0px;
             position: unset;
             z-index: 5;
+        }
+        .overlay {
+            background: #000000;
+            opacity: 0.4;
+        }
+        .wrap-search-link {
         }
     }
 
@@ -175,6 +147,36 @@
             transform: translateY(-50%);
             position: absolute;
             z-index: 4;
+        }
+    }
+    .wrap-search-link {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .categories-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            .icon {
+                font-size: 14px;
+                color: $white;
+                width: 26px;
+                height: 26px;
+                @include flex(center,center);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+        a {
+            font-size: 14px;
+            line-height: 19.6px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: $white;
         }
     }
 }

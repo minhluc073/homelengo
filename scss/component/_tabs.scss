@@ -59,14 +59,16 @@
             }
         }
         &.style-3 {
+            gap: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: inline-flex;
+            overflow: hidden;
             .nav-link-item {
-                background-color: $white;
-                color: $variant-2;
-                &.active,
-                &:hover {
-                    background-color: $primary;
-                    color: $white;
-                }
+               min-width: 115px;
+               padding: 7px 10px;
+               border-radius: 0;
+               
             }
         }
         &.style-4 {

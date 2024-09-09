@@ -406,7 +406,7 @@
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     background-color: $white;
-    border: 1px solid $outline;
+    // border: 1px solid $outline;
     border-radius: 16px;
     pointer-events: none;
     &::after {
@@ -491,7 +491,7 @@
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    border-bottom: 1px solid $outline;
+    // border-bottom: 1px solid $outline;
 }
 
 .main-header .main-menu .navigation > li > ul > li > a:before {
