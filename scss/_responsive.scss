@@ -704,6 +704,12 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .flat-map {
+        .top-map {
+            height: 500px;
+        }
+       
+    }
     .flat-slider {
         .heading {
             br {
@@ -1381,6 +1387,20 @@
     }
 }
 @media only screen and (max-width: 575px) {
+
+    .box-agent{
+        &.style-list{
+            flex-direction: column;
+            .box-img{
+                width: 100%;
+            }
+            .archive-content{
+                padding: 15px;
+            }
+        }
+    }
+
+
     .wd-search-form {
         .group-checkbox {
             .group-amenities {

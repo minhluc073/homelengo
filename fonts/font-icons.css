@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?iem9xl');
-  src:  url('icomoon.eot?iem9xl#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?iem9xl') format('truetype'),
-    url('icomoon.woff?iem9xl') format('woff'),
-    url('icomoon.svg?iem9xl#icomoon') format('svg');
+  src:  url('icomoon.eot?avs502');
+  src:  url('icomoon.eot?avs502#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?avs502') format('truetype'),
+    url('icomoon.woff?avs502') format('woff'),
+    url('icomoon.svg?avs502#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -121,12 +121,7 @@
 .icon-eye-off:before {
   content: "\e952";
 }
-.icon-minus1:before {
-  content: "\e953";
-}
-.icon-plus1:before {
-  content: "\e954";
-}
+
 .icon-play2:before {
   content: "\e955";
 }
@@ -292,22 +287,17 @@
 .icon-send:before {
   content: "\e995";
 }
-.icon-mail2:before {
+.icon-mail-line:before {
   content: "\e996";
 }
-.icon-phone21:before {
-  content: "\e997";
-}
-.icon-mapPinLine1:before {
-  content: "\e998";
-}
+
 .icon-youtube:before {
   content: "\e999";
 }
 .icon-pinterest2:before {
   content: "\e99a";
 }
-.icon-phone1:before {
+.icon-phone2:before {
   content: "\e99b";
 }
 .icon-pinterest:before {
@@ -532,12 +522,12 @@
 .icon-arr-down:before {
   content: "\e92a";
 }
-.icon-mail1:before {
-  content: "\e95a";
-}
-.icon-phone2:before {
+.icon-phone-line:before {
   content: "\e95b";
 }
 .icon-mapPinLine:before {
   content: "\e95c";
+}
+.icon-phone-line2:before {
+  content: "\e956";
 }
