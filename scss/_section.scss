@@ -4,25 +4,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.flat-section-v2 {
-    padding-top: 80px;
-}
-.flat-section-v3 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.flat-section-v4 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.flat-section-v5 {
-    padding-top: 120px;
-    padding-bottom: 80px;
-}
-.flat-section-v6 {
-    padding-top: 80px;
-    padding-bottom: 100px;
-}
+
+
 
 .flat-title-page {
     margin-top: 50px;
@@ -1273,6 +1256,25 @@
         margin-right: 0;
         .desc {
             margin-top: 20px;
+        }
+    }
+    &.style-2{
+        .content-left{
+            img{
+                border-radius: 15px;
+            }
+        }
+    }
+    .img-wrap{
+        position: relative;
+        .box-count{
+            display: flex;
+            gap: 30px;
+            .count-item{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
         }
     }
 }

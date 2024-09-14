@@ -553,6 +553,10 @@ label {
     margin-left: 5px !important;
     margin-right: 5px !important;
 }
+.mx-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .mt-4 {
     margin-top: 4px !important;
 }
@@ -698,4 +702,13 @@ label {
 .radius-30 {
     border-radius: 30px;
     overflow: hidden;
+}
+.shadow-1{
+    box-shadow: $shadow-1;
+}
+.shadow-2{
+    box-shadow: $shadow-2;
+}
+.shadow-3{
+    box-shadow: $shadow-3;
 }

@@ -31,3 +31,18 @@
     min-width: 100px;
     height: 100px;
 }
+.avt-status{
+    position: relative;
+    img{
+        border-radius: 50%;
+    }
+    .dot{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-color: $primary;
+        border-radius: 50%;
+        border: 2px solid $white;
+    }
+}

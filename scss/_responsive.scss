@@ -70,6 +70,21 @@
             .box-title {
             }
         }
+        &.style-2{
+            align-items: center;
+            .content-left {
+                width: 52.5%;
+                padding-left: 35px;
+                img{
+                border-radius: 30px;
+                }   
+            }
+            .content-right{
+                width: 47.5%;
+                padding-top: 0;
+                padding-bottom: 0;
+            } 
+        }
     }
     .flat-img-with-text-v2 {
         flex-direction: row;
@@ -81,6 +96,7 @@
             width: 49%;
         }
     }
+   
     .flat-testimonial-v2 {
         .content-left {
             width: 44.9%;
@@ -780,6 +796,7 @@
     .flat-section {
         padding: 60px 0px 60px;
     }
+
     .flat-blog-list {
         padding-right: 0;
         margin-bottom: 40px;
@@ -807,6 +824,7 @@
         font-size: 20px;
         line-height: 26px;
     }
+
     .flat-slider {
         &.home-1 {
             .slider-content {
@@ -978,10 +996,7 @@
             }
         }
     }
-    .flat-recommended-v2 {
-        padding-top: 460px;
-        margin-top: -400px;
-    }
+  
     .wrap-property-v2 {
         display: block;
         .box-inner-left {
