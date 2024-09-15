@@ -34,10 +34,12 @@
 .avt-status{
     position: relative;
     img{
-        border-radius: 50%;
+        border-radius: 50% !important;
     }
     .dot{
         position: absolute;
+        bottom: 0;
+        right: -1px;
         width: 16px;
         height: 16px;
         display: inline-block;

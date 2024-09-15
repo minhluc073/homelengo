@@ -291,7 +291,7 @@ textarea {
 
 /* Typography
 -------------------------------------------------------------- */
-
+.title-large,
 h1,
 h2,
 h3,
@@ -303,28 +303,30 @@ h6 {
     color: $on-surface;
 }
 
-h1 {
+
+.title-large {
     font-size: 80px;
     line-height: 88px;
     font-weight: 800;
 }
-
-h2 {
+h1{
     font-size: 56px;
     line-height: 68px;
-    font-weight: 800;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 62px;
 }
 
 h3 {
-    font-size: 44px;
-    line-height: 62px;
-    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 h4 {
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 800;
+    font-size: 30px;
+    line-height: 42px;
 }
 
 h5 {
@@ -335,7 +337,6 @@ h5 {
 h6 {
     font-size: 18px;
     line-height: 25.2px;
-    font-weight: 600;
 }
 a {
     @include transition3;
@@ -423,27 +424,27 @@ label {
 }
 //
 .fw-1 {
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 
 .fw-4 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .fw-5 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .fw-6 {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .fw-7 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .fw-8 {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 .fs-12 {
     font-size: 12px;
