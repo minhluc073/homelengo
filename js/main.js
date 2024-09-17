@@ -117,6 +117,8 @@
   ------------------------------------------------------------------------------------- */
   var headerFixed = function () {
     if ($("header").hasClass("header-fixed")) {
+      console.log('hhh')
+
       var nav = $("#header");
       if (nav.length) {
         var offsetTop = nav.offset().top,
@@ -134,7 +136,7 @@
           } else {
             nav.removeClass("is-fixed");
             injectSpace.hide();
-            $("#trans-logo").attr("src", "images/logo/logo-footer@2x.png");
+            $("#trans-logo").attr("src", "images/logo/logo@2x-white.png");
           }
         });
       }

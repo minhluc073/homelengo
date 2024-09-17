@@ -864,6 +864,38 @@ label {
 .header-style-2 .header-account ul li a:hover {
   color: #1563df;
 }
+.header-style-2:not(.is-fixed) .btn-line {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.header-style-2:not(.is-fixed) .btn-line svg path {
+  stroke: #ffffff;
+}
+.header-style-2:not(.is-fixed) .btn-line:hover {
+  border-color: transparent;
+  background-color: #ffffff;
+  color: #1563df;
+}
+.header-style-2:not(.is-fixed) .btn-line:hover svg path {
+  stroke: #1563df;
+}
+.header-style-2:not(.is-fixed) .tf-btn.primary {
+  background-color: #ffffff;
+  color: #1563df;
+  border-color: transparent;
+}
+.header-style-2:not(.is-fixed) .tf-btn.primary svg path {
+  stroke: #1563df;
+}
+.header-style-2:not(.is-fixed) .tf-btn.primary:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.header-style-2:not(.is-fixed) .tf-btn.primary:hover svg path {
+  stroke: #ffffff;
+}
 
 .main-header {
   z-index: 999;

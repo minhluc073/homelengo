@@ -13,16 +13,56 @@
         min-width: 140px;
     }
 }
-.header-style-2 .header-account {
-    ul li {
-        color: $white;
-        a {
+.header-style-2  {
+    .header-account{
+        ul li {
             color: $white;
-            &:hover {
-                color: $primary;
+            a {
+                color: $white;
+                &:hover {
+                    color: $primary;
+                }
             }
         }
     }
+    &:not(.is-fixed){
+        .btn-line{
+            background-color: transparent;
+            border-color: $white;
+            color: $white;
+            svg path{
+                stroke: $white;
+            }
+            &:hover {
+                border-color: transparent;
+                background-color: $white;
+                color: $primary;
+                svg path{
+                    stroke: $primary;
+                }
+            }
+        }
+        .tf-btn{
+            &.primary{
+                background-color: $white;
+                color: $primary;
+                border-color: transparent;
+                svg path{
+                    stroke: $primary;
+                }
+                &:hover{
+                    background-color: transparent;
+                    border-color: $white;
+                    color: $white;
+                    svg path{
+                        stroke: $white;
+                    }
+                }
+            }
+           
+        }
+    }
+    
 }
 
 .main-header {
