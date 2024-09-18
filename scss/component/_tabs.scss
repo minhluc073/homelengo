@@ -151,16 +151,32 @@
 .nav-tab-filter {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     .nav-link-item {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid $outline;
+        @include flex(center,center);
+        @include transition3;
+
         .icon {
-            font-size: 32px;
-            color: $variant-2;
+            width: 24px;
+            path{
             @include transition3;
+
+            }
         }
         &.active {
-            .icon {
-                color: $on-surface;
+            svg path{
+                fill: $on-surface;
+
+            }
+        }
+        &:hover{
+            border-color: $on-surface;
+            svg path{
+                fill: $on-surface;
             }
         }
     }

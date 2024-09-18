@@ -789,6 +789,10 @@ label {
   border-top: 1px solid #e4e4e4;
 }
 
+.line {
+  border: 1px solid #e4e4e4 !important;
+}
+
 .no-line {
   border: 0 !important;
 }
@@ -2437,19 +2441,40 @@ label {
 .nav-tab-filter {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
-.nav-tab-filter .nav-link-item .icon {
-  font-size: 32px;
-  color: #A3ABB0;
+.nav-tab-filter .nav-link-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.nav-tab-filter .nav-link-item.active .icon {
-  color: #161e2d;
+.nav-tab-filter .nav-link-item .icon {
+  width: 24px;
+}
+.nav-tab-filter .nav-link-item .icon path {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav-tab-filter .nav-link-item.active svg path {
+  fill: #161e2d;
+}
+.nav-tab-filter .nav-link-item:hover {
+  border-color: #161e2d;
+}
+.nav-tab-filter .nav-link-item:hover svg path {
+  fill: #161e2d;
 }
 
 .flat-animate-tab {
@@ -3960,7 +3985,6 @@ label {
   padding-left: 18px;
   padding-right: 29px;
   font-size: 14px;
-  line-height: 19.6px;
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6889,21 +6913,25 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   gap: 15px;
 }
 .box-title-listing .box-filter-tab {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   flex-wrap: wrap;
 }
 .box-title-listing .box-filter-tab .nice-select {
-  padding: 10px 63px 10px 16px;
+  padding: 0px 18px;
+  line-height: 48px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
 }
 .box-title-listing .box-filter-tab .list-sort {
-  width: 200px;
+  min-width: 179px;
+  width: auto;
   height: 48px;
 }
 .box-title-listing .box-filter-tab .list-page {
@@ -6912,6 +6940,17 @@ label {
 }
 .box-title-listing.style-1 {
   margin-bottom: 30px;
+}
+.box-title-listing .box-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.box-title-listing .box-left .text {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", sans-serif;
 }
 
 .wd-navigation {
@@ -9090,6 +9129,12 @@ tr {
   .flat-img-with-text.style-3 {
     border-radius: 30px;
   }
+  .flat-img-with-text.style-3 .content-left {
+    width: 55%;
+  }
+  .flat-img-with-text.style-3 .content-right {
+    width: 45%;
+  }
   .flat-img-with-text-v2 {
     flex-direction: row;
     gap: 50px;
@@ -9166,6 +9211,9 @@ tr {
   .box-benefit .icon-box .icon {
     font-size: 60px;
   }
+  .box-title-listing {
+    margin-bottom: 52px;
+  }
 }
 @media (min-width: 1200px) {
   .tf-marquee {
@@ -9230,7 +9278,7 @@ tr {
   }
   .flat-img-with-text.style-3 .content-right {
     padding: 50px 60px;
-    padding-right: 120px;
+    padding-right: 115px;
   }
   .flat-testimonial-v2 .content-right {
     padding: 100px;

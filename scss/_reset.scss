@@ -668,7 +668,9 @@ label {
 .line-t {
     border-top: 1px solid $outline;
 }
-
+.line{
+    border: 1px solid $outline !important;
+}
 .no-line {
     border: 0 !important;
 }
