@@ -14,6 +14,16 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+    .homeya-box {
+        &.list-style-2 {
+            .archive-top {
+                width: 40%;
+            }
+            .archive-bottom {
+                width: 60%;
+            }
+        }
+    }
 }
 @media (min-width: 768px) {
     .tf-marquee {
@@ -192,8 +202,8 @@
         }
     }
 
-    .box-title-listing{
-        margin-bottom: 52px;
+    .box-title-listing {
+        margin-bottom: 50px;
     }
 }
 
@@ -314,6 +324,16 @@
         }
         &.xl-col-2 {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .homeya-box {
+        &.list-style-2 {
+            .archive-top {
+                width: 33.5%;
+            }
+            .archive-bottom {
+                width: 66.5%;
+            }
         }
     }
 }
@@ -672,21 +692,7 @@
             flex-shrink: unset;
         }
     }
-    .flat-sidebar {
-        .list-style-2 {
-            .images-style {
-                width: 220px;
-                img {
-                    object-fit: cover;
-                }
-            }
-        }
-        .homeya-box {
-            .meta-list {
-                gap: 15px;
-            }
-        }
-    }
+
     .layout-wrap .flat-counter-v2 {
         grid-template-columns: 1fr 1fr;
     }
@@ -830,6 +836,9 @@
     }
     .flat-section-v2 {
         padding: 100px 0px 60px;
+    }
+    .flat-section-v3 {
+        padding: 50px 0px 60px;
     }
 
     .flat-blog-list {
@@ -1125,13 +1134,6 @@
             padding: 15px;
         }
     }
-    .flat-sidebar {
-        .list-style-2 {
-            .images-style {
-                width: 330px;
-            }
-        }
-    }
     .widget-sidebar {
         margin-bottom: 30px;
     }
@@ -1340,14 +1342,7 @@
             }
         }
     }
-    .homeya-box {
-        &.list-style-2 {
-            display: block;
-            .images-style {
-                width: 100%;
-            }
-        }
-    }
+  
     .header-dashboard .header-account .box-avatar {
         margin-right: 0;
     }

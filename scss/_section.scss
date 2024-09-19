@@ -8,6 +8,10 @@
     padding-top: 150px;
     padding-bottom: 100px;
 }
+.flat-section-v3{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 
 .flat-title-page {
     margin-top: 50px;
@@ -725,162 +729,6 @@
             }
         }
     }
-    &.lg {
-        .images-group {
-            .top {
-                flex-wrap: wrap;
-            }
-        }
-        .content {
-            padding: 24px 30px;
-            .desc {
-                margin-top: 12px;
-                .icon {
-                    font-size: 20px;
-                }
-                p {
-                    font-size: 18px;
-                    line-height: 28px;
-                }
-            }
-            .note {
-                font-size: 20px;
-                line-height: 30px;
-                margin-top: 16px;
-            }
-            .meta-list {
-                margin-top: 16px;
-                column-gap: 40px;
-                row-gap: 15px;
-                flex-wrap: wrap;
-                .item {
-                    .icon {
-                        font-size: 28px;
-                    }
-                    span {
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 28px;
-                    }
-                }
-            }
-        }
-        .archive-bottom {
-            padding: 24px 30px;
-        }
-    }
-    &.md {
-        .content {
-            padding: 16px;
-            .desc {
-                p {
-                    font-size: 14px;
-                    line-height: 22px;
-                }
-            }
-            .meta-list {
-                margin-top: 16px;
-                column-gap: 20px;
-                .item {
-                    .icon {
-                        font-size: 20px;
-                    }
-                    span {
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 26px;
-                        display: inline-block;
-                    }
-                }
-            }
-            .archive-bottom {
-                padding: 16px;
-            }
-        }
-    }
-    &.style-2 {
-        .images-group {
-            &:after {
-                content: "";
-                position: absolute;
-                top: unset;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 132px;
-                @include transition4;
-                background: $garden-2;
-                opacity: 1;
-            }
-            .flag-tag.style-2 {
-                background-color: transparent;
-                color: $white;
-                padding: 0;
-            }
-        }
-        &:hover {
-            .images-group {
-                &:after {
-                    height: 100%;
-                }
-            }
-        }
-    }
-    &.style-3 {
-        border: 0;
-        .images-group {
-            position: relative;
-            .images-style {
-                height: 308px;
-                img {
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            .content {
-                position: absolute;
-                left: 16px;
-                right: 16px;
-                bottom: 16px;
-                z-index: 50;
-                padding: 0;
-                border: 0;
-                .pricing {
-                    margin-top: 4px;
-                    margin-bottom: 8px;
-                }
-                .meta-list {
-                    padding-top: 8px;
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    .icon,
-                    span {
-                        color: $white;
-                    }
-                }
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: unset;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 160px;
-                @include transition4;
-                background: $garden-4;
-                opacity: 1;
-            }
-        }
-        &:hover {
-            .images-group {
-                &:after {
-                    height: 100%;
-                }
-            }
-        }
-    }
     // style row
     &.list-style-1 {
         display: flex;
@@ -931,10 +779,7 @@
     }
     &.list-style-2 {
         .images-style {
-            width: 330px;
-            img {
-                object-fit: unset;
-            }
+           
         }
     }
 }
@@ -2463,7 +2308,7 @@
 .widget-sidebar {
     .widget-box {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom:40px;
         }
     }
 }
