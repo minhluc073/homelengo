@@ -251,18 +251,16 @@
                                                                     <input type="text" class="form-control" placeholder="Type keyword...." value="" name="s" title="Search for" required="">
                                                                 </div>
                                                                 <div class="form-style">
-                                                                    <label class="title-select">Location</label>
                                                                     <div class="group-ip ip-icon">
-                                                                        <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
+                                                                        <input type="text" class="form-control" placeholder="Location" value="" name="s" title="Search for" required="">
                                                                         <a href="#" class="icon-right icon-location"></a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-style">
-                                                                    <label class="title-select">Type</label>
+                                                             
                                                                     <div class="group-select">
-                                                                        <div class="nice-select" tabindex="0"><span class="current">All</span>
-                                                                            <ul class="list">  
-                                                                                <li data-value class="option selected">All</li>                                                        
+                                                                        <div class="nice-select" tabindex="0"><span class="current">Property type</span>
+                                                                            <ul class="list">                                                       
                                                                                 <li data-value="villa" class="option">Villa</li>
                                                                                 <li data-value="studio" class="option">Studio</li>
                                                                                 <li data-value="office" class="option">Office</li>
@@ -271,8 +269,7 @@
                                                                     </div>                                                    
                                                                 </div>
                                                                 <div class="form-style box-select">
-                                                                    <label class="title-select">Rooms</label>
-                                                                    <div class="nice-select" tabindex="0"><span class="current">2</span>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Room</span>
                                                                         <ul class="list"> 
                                                                             <li data-value="2" class="option">1</li>
                                                                             <li data-value="2" class="option selected">2</li>
@@ -288,8 +285,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-style box-select">
-                                                                    <label class="title-select">Bathrooms</label>
-                                                                    <div class="nice-select" tabindex="0"><span class="current">4</span>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Bathrooms</span>
                                                                         <ul class="list"> 
                                                                             <li data-value="all" class="option">All</li>
                                                                             <li data-value="1" class="option">1</li>
@@ -306,8 +302,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-style box-select">
-                                                                    <label class="title-select">Bedrooms</label>
-                                                                    <div class="nice-select" tabindex="0"><span class="current">4</span>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Bedroomsrooms</span>
                                                                         <ul class="list"> 
                                                                             <li data-value="1" class="option">All</li>
                                                                             <li data-value="1" class="option">1</li>
@@ -327,12 +322,11 @@
                                                             <div class="box">
                                                                 <div class="form-style widget-price">
                                                                     <div class="box-title-price">
-                                                                        <span class="title-price">Price Range</span>
+                                                                        <span class="title-price fw-6">Price:</span>
                                                                             <div class="caption-price">
-                                                                                <span>from</span>
-                                                                                <span id="slider-range-value1" class="fw-7"></span>
-                                                                                <span>to</span>
-                                                                                <span id="slider-range-value2" class="fw-7"></span>
+                                                                                <span id="slider-range-value1" class="fw-6"></span>
+                                                                                <span class="fw-6">-</span>
+                                                                                <span id="slider-range-value2" class="fw-6"></span>
                                                                             </div>
                                                                     </div>
                                                                     <div id="slider-range"></div>
@@ -343,12 +337,11 @@
                                                                 </div>
                                                                 <div class="form-style widget-price wd-price-2">
                                                                     <div class="box-title-price">
-                                                                        <span class="title-price">Size Range</span>
+                                                                        <span class="title-price fw-6">Size:</span>
                                                                         <div class="caption-price">
-                                                                            <span>from</span>
-                                                                            <span id="slider-range-value01" class="fw-7"></span>
-                                                                            <span>to</span>
-                                                                            <span id="slider-range-value02" class="fw-7"></span>
+                                                                            <span id="slider-range-value01" class="fw-6"></span>
+                                                                            <span class="fw-6">to</span>
+                                                                            <span id="slider-range-value02" class="fw-6"></span>
                                                                         </div>
                                                                     </div>
                                                                     <div id="slider-range2"></div>
@@ -466,7 +459,7 @@
                                                             </div>
                                                             
                                                             <div class="form-style">
-                                                                <button type="submit" class="tf-btn primary" href="#">Find Properties</button>
+                                                                <button type="submit" class="tf-btn btn-view primary hover-btn-view" href="#">Find Properties <span class="icon icon-arrow-right2"></span></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -476,107 +469,137 @@
                                         
                                     </div>
                                 </div>
-                                <div class="widget-box bg-surface box-latest-property">
-                                    <div class="h7 fw-7 title">Latest Propeties</div>
+                                <div class="widget-box box-latest-property">
+                                    <h5 class="fw-6 title">Latest Propeties</h5>
                                     <ul>
                                         <li class="latest-property-item">
                                             <a href="property-details-v1.html" class="images-style">
-                                                <img src="images/home/house-sm-3.jpg" alt="img">
+                                                <img src="images/home/house-8.jpg" alt="img">
                                             </a>
                                             <div class="content">
-                                                <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Casa Lomas de Mach...</a></div>
-                                                <ul class="meta-list">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
                                                     <li class="item">
-                                                        <span>Bed:</span>
-                                                        <span class="fw-7">4</span>
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span>Bath:</span>
-                                                        <span class="fw-7">2</span>
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span class="fw-7">600 SqFT</span>
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
                                                     </li>
                                                 </ul>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="h7 fw-7">$5050,00</div>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
+                                                <div class="mt-10 text-btn">$7250,00</div>
                                             </div>
                                         </li>
                                         <li class="latest-property-item">
                                             <a href="property-details-v1.html" class="images-style">
-                                                <img src="images/home/house-sm-9.jpg" alt="img">
+                                                <img src="images/home/house-3.jpg" alt="img">
                                             </a>
                                             <div class="content">
-                                                <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven...</a></div>
-                                                <ul class="meta-list">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
                                                     <li class="item">
-                                                        <span>Bed:</span>
-                                                        <span class="fw-7">4</span>
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span>Bath:</span>
-                                                        <span class="fw-7">2</span>
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span class="fw-7">600 SqFT</span>
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
                                                     </li>
                                                 </ul>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="h7 fw-7">$5050,00</div>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
+                                                <div class="mt-10 text-btn">$7250,00</div>
                                             </div>
                                         </li>
                                         <li class="latest-property-item">
                                             <a href="property-details-v1.html" class="images-style">
-                                                <img src="images/home/house-sm-1.jpg" alt="img">
+                                                <img src="images/home/house-28.jpg" alt="img">
                                             </a>
                                             <div class="content">
-                                                <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Sunset Heights Estate</a></div>
-                                                <ul class="meta-list">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
                                                     <li class="item">
-                                                        <span>Bed:</span>
-                                                        <span class="fw-7">4</span>
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span>Bath:</span>
-                                                        <span class="fw-7">2</span>
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span class="fw-7">600 SqFT</span>
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
                                                     </li>
                                                 </ul>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="h7 fw-7">$5050,00</div>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
+                                                <div class="mt-10 text-btn">$7250,00</div>
                                             </div>
                                         </li>
                                         <li class="latest-property-item">
                                             <a href="property-details-v1.html" class="images-style">
-                                                <img src="images/home/house-sm-4.jpg" alt="img">
+                                                <img src="images/home/house-29.jpg" alt="img">
                                             </a>
                                             <div class="content">
-                                                <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">de Machalí Machas...</a></div>
-                                                <ul class="meta-list">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
                                                     <li class="item">
-                                                        <span>Bed:</span>
-                                                        <span class="fw-7">4</span>
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span>Bath:</span>
-                                                        <span class="fw-7">2</span>
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
                                                     </li>
                                                     <li class="item">
-                                                        <span class="fw-7">600 SqFT</span>
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
                                                     </li>
                                                 </ul>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="h7 fw-7">$5050,00</div>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-19.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
                                             </div>
                                         </li>
                                     </ul>

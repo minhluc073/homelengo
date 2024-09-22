@@ -1257,6 +1257,21 @@
             display: none;
         }
     }
+    .box-faq{
+        .faq-item{
+            .faq-header{
+                padding: 15px;
+                padding-right: 30px;
+                &::after{
+                    right: 15px;
+                }
+            }
+            .faq-body{
+                padding: 15px;
+                padding-top: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {

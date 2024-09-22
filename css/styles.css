@@ -450,6 +450,12 @@ label {
   line-height: 22.4px;
 }
 
+.text-btn {
+  font-size: 16px;
+  line-height: 21.86px;
+  font-weight: 600;
+}
+
 .text-1 {
   font-size: 18px;
   font-weight: 600;
@@ -3627,7 +3633,7 @@ label {
   color: #5c6368;
 }
 .widget-filter-search .wd-filter-select .widget-price.wd-price-2 {
-  margin: 22px 0px;
+  margin: 30px 0px;
 }
 .widget-filter-search .nav-tab-form {
   gap: 10px;
@@ -6801,22 +6807,21 @@ label {
   margin-bottom: 20px;
 }
 .box-latest-property .latest-property-item:not(:last-child) {
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
 }
 
 .latest-property-item {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 .latest-property-item .images-style {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  width: 110px;
-  height: 110px;
+  width: 112px;
+  height: 80px;
 }
 .latest-property-item .images-style img {
   height: 100%;
@@ -6846,8 +6851,17 @@ label {
 .latest-property-item .meta-list {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin: 8px 0px;
+  gap: 16px;
+  margin-top: 6px;
+}
+.latest-property-item .meta-list .item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.latest-property-item .meta-list .item .icon {
+  font-size: 16px;
+  color: #A3ABB0;
 }
 .latest-property-item:hover .images-style img {
   transform: scale(1.05);
@@ -7640,34 +7654,33 @@ label {
 }
 
 .flat-section .tf-faq:not(:last-child) {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.tf-faq h5 {
-  margin-bottom: 30px;
+.tf-faq .title {
+  margin-bottom: 40px;
   text-transform: capitalize;
 }
 
 .box-faq .faq-item {
   border: 1px solid #e4e4e4;
-  border-radius: 12px;
-  padding: 0px 20px;
+  border-radius: 16px;
 }
 .box-faq .faq-item .faq-header {
-  padding: 20px 0px;
-  padding-right: 30px;
+  padding: 24px 30px 20px;
+  padding-right: 60px;
   display: block;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
+  font-size: 18px;
+  line-height: 25.2px;
+  font-weight: 600;
   position: relative;
   text-transform: capitalize;
 }
 .box-faq .faq-item .faq-header::after {
   position: absolute;
-  content: "\e917";
+  content: "\e921";
   font-family: "icomoon";
-  right: 0px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transition: all 0.5s ease;
@@ -7675,81 +7688,78 @@ label {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-size: 24px;
+  font-size: 20px;
+  color: #161e2d;
 }
 .box-faq .faq-item .faq-header:not(.collapsed)::after {
-  content: "\e916";
+  content: "\e920";
 }
 .box-faq .faq-item .faq-body {
-  border-top: 1px solid #e4e4e4;
-  padding: 12px 0px 20px;
+  padding: 24px 30px;
+  padding-top: 0;
   color: #5c6368;
-  font-size: 18px;
-  line-height: 28px;
 }
 .box-faq .faq-item:not(:last-child) {
   margin-bottom: 12px;
+}
+.box-faq .faq-item.active {
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.box-faq .faq-item.active .faq-header {
+  color: #1563df;
 }
 
 .box-pricing {
   padding: 30px;
   border-radius: 16px;
-  background-color: #f7f7f7;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.box-pricing .price {
-  margin-bottom: 20px;
-}
-.box-pricing .box-title-price {
-  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #e4e4e4;
 }
 .box-pricing .box-title-price .title {
   margin-bottom: 8px;
 }
 .box-pricing .box-title-price .title h4,
 .box-pricing .box-title-price .title span {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .box-pricing .box-title-price .desc {
-  font-size: 16px;
-  line-height: 26px;
   color: #5c6368;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.box-pricing .list-price {
-  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .box-pricing .list-price .item {
   display: flex;
   align-items: center;
   gap: 8px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .box-pricing .list-price .item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .box-pricing .list-price .check-icon {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.box-pricing .box:not(:last-child) {
+  margin-bottom: 20px;
 }
 .box-pricing .tf-btn {
   width: 100%;
@@ -7762,57 +7772,41 @@ label {
   color: #161e2d;
   border-color: #ffffff;
 }
-.box-pricing.active h4,
+.box-pricing.active .tf-btn .icon, .box-pricing:hover .tf-btn .icon {
+  color: #161e2d;
+}
+.box-pricing.active h5,
 .box-pricing.active span,
-.box-pricing.active h6,
+.box-pricing.active h3,
 .box-pricing.active .desc,
-.box-pricing.active li, .box-pricing:hover h4,
+.box-pricing.active li, .box-pricing:hover h5,
 .box-pricing:hover span,
-.box-pricing:hover h6,
+.box-pricing:hover h3,
 .box-pricing:hover .desc,
 .box-pricing:hover li {
   color: #ffffff;
 }
 .box-pricing.active .check-icon, .box-pricing:hover .check-icon {
-  background-color: #ffffff;
-  color: #1563df;
-}
-.box-pricing.active {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  position: relative;
-}
-.box-pricing.active .tag {
-  position: absolute;
-  color: #161e2d;
-  right: 20px;
-  top: 20px;
-}
-.box-pricing .tag {
-  padding: 4px 8px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  font-size: 12px;
-  line-height: 19px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-weight: 600;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .check-icon {
-  width: 20px;
-  height: 20px;
-  font-size: 13px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1563df;
+  background-color: transparent;
   border-radius: 50%;
   color: #ffffff;
+  font-size: 13px;
+  color: #1563df;
+  border: 1px solid #1563df;
 }
 .check-icon.disable {
-  background-color: #e4e4e4;
-  color: #161e2d;
+  border-color: #A3ABB0;
+  color: #A3ABB0;
 }
 
 .flat-banner-about .btn-view {
@@ -9855,6 +9849,17 @@ tr {
   }
   .tf-image-wrap .tag-item {
     display: none;
+  }
+  .box-faq .faq-item .faq-header {
+    padding: 15px;
+    padding-right: 30px;
+  }
+  .box-faq .faq-item .faq-header::after {
+    right: 15px;
+  }
+  .box-faq .faq-item .faq-body {
+    padding: 15px;
+    padding-top: 0;
   }
 }
 @media only screen and (max-width: 767px) {

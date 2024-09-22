@@ -137,6 +137,19 @@
       });
     }
   };
+
+  /* check active 
+  -------------------------------------------------------------------------*/
+  var checkClick = function () {
+    $(".box-faq").on("click", ".faq-item", function () {
+      var isActive = $(this).hasClass("active");
+      $(this).closest(".box-faq").find(".faq-item").removeClass("active");
+      if (!isActive) {
+        $(this).addClass("active");
+      }
+    });
+  };
+
   /* Preloader
   -------------------------------------------------------------------------------------*/
   var preloader = function () {
@@ -379,6 +392,7 @@
     goTop();
     showPass();
     datePicker();
+    checkClick();
     preloader();
     // cursor();
   });
