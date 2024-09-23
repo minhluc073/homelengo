@@ -205,6 +205,9 @@
     .box-title-listing {
         margin-bottom: 50px;
     }
+    .single-property-element {
+        padding-right: 30px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -840,6 +843,10 @@
     .flat-section-v3 {
         padding: 50px 0px 60px;
     }
+    .flat-section-v4 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     .flat-blog-list {
         padding-right: 0;
@@ -1138,18 +1145,33 @@
         margin-bottom: 30px;
     }
     .flat-slider-detail-v1 {
-        .icon-box {
-            .item {
+        .box-img-detail {
+            border-radius: 15px;
+        }
+    }
+    .single-property-video {
+        .img-video {
+            border-radius: 15px;
+            .btn-video {
                 width: 40px;
                 height: 40px;
+            }
+        }
+    }
+    .single-property-explore {
+        .box-img {
+            border-radius: 15px;
+            .box-icon {
                 .icon {
-                    font-size: 24px;
+                    font-size: 40px;
                 }
             }
         }
     }
-    .single-property-video {
-        padding-right: 0;
+    .single-property-map {
+        .map {
+            border-radius: 15px;
+        }
     }
     .single-property-feature .wrap-feature {
         gap: 30px;
@@ -1159,8 +1181,12 @@
         margin-top: 30px;
         padding-left: 0;
     }
-    .flat-property-detail .header-property-detail {
-        padding: 30px 15px;
+    .header-property-detail {
+        .content-bottom {
+            .box-left {
+                gap: 20px;
+            }
+        }
     }
     .widget-box-single {
         padding: 15px;
@@ -1257,16 +1283,16 @@
             display: none;
         }
     }
-    .box-faq{
-        .faq-item{
-            .faq-header{
+    .box-faq {
+        .faq-item {
+            .faq-header {
                 padding: 15px;
                 padding-right: 30px;
-                &::after{
+                &::after {
                     right: 15px;
                 }
             }
-            .faq-body{
+            .faq-body {
                 padding: 15px;
                 padding-top: 0;
             }
@@ -1275,6 +1301,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .single-property-map {
+        .info-map {
+            grid-template-columns: 1fr;
+        }
+    }
     .radius-30 {
         border-radius: 15px;
     }
@@ -1357,7 +1388,7 @@
             }
         }
     }
-  
+
     .header-dashboard .header-account .box-avatar {
         margin-right: 0;
     }
