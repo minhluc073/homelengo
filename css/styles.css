@@ -6998,6 +6998,7 @@ label {
 
 .single-property-element .title {
   text-transform: capitalize;
+  margin-bottom: 16px;
 }
 .single-property-element:not(:last-child) {
   padding-bottom: 40px;
@@ -7323,7 +7324,7 @@ label {
   display: flex;
 }
 .single-property-nearby .item-nearby .label {
-  width: 30%;
+  width: 35%;
   color: #5c6368;
   opacity: 0.8;
 }
@@ -7345,14 +7346,11 @@ label {
 }
 .single-property-loan .box-loan-calc .box-top {
   padding: 20px;
-  padding-right: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 30px;
+  gap: 20px;
 }
 .single-property-loan .box-loan-calc .item-calc .label {
-  color: #5c6368;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 .single-property-loan .box-loan-calc .box-bottom {
@@ -7363,7 +7361,10 @@ label {
   justify-content: space-between;
 }
 .single-property-loan .box-loan-calc .form-control {
-  padding: 10px 16px;
+  padding: 15px 18px;
+}
+.single-property-loan .box-loan-calc .tf-btn {
+  min-width: 220px;
 }
 
 .single-wrapper-review .box-title-review {
@@ -7373,6 +7374,31 @@ label {
   padding-bottom: 40px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e4e4e4;
+}
+.single-wrapper-review .wrap-review .tf-btn {
+  min-width: 210px;
+}
+.single-wrapper-review .list-review-item .box-head {
+  margin-bottom: 16px;
+}
+.single-wrapper-review .list-review-item .box-head p {
+  margin-top: 4px;
+}
+.single-wrapper-review .list-review-item .list-star {
+  display: flex;
+}
+.single-wrapper-review .list-review-item .list-star .icon {
+  font-size: 14px;
+}
+.single-wrapper-review .list-review-item .box-img {
+  margin: 16px 0px;
+  display: flex;
+  gap: 16px;
+  overflow: auto;
+}
+.single-wrapper-review .list-review-item .box-img .img {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .flat-latest-property .box-title {
