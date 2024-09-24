@@ -208,6 +208,11 @@
     .single-property-element {
         padding-right: 30px;
     }
+    .flat-property-detail-v2 {
+        .single-property-element {
+            margin-right: 30px;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -545,6 +550,16 @@
 }
 
 @media only screen and (max-width: 1350px) {
+    .box-navigation {
+        
+        .navigation {
+            width: 50px;
+            height: 50px;
+            .icon{
+                font-size: 14px;
+            }
+        }
+    }
     .flat-testimonial {
         padding-left: 15px;
         padding-right: 15px;
@@ -1295,6 +1310,32 @@
             .faq-body {
                 padding: 15px;
                 padding-top: 0;
+            }
+        }
+    }
+
+    .single-sidebar {
+        .widget-box {
+            padding: 15px;
+        }
+    }
+    .flat-property-detail-v2 {
+        .single-property-element {
+            border-radius: 16px;
+        }
+        .single-sidebar {
+            .box-latest-property {
+                padding: 15px;
+            }
+        }
+    }
+    .box-navigation {
+        
+        .navigation {
+            width: 40px;
+            height: 40px;
+            .icon{
+                font-size: 12px;
             }
         }
     }

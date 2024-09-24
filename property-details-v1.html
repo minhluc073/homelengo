@@ -283,7 +283,7 @@
                                 <a href="#" class="btn-view"><span class="text">View More</span> </a>
                             </div>
                             <div class="single-property-element single-property-overview">
-                                <h5 class="title fw-6">Overview</h5>
+                                <h6 class="title fw-6">Overview</h6>
                                 <ul class="info-box">
                                     <li class="item">
                                         <a href="#" class="box-icon w-52"><i class="icon icon-house-line"></i></a>
@@ -566,7 +566,7 @@
                                 </ul>
                             </div> 
                             <div class="single-property-element single-property-attachments">
-                                <h5 class="title fw-6">File Attachments</h5>
+                                <h6 class="title fw-6">File Attachments</h6>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <a href="#" target="_blank" class="attachments-item">
@@ -835,41 +835,39 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="widget-sidebar fixed-sidebar wrapper-sidebar-right">
-                                <div class="widget-box single-property-contact bg-surface">
-                                    <div class="h7 title fw-7">Contact Sellers</div>
+                            <div class="single-sidebar fixed-sidebar">
+                                <div class="widget-box single-property-contact">
+                                    <h5 class="title fw-6">Contact Sellers</h5>
                                     <div class="box-avatar">
                                         <div class="avatar avt-100 round">
-                                            <img src="images/avatar/avt-12.jpg" alt="avatar">
+                                            <img src="images/avatar/avt-lg-single.jpg" alt="avatar">
                                         </div>
                                         <div class="info">
-                                            <div class="text-1 name">Shara Conner</div>
-                                            <span>1-333-345-6868 themesflat@gmail.com</span>
+                                            <h6 class="name">Shara Conner</h6>
+                                            <ul class="list">
+                                                <li class="d-flex align-items-center gap-4 text-variant-1"><i class="icon icon-phone"></i>1-333-345-6868</li>
+                                                <li class="d-flex align-items-center gap-4 text-variant-1"><i class="icon icon-mail"></i>themesflat@gmail.com</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <form action="#" class="contact-form">
                                         <div class="ip-group">
-                                            <label for="fullname">Full Name:</label>
                                             <input type="text" placeholder="Jony Dane" class="form-control">
                                         </div>
                                         <div class="ip-group">
-                                            <label for="phone">Phone Number:</label>
                                             <input type="text" placeholder="ex 0123456789" class="form-control">
                                         </div>
                                         <div class="ip-group">
-                                            <label for="email">Email Address:</label>
                                             <input type="text" placeholder="themesflat@gmail.com" class="form-control">
                                         </div>
                                         <div class="ip-group">
-                                            <label for="message">Your Message:</label>
                                             <textarea id="comment-message" name="message" rows="4" tabindex="4"
                                             placeholder="Message" aria-required="true"></textarea>
                                         </div>
-                                        <button class="tf-btn primary w-100">Send Message</button>
+                                        <button type="submit" class="tf-btn btn-view primary hover-btn-view w-100">Find Properties <span class="icon icon-arrow-right2"></span></button>
                                     </form>
                                 </div>
-                                <div class="flat-tab flat-tab-form widget-filter-search widget-box bg-surface">
-                                    <div class="h7 title fw-7">Search</div>
+                                <div class="flat-tab flat-tab-form widget-filter-search widget-box">
                                     <ul class="nav-tab-form" role="tablist">
                                         <li class="nav-tab-item" role="presentation">   
                                             <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
@@ -883,234 +881,221 @@
                                             <div class="form-sl">
                                                 <form method="post">
                                                     <div class="wd-filter-select">
-                                                        <div class="inner-group inner-filter">
-                                                            <div class="form-style">
-                                                                <label class="title-select">Keyword</label>
-                                                                <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">
-                                                            </div>
-                                                            <div class="form-style">
-                                                                <label class="title-select">Location</label>
-                                                                <div class="group-ip ip-icon">
-                                                                    <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
-                                                                    <a href="#" class="icon-right icon-location"></a>
+                                                        <div class="inner-group">
+                                                            <div class="box">
+                                                                <div class="form-style">
+                                                                    <input type="text" class="form-control" placeholder="Type keyword...." value="" name="s" title="Search for" required="">
                                                                 </div>
-                                                            </div>
-                                                            <div class="form-style">
-                                                                <label class="title-select">Type</label>
-                                                                <div class="group-select">
-                                                                    <div class="nice-select" tabindex="0"><span class="current">All</span>
-                                                                        <ul class="list">  
-                                                                            <li data-value class="option selected">All</li>                                                        
-                                                                            <li data-value="villa" class="option">Villa</li>
-                                                                            <li data-value="studio" class="option">Studio</li>
-                                                                            <li data-value="office" class="option">Office</li>
+                                                                <div class="form-style">
+                                                                    <div class="group-ip ip-icon">
+                                                                        <input type="text" class="form-control" placeholder="Location" value="" name="s" title="Search for" required="">
+                                                                        <a href="#" class="icon-right icon-location"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-style">
+                                                             
+                                                                    <div class="group-select">
+                                                                        <div class="nice-select" tabindex="0"><span class="current">Property type</span>
+                                                                            <ul class="list">                                                       
+                                                                                <li data-value="villa" class="option">Villa</li>
+                                                                                <li data-value="studio" class="option">Studio</li>
+                                                                                <li data-value="office" class="option">Office</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>                                                    
+                                                                </div>
+                                                                <div class="form-style box-select">
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Room</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="2" class="option">1</li>
+                                                                            <li data-value="2" class="option selected">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
                                                                         </ul>
                                                                     </div>
-                                                                </div>                                                    
-                                                            </div>
-                                                            <div class="form-style box-select">
-                                                                <label class="title-select">Rooms</label>
-                                                                <div class="nice-select" tabindex="0"><span class="current">2</span>
-                                                                    <ul class="list"> 
-                                                                        <li data-value="2" class="option">1</li>
-                                                                        <li data-value="2" class="option selected">2</li>
-                                                                        <li data-value="3" class="option">3</li>
-                                                                        <li data-value="4" class="option">4</li>
-                                                                        <li data-value="5" class="option">5</li>
-                                                                        <li data-value="6" class="option">6</li>
-                                                                        <li data-value="7" class="option">7</li>
-                                                                        <li data-value="8" class="option">8</li>
-                                                                        <li data-value="9" class="option">9</li>
-                                                                        <li data-value="10" class="option">10</li>
-                                                                    </ul>
+                                                                </div>
+                                                                <div class="form-style box-select">
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Bathrooms</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="all" class="option">All</li>
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option selected">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-style box-select">
+                                                                    <div class="nice-select" tabindex="0"><span class="current">Bedroomsrooms</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="1" class="option">All</li>
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option selected">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-style box-select">
-                                                                <label class="title-select">Bathrooms</label>
-                                                                <div class="nice-select" tabindex="0"><span class="current">4</span>
-                                                                    <ul class="list"> 
-                                                                        <li data-value="all" class="option">All</li>
-                                                                        <li data-value="1" class="option">1</li>
-                                                                        <li data-value="2" class="option">2</li>
-                                                                        <li data-value="3" class="option">3</li>
-                                                                        <li data-value="4" class="option selected">4</li>
-                                                                        <li data-value="5" class="option">5</li>
-                                                                        <li data-value="6" class="option">6</li>
-                                                                        <li data-value="7" class="option">7</li>
-                                                                        <li data-value="8" class="option">8</li>
-                                                                        <li data-value="9" class="option">9</li>
-                                                                        <li data-value="10" class="option">10</li>
-                                                                    </ul>
+                                                            <div class="box">
+                                                                <div class="form-style widget-price">
+                                                                    <div class="box-title-price">
+                                                                        <span class="title-price fw-6">Price:</span>
+                                                                            <div class="caption-price">
+                                                                                <span id="slider-range-value1" class="fw-6"></span>
+                                                                                <span class="fw-6">-</span>
+                                                                                <span id="slider-range-value2" class="fw-6"></span>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div id="slider-range"></div>
+                                                                    <div class="slider-labels">
+                                                                        <input type="hidden" name="min-value" value="">
+                                                                        <input type="hidden" name="max-value" value="">                                                                                  
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="form-style box-select">
-                                                                <label class="title-select">Bedrooms</label>
-                                                                <div class="nice-select" tabindex="0"><span class="current">4</span>
-                                                                    <ul class="list"> 
-                                                                        <li data-value="1" class="option">All</li>
-                                                                        <li data-value="1" class="option">1</li>
-                                                                        <li data-value="2" class="option">2</li>
-                                                                        <li data-value="3" class="option">3</li>
-                                                                        <li data-value="4" class="option selected">4</li>
-                                                                        <li data-value="5" class="option">5</li>
-                                                                        <li data-value="6" class="option">6</li>
-                                                                        <li data-value="7" class="option">7</li>
-                                                                        <li data-value="8" class="option">8</li>
-                                                                        <li data-value="9" class="option">9</li>
-                                                                        <li data-value="10" class="option">10</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-style widget-price">
-                                                                <div class="box-title-price">
-                                                                    <span class="title-price">Price Range</span>
+                                                                <div class="form-style widget-price wd-price-2">
+                                                                    <div class="box-title-price">
+                                                                        <span class="title-price fw-6">Size:</span>
                                                                         <div class="caption-price">
-                                                                            <span>from</span>
-                                                                            <span id="slider-range-value1" class="fw-7"></span>
-                                                                            <span>to</span>
-                                                                            <span id="slider-range-value2" class="fw-7"></span>
+                                                                            <span id="slider-range-value01" class="fw-6"></span>
+                                                                            <span class="fw-6">to</span>
+                                                                            <span id="slider-range-value02" class="fw-6"></span>
                                                                         </div>
-                                                                </div>
-                                                                <div id="slider-range"></div>
-                                                                <div class="slider-labels">
-                                                                    <input type="hidden" name="min-value" value="">
-                                                                    <input type="hidden" name="max-value" value="">                                                                                  
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-style widget-price wd-price-2">
-                                                                <div class="box-title-price">
-                                                                    <span class="title-price">Size Range</span>
-                                                                    <div class="caption-price">
-                                                                        <span>from</span>
-                                                                        <span id="slider-range-value01" class="fw-7"></span>
-                                                                        <span>to</span>
-                                                                        <span id="slider-range-value02" class="fw-7"></span>
+                                                                    </div>
+                                                                    <div id="slider-range2"></div>
+                                                                    <div class="slider-labels">
+                                                                        <input type="hidden" name="min-value2" value="">
+                                                                        <input type="hidden" name="max-value2" value="">      
                                                                     </div>
                                                                 </div>
-                                                                <div id="slider-range2"></div>
-                                                                <div class="slider-labels">
-                                                                    <input type="hidden" name="min-value2" value="">
-                                                                    <input type="hidden" name="max-value2" value="">      
-                                                                </div>
                                                             </div>
-                                                            <div class="form-style btn-show-advanced">
-                                                                <a class="filter-advanced pull-right">
-                                                                     <span class="icon icon-faders"></span> 
-                                                                     <span class="text-advanced">Show Advanced</span>                                                                      
-                                                                </a>
-                                                            </div>
-                                                            <div class="form-style wd-amenities">
-                                                                <div class="group-checkbox">
-                                                                    <div class="text-1">Amenities:</div>
-                                                                    <div class="group-amenities">
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb1" checked> 
-                                                                            <label for="cb1" class="text-cb-amenities">Air Condition</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb2"> 
-                                                                            <label for="cb2" class="text-cb-amenities">Disabled Access</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb3"> 
-                                                                            <label for="cb3" class="text-cb-amenities">Ceiling Height</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb4" checked> 
-                                                                            <label for="cb4" class="text-cb-amenities">Floor</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb5"> 
-                                                                            <label for="cb5" class="text-cb-amenities">Heating</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb6"> 
-                                                                            <label for="cb6" class="text-cb-amenities">Renovation</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb7"> 
-                                                                            <label for="cb7" class="text-cb-amenities">Window Type</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb8"> 
-                                                                            <label for="cb8" class="text-cb-amenities">Cable TV</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb9" checked> 
-                                                                            <label for="cb9" class="text-cb-amenities">Elevator</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb10"> 
-                                                                            <label for="cb10" class="text-cb-amenities">Furnishing</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb11"> 
-                                                                            <label for="cb11" class="text-cb-amenities">Intercom</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb12"> 
-                                                                            <label for="cb12" class="text-cb-amenities">Security</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb13"> 
-                                                                            <label for="cb13" class="text-cb-amenities">Search property</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb14"> 
-                                                                            <label for="cb14" class="text-cb-amenities">Ceiling Height</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb15"> 
-                                                                            <label for="cb15" class="text-cb-amenities">Fence</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb16"> 
-                                                                            <label for="cb16" class="text-cb-amenities">Fence</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb17" checked> 
-                                                                            <label for="cb17" class="text-cb-amenities">Garage</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb18"> 
-                                                                            <label for="cb18" class="text-cb-amenities">Parking</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb19"> 
-                                                                            <label for="cb19" class="text-cb-amenities">Swimming Pool</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb20"> 
-                                                                            <label for="cb20" class="text-cb-amenities">Construction Year</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb21"> 
-                                                                            <label for="cb21" class="text-cb-amenities">Fireplace</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb22"> 
-                                                                            <label for="cb22" class="text-cb-amenities">Garden</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb23"> 
-                                                                            <label for="cb23" class="text-cb-amenities">Pet Friendly</label>
-                                                                        </fieldset>
-                                                                        <fieldset class="amenities-item">
-                                                                            <input type="checkbox" class="tf-checkbox style-1" id="cb24"> 
-                                                                            <label for="cb24" class="text-cb-amenities">WiFi</label>
-                                                                        </fieldset>
+                                                            <div class="box">
+                                                                <div class="form-style wd-amenities">
+                                                                    <div class="group-checkbox">
+                                                                        <h6 class="title text-black-2">Amenities:</h6>
+                                                                        <div class="group-amenities">
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb1" checked> 
+                                                                                <label for="cb1" class="text-cb-amenities">Air Condition</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb2"> 
+                                                                                <label for="cb2" class="text-cb-amenities">Disabled Access</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb3"> 
+                                                                                <label for="cb3" class="text-cb-amenities">Ceiling Height</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb4" checked> 
+                                                                                <label for="cb4" class="text-cb-amenities">Floor</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb5"> 
+                                                                                <label for="cb5" class="text-cb-amenities">Heating</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb6"> 
+                                                                                <label for="cb6" class="text-cb-amenities">Renovation</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb7"> 
+                                                                                <label for="cb7" class="text-cb-amenities">Window Type</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb8"> 
+                                                                                <label for="cb8" class="text-cb-amenities">Cable TV</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb9" checked> 
+                                                                                <label for="cb9" class="text-cb-amenities">Elevator</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb10"> 
+                                                                                <label for="cb10" class="text-cb-amenities">Furnishing</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb11"> 
+                                                                                <label for="cb11" class="text-cb-amenities">Intercom</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb12"> 
+                                                                                <label for="cb12" class="text-cb-amenities">Security</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb13"> 
+                                                                                <label for="cb13" class="text-cb-amenities">Search property</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb14"> 
+                                                                                <label for="cb14" class="text-cb-amenities">Ceiling Height</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb15"> 
+                                                                                <label for="cb15" class="text-cb-amenities">Fence</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb16"> 
+                                                                                <label for="cb16" class="text-cb-amenities">Fence</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb17" checked> 
+                                                                                <label for="cb17" class="text-cb-amenities">Garage</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb18"> 
+                                                                                <label for="cb18" class="text-cb-amenities">Parking</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb19"> 
+                                                                                <label for="cb19" class="text-cb-amenities">Swimming Pool</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb20"> 
+                                                                                <label for="cb20" class="text-cb-amenities">Construction Year</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb21"> 
+                                                                                <label for="cb21" class="text-cb-amenities">Fireplace</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb22"> 
+                                                                                <label for="cb22" class="text-cb-amenities">Garden</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb23"> 
+                                                                                <label for="cb23" class="text-cb-amenities">Pet Friendly</label>
+                                                                            </fieldset>
+                                                                            <fieldset class="amenities-item">
+                                                                                <input type="checkbox" class="tf-checkbox style-1" id="cb24"> 
+                                                                                <label for="cb24" class="text-cb-amenities">WiFi</label>
+                                                                            </fieldset>
+                                                                        </div>
+                                                                        
                                                                     </div>
-                                                                    
                                                                 </div>
                                                             </div>
-                                                            <div class="form-style btn-hide-advanced">
-                                                                <a class="filter-advanced pull-right">
-                                                                     <span class="icon icon-faders"></span> 
-                                                                     <span class="text-advanced">Hide Advanced</span>                                                                      
-                                                                </a>
-                                                            </div>
+                                                            
                                                             <div class="form-style">
-                                                                <button type="submit" class="tf-btn primary" href="#">Find Properties</button>
+                                                                <button type="submit" class="tf-btn btn-view primary hover-btn-view">Find Properties <span class="icon icon-arrow-right2"></span></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1120,8 +1105,8 @@
                                         
                                     </div>
                                 </div>
-                                <div class="widget-box single-property-whychoose bg-surface">
-                                    <div class="h7 title fw-7">Why Choose Us?</div>
+                                <div class="widget-box single-property-whychoose">
+                                    <h5 class="title fw-6">Why Choose Us?</h5>
                                     <ul class="box-whychoose">
                                         <li class="item-why">
                                             <i class="icon icon-secure"></i>
@@ -1140,6 +1125,143 @@
                                             Available Support 24/7
                                         </li>
                                     </ul>
+                                </div>
+                                <div class="box-latest-property">
+                                    <h5 class="fw-6 title">Latest Propeties</h5>
+                                    <ul>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-8.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-3.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-28.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-29.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                        <li class="latest-property-item">
+                                            <a href="property-details-v1.html" class="images-style">
+                                                <img src="images/home/house-19.jpg" alt="img">
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-capitalize text-btn"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
+                                                <ul class="meta-list mt-6">
+                                                    <li class="item">
+                                                        <i class="icon icon-bed"></i>
+                                                        <span class="text-variant-1">Beds:</span>
+                                                        <span class="fw-6">3</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-bath"></i>
+                                                        <span class="text-variant-1">Baths:</span>
+                                                        <span class="fw-6">2</span>
+                                                    </li>
+                                                    <li class="item">
+                                                        <i class="icon icon-Sqft"></i>
+                                                        <span class="text-variant-1">Sqft:</span>
+                                                        <span class="fw-6">1150</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-10 text-btn">$7250,00</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1408,10 +1530,6 @@
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/shortcodes.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuSiPhoDaOJ7aqtJVtQhYhLzwwJ7rQlmA"></script>
-    <script src="js/map-single.js"></script>
-    <script src="js/marker.js"></script>
-    <script src="js/infobox.min.js"></script>
 </body>
 
 </html>
