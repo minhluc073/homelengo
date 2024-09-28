@@ -462,6 +462,11 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .flat-header-wrapper-about {
+        .box-img {
+            display: none;
+        }
+    }
     .show-mb {
         display: inline-block;
     }
@@ -505,12 +510,6 @@
     .single-property-contact .box-avatar {
         flex-wrap: wrap;
     }
-    .single-property-gallery .box-navigation .navigation.swiper-nav-prev {
-        right: 0;
-    }
-    .single-property-gallery .box-navigation .navigation.swiper-nav-next {
-        left: 0;
-    }
 
     .overlay-dashboard {
         position: fixed;
@@ -551,11 +550,10 @@
 
 @media only screen and (max-width: 1350px) {
     .box-navigation {
-        
         .navigation {
             width: 50px;
             height: 50px;
-            .icon{
+            .icon {
                 font-size: 14px;
             }
         }
@@ -763,6 +761,28 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .single-property-gallery {
+        .box-navigation {
+            .navigation {
+                &.swiper-nav-next {
+                    left: 15px;
+                }
+                &.swiper-nav-prev {
+                    right: 15px;
+                }
+            }
+        }
+    }
+
+    .flat-gallery-single {
+        grid-template-areas:
+            "item1 item1"
+            "item1 item1"
+            "item2 item3"
+            "item4 item5";
+        gap: 15px;
+        padding: 0px 15px;
+    }
     .flat-img-with-text {
         .box-count {
             gap: 15px;
@@ -1330,11 +1350,10 @@
         }
     }
     .box-navigation {
-        
         .navigation {
             width: 40px;
             height: 40px;
-            .icon{
+            .icon {
                 font-size: 12px;
             }
         }
@@ -1460,13 +1479,6 @@
 @media only screen and (max-width: 700px) {
     .single-property-info .inner-box .label {
         width: 40%;
-    }
-    .flat-gallery-single {
-        grid-template-areas:
-            "item1 item1"
-            "item1 item1"
-            "item2 item3"
-            "item4 item5";
     }
 }
 @media only screen and (max-width: 655px) {
