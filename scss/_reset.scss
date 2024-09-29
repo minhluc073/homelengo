@@ -547,6 +547,9 @@ label {
 .mb-8 {
     margin-bottom: 8px;
 }
+.mb-10 {
+    margin-bottom: 10px;
+}
 .mb-16 {
     margin-bottom: 16px;
 }
@@ -724,4 +727,11 @@ label {
 }
 .shadow-3 {
     box-shadow: $shadow-3;
+}
+
+.list-default {
+    padding-left: 15px;
+    li {
+        list-style: disc;
+    }
 }
