@@ -608,15 +608,23 @@
 .flat-filter-search-v2 {
     .flat-tab-form {
         display: flex;
-        padding: 18px 30px;
-        gap: 30px;
-        border: 1px solid $outline;
+        padding: 30px;
+        gap: 12px;
+        box-shadow: $shadow-1;
+        margin-bottom: 40px;
         .nav-tab-form {
-            gap: 16px;
+            gap: 6px;
+            margin-bottom: 0;
             .nav-link-item {
-                border-radius: 8px;
-                background-color: $surface;
+                border-radius: 99px;
+                background-color: $outline;
                 color: $on-surface;
+                padding: 16px 25px;
+                &.active,
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
             }
         }
         .tab-content {
@@ -624,18 +632,46 @@
             flex-grow: 1;
         }
         .wd-find-select {
-            gap: 30px;
+            gap: 12px;
+            padding: 0;
+            flex-wrap: wrap;
             .inner-group {
                 padding: 0px;
+                gap: 12px;
             }
             .tf-btn {
-                padding: 11px 20px;
-                border-radius: 4px;
             }
         }
         .wd-search-form {
             top: 131%;
             margin-top: 0;
+        }
+        .form-style {
+            border: none !important;
+            .nice-select,
+            .form-control {
+                padding: 16px 18px;
+                border: 1px solid $outline;
+                color: $variant-1;
+                font-weight: 400;
+                border-radius: 999px;
+                padding-right: 48px;
+                font-size: 14px;
+                line-height: 19.6px;
+            }
+        }
+        .search-form {
+            position: relative;
+            .icon {
+                font-size: 16px;
+                position: absolute;
+                left: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .form-control {
+                padding-left: 44px !important;
+            }
         }
     }
 }
@@ -2172,10 +2208,11 @@
     }
     &.layout-2 {
         .wrap-left {
-            height: calc(100vh - 178px);
-            width: 47.4%;
+            height: calc(100vh - 232px);
+            width: 45%;
             padding: 30px;
             padding-bottom: 0;
+            padding-top: 0;
             &::-webkit-scrollbar {
                 width: 8px;
             }
@@ -2184,48 +2221,58 @@
             }
         }
         .wrap-right {
-            height: calc(100vh - 178px);
-            width: 52.6%;
+            height: calc(100vh - 232px);
+            width: 54%;
         }
+    }
+    .box-title-listing {
+        margin-bottom: 30px;
     }
 }
 .wrapper-layout-3 {
     display: flex;
     height: 100%;
+    padding-top: 40px;
     .wrap-sidebar {
-        height: calc(100vh - 80px);
-        width: 23.3%;
-        padding-bottom: 80px;
+        height: calc(100vh - 118px);
+        width: 22%;
         overflow-x: hidden;
         overflow-y: auto;
-        background-color: $surface;
+        padding: 20px;
+        padding-top: 0;
+        padding-right: 0;
+
         &::-webkit-scrollbar {
             width: 8px;
         }
         &::-webkit-scrollbar-thumb {
-            background: $variant-1;
+            background: transparent;
         }
         .widget-filter-search {
-            padding: 30px;
+            padding: 22px;
         }
     }
+    .box-title-listing {
+        margin-bottom: 30px;
+    }
     .wrap-inner {
-        padding: 30px;
-        width: 47.3%;
+        padding: 40px;
+        padding-top: 0;
+        width: 38%;
         padding-bottom: 0;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 118px);
         overflow-x: hidden;
         overflow-y: auto;
         &::-webkit-scrollbar {
             width: 8px;
         }
         &::-webkit-scrollbar-thumb {
-            background: $variant-1;
+            background: $outline;
         }
     }
     .wrap-map {
-        height: calc(100vh - 80px);
-        width: 29.4%;
+        height: calc(100vh - 118px);
+        width: 40%;
         right: 0;
         bottom: 0;
         position: fixed;

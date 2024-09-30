@@ -13,8 +13,8 @@
         min-width: 140px;
     }
 }
-.header-style-2  {
-    .header-account{
+.header-style-2 {
+    .header-account {
         ul li {
             color: $white;
             a {
@@ -25,44 +25,42 @@
             }
         }
     }
-    &:not(.is-fixed){
-        .btn-line{
+    &:not(.is-fixed) {
+        .btn-line {
             background-color: transparent;
             border-color: $white;
             color: $white;
-            svg path{
+            svg path {
                 stroke: $white;
             }
             &:hover {
                 border-color: transparent;
                 background-color: $white;
                 color: $primary;
-                svg path{
+                svg path {
                     stroke: $primary;
                 }
             }
         }
-        .tf-btn{
-            &.primary{
+        .tf-btn {
+            &.primary {
                 background-color: $white;
                 color: $primary;
                 border-color: transparent;
-                svg path{
+                svg path {
                     stroke: $primary;
                 }
-                &:hover{
+                &:hover {
                     background-color: transparent;
                     border-color: $white;
                     color: $white;
-                    svg path{
+                    svg path {
                         stroke: $white;
                     }
                 }
             }
-           
         }
     }
-    
 }
 
 .main-header {
@@ -449,6 +447,8 @@
     // border: 1px solid $outline;
     border-radius: 16px;
     pointer-events: none;
+    box-shadow: 0px 10px 25px 0px #365f681a;
+
     &::after {
         content: "";
         position: absolute;

@@ -365,6 +365,13 @@
 
 // min-width:
 @media only screen and (min-width: 1520px) {
+    .wrapper-layout.layout-2 .wrap-left {
+        padding-left: 100px;
+    }
+    .flat-filter-search-v2 .flat-tab-form {
+        padding: 30px 100px;
+    }
+
     .tf-sw-testimonial:hover {
         cursor: url("../images/avatar/cursor-sw.png"), auto;
     }
@@ -749,6 +756,8 @@
         .wrap-inner {
             width: 100%;
             height: auto;
+            padding: 15px;
+            padding-top: 0;
         }
         .wrap-map {
             margin-top: 0;
@@ -970,7 +979,7 @@
                 .nice-select {
                     padding: 10px 16px;
                     border: 1px solid $outline;
-                    border-radius: 8px;
+                    border-radius: 99px;
                     font-weight: 400;
                 }
             }
@@ -988,7 +997,7 @@
         .tf-btn {
             // width: 100%;
             min-width: 100px;
-            border-radius: 4px;
+            border-radius: 99px;
         }
     }
     .wd-search-form {
