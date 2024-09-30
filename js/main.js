@@ -117,7 +117,6 @@
   ------------------------------------------------------------------------------------- */
   var headerFixed = function () {
     if ($("header").hasClass("header-fixed")) {
-      console.log('hhh')
 
       var nav = $("#header");
       if (nav.length) {

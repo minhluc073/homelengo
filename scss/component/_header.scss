@@ -68,7 +68,6 @@
     width: 100%;
     height: 78px;
     position: relative;
-    box-shadow: $shadow-1;
     background-color: $white;
     padding-left: 15px;
     padding-right: 15px;
@@ -78,8 +77,6 @@
         background-color: transparent;
         @include transition5;
         &.is-fixed {
-            background-color: $white;
-            border-bottom: 1px solid $outline;
             .navigation > li > a {
                 color: $on-surface !important;
             }
@@ -96,6 +93,11 @@
     }
     .inner-header {
         @include flex(center, space-between);
+    }
+    &.is-fixed {
+        box-shadow: $shadow-1;
+        background-color: $white;
+        border-bottom: 1px solid $outline;
     }
 }
 
