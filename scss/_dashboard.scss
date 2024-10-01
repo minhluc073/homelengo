@@ -1,10 +1,10 @@
 // dashboard
 .header-dashboard {
-    padding-left: 20px;
+    box-shadow: $shadow-1;
     .logo-box {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         .button-show-hide {
             margin-top: 4px;
             width: 44px;
@@ -17,12 +17,10 @@
             }
         }
     }
-    .main-menu {
-        margin-left: -245px;
-    }
+
     .header-account {
+        gap: 30px;
         .box-avatar {
-            margin-right: 20px;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -90,37 +88,48 @@
     position: fixed;
     width: 280px;
     min-width: 280px;
-    background: $white;
-    box-shadow: 0px 2px 2px 0px #1c24331a;
+    background: $on-surface;
     height: 100%;
-    top: 80px;
+    top: 0;
     left: 0;
     bottom: 0;
     overflow-y: auto;
-    z-index: 20;
+    z-index: 1000;
     @include transition4;
     transform: translateX(0);
-    padding: 40px 16px;
+    // padding: 40px 16px;
     &::-webkit-scrollbar {
         width: 2px;
     }
     &::-webkit-scrollbar-thumb {
-        background: $outline;
+        // background: $primary;
+    }
+    .menu-box {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .title {
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 9px;
+            color: rgba(255, 255, 255, 0.4);
+        }
     }
     .box-menu-dashboard {
         .nav-menu-item {
             &:not(:last-child) {
-                margin-bottom: 12px;
+                margin-bottom: 6px;
             }
             &:hover,
             &.active {
                 .nav-menu-link {
-                    background-color: rgba(238, 103, 66, 0.1);
+                    background-color: $primary;
                     .icon {
                         color: $on-surface;
                     }
-                    svg path {
-                        fill: $on-surface;
+                    svg {
+                        g {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -128,18 +137,45 @@
         .nav-menu-link {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 9px 16px;
-            font-weight: 700;
+            gap: 12px;
+            padding: 12px 30px;
+            font-weight: 600;
             text-transform: capitalize;
-            border-radius: 8px;
-            .icon {
-                @include transition3;
-                color: $variant-2;
-                font-size: 24px;
-            }
+            color: $white;
             svg path {
                 @include transition3;
+            }
+        }
+    }
+    .logo-box {
+        display: block;
+        padding: 34px 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        img {
+            width: 166px;
+        }
+    }
+    .user-box {
+        padding: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        p {
+            margin-bottom: 9px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .icon-box {
+                background-color: rgba(255, 255, 255, 0.4);
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                @include flex(center, center);
+            }
+            .text {
+                color: rgba(255, 255, 255, 0.4);
             }
         }
     }

@@ -348,10 +348,20 @@
 
 @media (min-width: 1441px) {
     .main-header {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
         .inner-header-left {
-            gap: 100px;
+            gap: 50px;
+        }
+    }
+    .header-dashboard {
+        .logo-box {
+            gap: 75px;
+        }
+        .inner-header {
+            .inner-header-left {
+                gap: 20px;
+            }
         }
     }
     .flat-title-page {
@@ -365,6 +375,19 @@
 
 // min-width:
 @media only screen and (min-width: 1520px) {
+    .main-header {
+        padding-left: 100px;
+        padding-right: 100px;
+        .inner-header-left {
+            gap: 100px;
+        }
+    }
+    .header-dashboard {
+        .logo-box {
+            gap: 15px;
+        }
+    }
+
     .wrapper-layout.layout-2 .wrap-left {
         padding-left: 100px;
     }
