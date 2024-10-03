@@ -354,6 +354,15 @@
             gap: 50px;
         }
     }
+    .spaceX-lg-100{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .search-popup-wrapper {
+        .box-form-search {
+            padding: 50px 30px 60px 30px;
+        }
+    }
     .header-dashboard {
         .logo-box {
             gap: 75px;
@@ -380,6 +389,15 @@
         padding-right: 100px;
         .inner-header-left {
             gap: 100px;
+        }
+    }
+    .spaceX-lg-100{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .search-popup-wrapper {
+        .box-form-search {
+            padding: 50px 100px 60px 100px;
         }
     }
     .header-dashboard {
@@ -1562,6 +1580,11 @@
             }
         }
     }
+    .header-account {
+        .tf-btn {
+            display: none;
+        }
+    }
 
     .wd-search-form {
         .group-checkbox {
@@ -1796,14 +1819,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .header-account {
-        display: none;
-    }
-    .header-style-3 {
-        .header-account {
-            display: flex;
-        }
-    }
 }
 @media only screen and (max-width: 360px) {
 }

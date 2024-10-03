@@ -71,11 +71,13 @@
     background-color: $white;
     padding-left: 15px;
     padding-right: 15px;
+    box-shadow: $shadow-1;
     &.header-style-2 {
         margin-bottom: -80px;
         border: 0;
         background-color: transparent;
         @include transition5;
+        box-shadow: none;
         &.is-fixed {
             .navigation > li > a {
                 color: $on-surface !important;

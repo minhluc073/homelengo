@@ -614,6 +614,10 @@ label {
 .pb-30 {
     padding-bottom: 30px;
 }
+.spaceX-lg-100{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 // radius
 .round-8 {
     border-radius: 8px;
@@ -709,7 +713,7 @@ label {
 }
 
 .cus-layout-left {
-    width: calc(100vw - (100vw - 1290px) / 2);
+    width: calc(100vw - (100vw - 1720px) / 2);
     max-width: 100%;
     margin-left: unset;
     margin-right: auto;

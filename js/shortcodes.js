@@ -259,6 +259,30 @@
       );
     }
   };
+  /* Handle Search popup
+  -------------------------------------------------------------------------------------*/
+  var handleSearchPopup = function () {
+    var headerHeight = $("#header").outerHeight();
+
+    $(".btn-search-popup").on("click", function () {
+      if ($(".search-popup-wrapper").hasClass("open")) {
+        $(".search-popup-wrapper").removeClass("open");
+        $(".overlay2").fadeOut();
+        $(".search-popup-wrapper").css("top", "-100%");
+      } else {
+        $(".search-popup-wrapper").addClass("open");
+        $(".overlay2").fadeIn();
+        $(".search-popup-wrapper").css("top", headerHeight + "px");
+      }
+    });
+
+    $(".close-btn, .overlay2").on("click", function () {
+      $(".search-popup-wrapper").removeClass("open");
+      $(".overlay2").fadeOut();
+      $(".search-popup-wrapper").css("top", "-100%");
+    });
+  };
+
   /* Datepicker  
   -------------------------------------------------------------------------------------*/
   var datePicker = function () {
@@ -393,6 +417,7 @@
     showPass();
     datePicker();
     checkClick();
+    handleSearchPopup();
     preloader();
     // cursor();
   });

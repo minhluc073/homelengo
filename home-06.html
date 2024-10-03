@@ -49,56 +49,147 @@
 
     <div id="wrapper">
         <div id="pagee" class="clearfix">
-            <!-- Main Header -->
-            <header class="main-header header-style-3 header-search fixed-header">
+            <!-- header -->
+            <header id="header" class="main-header header-fixed fixed-header">
                 <!-- Header Lower -->
                 <div class="header-lower">
                     <div class="row">                      
                         <div class="col-lg-12">         
-                            <div class="inner-container d-flex justify-content-between align-items-center">
-                                <!-- Logo Box -->
-                                <div class="logo-box flex">
-                                    <div class="logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="174" height="44"></a></div>
-                                </div>
-                                <div class="nav-outer flex align-center">
-                                    <div class="outer-search">
-                                        <div class="form-box box-1">
-                                            <input type="text" placeholder="Enter Keyword">
-                                        </div>
-                                        <div class="form-box box-2">
-                                            <input type="text" placeholder="Search Location">
-                                        </div>
-                                        <div class="form-box box-3">
-                                            <input type="text" placeholder="Choose Type">
-                                        </div>
-                                        <a href="#filterSearch" class="btn-search filter-search-canvas" data-bs-toggle="offcanvas" aria-controls="offcanvasTop"><span class="icon icon-search"></span></a>
+                            <div class="inner-header">
+                                <div class="inner-header-left">
+                                    <div class="logo-box flex">
+                                        <div class="logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="166" height="48"></a></div>
                                     </div>
-                                    <a href="#filterSearchMb" class="btn-search btn-search-mb" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft"><span class="icon icon-search"></span></a>
-
-                                </div>
-                                <div class="header-account">
-                                    <div class="register">
-                                        <ul class="d-flex">
-                                            <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
-                                            <li>/</li>
-                                            <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
-                                        </ul>
+                                    <div class="nav-outer flex align-center">
+                                            <!-- Main Menu -->
+                                            <nav class="main-menu show navbar-expand-md">
+                                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                                    <ul class="navigation clearfix">
+                                                        <li class="dropdown2 home current"><a href="#">Home</a>
+                                                            <ul>
+                                                                <li class="current"><a href="index.html">Homepage 01</a></li>
+                                                                <li><a href="home-02.html">Homepage 02</a></li>
+                                                                <li><a href="home-03.html">Homepage 03</a></li>
+                                                                <li><a href="home-04.html">Homepage 04</a></li>
+                                                                <li><a href="home-05.html">Homepage 05</a></li>
+                                                                <li><a href="home-06.html">Homepage 06</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown2"><a href="#">Listing</a>
+                                                            <ul>
+                                                                <li><a href="property-halfmap-grid.html">Property Half Map Grid</a></li>
+                                                                <li><a href="property-halfmap-list.html">Property Half Map List</a></li>
+                                                                <li><a href="topmap-grid.html">Find Topmap Grid</a></li>
+                                                                <li><a href="topmap-list.html">Find Topmap List</a></li>
+                                                                <li><a href="sidebar-grid.html">Find Sidebar Grid</a></li>
+                                                                <li><a href="sidebar-list.html">Find Sidebar List</a></li>
+    
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown2"><a href="#">Properties</a>
+                                                            <ul>
+                                                                <li><a href="property-details-v1.html">Property Details 1</a></li>
+                                                                <li><a href="property-details-v2.html">Property Details 2</a></li>
+                                                                <li><a href="property-details-v3.html">Property Details 3</a></li>
+                                                                <li><a href="property-details-v4.html">Property Details 4</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown2"><a href="#">Pages</a>
+                                                            <ul>
+                                                                <li><a href="about-us.html">About Us</a></li>
+                                                                <li><a href="our-service.html">Our Services</a></li>
+                                                                <li><a href="pricing.html">Pricing</a></li>
+                                                                <li><a href="contact.html">Contact Us</a></li>
+                                                                <li><a href="faq.html">FAQs</a></li>
+                                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                                
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown2"><a href="#">Blog</a>
+                                                            <ul>
+                                                                <li><a href="blog.html">Blog Default</a></li>
+                                                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                                <li><a href="blog-detail.html">Blog Post Details</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li class="dropdown2"><a href="#">Dashboard</a>
+                                                            <ul>
+                                                                <li><a href="dashboard.html">Dashboard</a></li>
+                                                                <li><a href="my-favorites.html">My Properties</a></li>
+                                                                <li><a href="my-invoices.html">My Invoices</a></li>
+                                                                <li><a href="my-favorites.html">My Favorites</a></li>
+                                                                <li><a href="reviews.html">Reviews</a></li>
+                                                                <li><a href="my-profile.html">My Profile</a></li>
+                                                                <li><a href="add-property.html">Add Property</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </nav>
+                                            <!-- Main Menu End-->
                                     </div>
+                                </div>
+                                <div class="inner-header-right header-account">
+                                    <a href="#modalLogin" data-bs-toggle="modal" class="tf-btn btn-line btn-login">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.1251 5C13.1251 5.8288 12.7959 6.62366 12.2099 7.20971C11.6238 7.79576 10.8289 8.125 10.0001 8.125C9.17134 8.125 8.37649 7.79576 7.79043 7.20971C7.20438 6.62366 6.87514 5.8288 6.87514 5C6.87514 4.1712 7.20438 3.37634 7.79043 2.79029C8.37649 2.20424 9.17134 1.875 10.0001 1.875C10.8289 1.875 11.6238 2.20424 12.2099 2.79029C12.7959 3.37634 13.1251 4.1712 13.1251 5ZM3.75098 16.765C3.77776 15.1253 4.44792 13.5618 5.61696 12.4117C6.78599 11.2616 8.36022 10.6171 10.0001 10.6171C11.6401 10.6171 13.2143 11.2616 14.3833 12.4117C15.5524 13.5618 16.2225 15.1253 16.2493 16.765C14.2888 17.664 12.1569 18.1279 10.0001 18.125C7.77014 18.125 5.65348 17.6383 3.75098 16.765Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Sign in  
+                                    </a>
                                     <div class="flat-bt-top">
-                                        <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-                                    </div>  
-                                    <a href="#sidebarMenu" class="btn-menu-nav" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft"><span class="icon icon-categories"></span></a> 
+                                        <a class="tf-btn primary" href="add-property.html">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.625 14.375V17.1875C13.625 17.705 13.205 18.125 12.6875 18.125H4.5625C4.31386 18.125 4.0754 18.0262 3.89959 17.8504C3.72377 17.6746 3.625 17.4361 3.625 17.1875V6.5625C3.625 6.045 4.045 5.625 4.5625 5.625H6.125C6.54381 5.62472 6.96192 5.65928 7.375 5.72834M13.625 14.375H16.4375C16.955 14.375 17.375 13.955 17.375 13.4375V9.375C17.375 5.65834 14.6725 2.57417 11.125 1.97834C10.7119 1.90928 10.2938 1.87472 9.875 1.875H8.3125C7.795 1.875 7.375 2.295 7.375 2.8125V5.72834M13.625 14.375H8.3125C8.06386 14.375 7.8254 14.2762 7.64959 14.1004C7.47377 13.9246 7.375 13.6861 7.375 13.4375V5.72834M17.375 11.25V9.6875C17.375 8.94158 17.0787 8.22621 16.5512 7.69876C16.0238 7.17132 15.3084 6.875 14.5625 6.875H13.3125C13.0639 6.875 12.8254 6.77623 12.6496 6.60041C12.4738 6.4246 12.375 6.18614 12.375 5.9375V4.6875C12.375 4.31816 12.3023 3.95243 12.1609 3.6112C12.0196 3.26998 11.8124 2.95993 11.5512 2.69876C11.2901 2.4376 10.98 2.23043 10.6388 2.08909C10.2976 1.94775 9.93184 1.875 9.5625 1.875H8.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Submit Property
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn-search-popup"><i class="icon icon-search"></i></a>
 
                                 </div>
+                                    
+                                <div class="mobile-nav-toggler mobile-button"><span></span></div>
+                                    
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Header Lower -->
             
-                
+                <!-- Mobile Menu  -->
+                <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>    
+                <div class="mobile-menu">
+                    <div class="menu-backdrop"></div>                            
+                    <nav class="menu-box">
+                        <div class="nav-logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="nav-logo" width="174" height="44"></a></div>
+                        <div class="bottom-canvas">
+                            <div class="login-box flex align-center">
+                                <a href="#modalLogin" data-bs-toggle="modal">Login</a>
+                                <span>/</span>
+                                <a href="#modalRegister" data-bs-toggle="modal">Register</a>
+                            </div>
+                            <div class="menu-outer"></div>
+                            <div class="button-mobi-sell">
+                                <a class="tf-btn primary" href="add-property.html">Submit Property</a>
+                            </div> 
+                            <div class="mobi-icon-box">
+                                <div class="box d-flex align-items-center">
+                                    <span class="icon icon-phone2"></span>
+                                    <div>1-333-345-6868</div>
+                                </div>
+                                <div class="box d-flex align-items-center">
+                                    <span class="icon icon-mail"></span>
+                                    <div>themesflat@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>                
+                </div>
+                <!-- End Mobile Menu -->
             
             </header>
+            <!-- header -->
             <section class="flat-categories-v3">
                 <div class="wrap-categories-v3">
                     <div class="swiper tf-sw-auto sw-auto" data-loop="true">
@@ -620,203 +711,26 @@
 
     </div>
 
-
-
-    <!-- sidebar menu -->
-    <div class="offcanvas offcanvas-start canvas-menu" id="sidebarMenu">
-        <div class="offcanvas-header">
-            <nav class="nav-logo">
-                <a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="174" height="44"></a>
-            </nav>
-            <span class="icon-close2 icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
-          </div> 
-        <div class="off-canvas-body">
-            <div class="login-box">
-                <a href="#modalLogin" data-bs-toggle="modal">Login</a>
-                <span>/</span>
-                <a href="#modalRegister" data-bs-toggle="modal">Register</a>
-            </div>
-            <ul class="menu-outer" id="wrapper-menu-navigation">
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-one" class="collapsed nav-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
-                        Home
-                        <span class="icon icon-arr-down"></span>
-                    </a>
-                    <div id="dropdown-menu-one" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul  class="sub-nav-menu" >
-                            <li><a href="index.html" class="sub-nav-link">Homepage 1</a></li>
-                            <li><a href="home-02.html" class="sub-nav-link">Homepage 2</a></li>
-                            <li><a href="home-03.html" class="sub-nav-link">Homepage 3</a></li>
-                            <li><a href="home-04.html" class="sub-nav-link">Homepage 4</a></li>
-                            <li><a href="home-05.html" class="sub-nav-link">Homepage 5</a></li>
-                            <li><a href="home-06.html" class="sub-nav-link current">Homepage 6</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-two" class="collapsed nav-link" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-two">
-                        Listing
-                        <span class="icon icon-arr-down"></span>
-                    </a>
-                    <div id="dropdown-menu-two" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul class="sub-nav-menu">
-                            <li><a href="property-halfmap-grid.html" class="sub-nav-link">Property Half Map Grid</a></li>
-                            <li><a href="property-halfmap-list.html" class="sub-nav-link">Property Half Map List</a></li>
-                            <li><a href="topmap-grid.html" class="sub-nav-link">Find Topmap Grid</a></li>
-                            <li><a href="topmap-list.html" class="sub-nav-link">Find Topmap List</a></li>
-                            <li><a href="sidebar-grid.html" class="sub-nav-link">Find Sidebar Grid</a></li>
-                            <li><a href="sidebar-list.html" class="sub-nav-link">Find Sidebar List</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-three" class="collapsed nav-link" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-three">
-                        Properties
-                        <span class="icon icon-arr-down"></span>
-                    </a>
-                    <div id="dropdown-menu-three" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul class="sub-nav-menu">
-                            <li><a href="property-details-v1.html" class="sub-nav-link">Property Details 1</a></li>
-                            <li><a href="property-details-v2.html" class="sub-nav-link">Property Details 2</a></li>
-                            <li><a href="property-details-v3.html" class="sub-nav-link">Property Details 3</a></li>
-                            <li><a href="property-details-v4.html" class="sub-nav-link">Property Details 4</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-four" class="collapsed nav-link" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-four">
-                        Pages
-                        <span class="icon icon-arr-down"></span>
-                    </a>
-                    <div id="dropdown-menu-four" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul class="sub-nav-menu">
-                            <li><a href="about-us.html" class="sub-nav-link">About Us</a></li>
-                            <li><a href="our-service.html" class="sub-nav-link">Our Services</a></li>
-                            <li><a href="pricing.html" class="sub-nav-link">Pricing</a></li>
-                            <li><a href="contact-us.html" class="sub-nav-link">Contact Us</a></li>
-                            <li><a href="faq.html" class="sub-nav-link">FAQs</a></li>
-                            <li><a href="privacy-policy.html" class="sub-nav-link">Privacy Policy</a></li>
-                           
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-five" class="collapsed nav-link" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-five">
-                        Blog
-                        <span class="icon icon-arr-down"></span>
-
-                    </a>
-                    <div id="dropdown-menu-five" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul class="sub-nav-menu">
-                            <li><a href="blog.html" class="sub-nav-link">Blog Default</a></li>
-                            <li><a href="blog-grid.html" class="sub-nav-link">Blog Grid</a></li>
-                            <li><a href="blog-detail.html" class="sub-nav-link">Blog Post Details</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#dropdown-menu-six" class="collapsed nav-link" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-five">
-                        Dashboard
-                        <span class="icon icon-arr-down"></span>
-
-                    </a>
-                    <div id="dropdown-menu-six" class="collapse" data-bs-parent="#wrapper-menu-navigation">
-                        <ul class="sub-nav-menu">
-                            <li><a href="dashboard.html" class="sub-nav-link">Dashboard</a></li>
-                            <li><a href="my-favorites.html" class="sub-nav-link">My Properties</a></li>
-                            <li><a href="my-invoices.html" class="sub-nav-link">My Invoices</a></li>
-                            <li><a href="my-favorites.html" class="sub-nav-link">My Favorites</a></li>
-                            <li><a href="reviews.html" class="sub-nav-link">Reviews</a></li>
-                            <li><a href="my-profile.html" class="sub-nav-link">My Profile</a></li>
-                            <li><a href="add-property.html" class="sub-nav-link">Add Property</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-            </ul>
-            <div class="box-btn">
-                <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-            </div>
-            <div class="menu-icon-box">
-                <div class="box d-flex align-items-center">
-                    <span class="icon icon-phone2"></span>
-                    <div>1-333-345-6868</div>
-                </div>
-                <div class="box d-flex align-items-center">
-                    <span class="icon icon-mail"></span>
-                    <div>themesflat@gmail.com</div>
-                </div>
-            </div>
-           
-        </div>       
-    </div>
-    <!-- End sidebar menu -->
-    <!-- canvas filter -->
-    <div class="offcanvas offcanvas-top canvas-filter" id="filterSearch">
-        <header class="main-header header-style-3">
-            <div class="header-lower">
-                <div class="row">                      
-                    <div class="col-lg-12">         
-                        <div class="inner-container d-flex justify-content-between align-items-center">
-                            <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="174" height="44"></a></div>
-                            </div>
-                            <div class="nav-outer-tab">
-                                <div class="flat-tab flat-tab-form">
-                                    <ul class="nav-tab-form style-4 justify-content-center" role="tablist">
-                                        <li class="nav-tab-item" role="presentation">   
-                                            <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
-                                        </li>
-                                        <li class="nav-tab-item" role="presentation">
-                                            <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">For Sale</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="header-account">
-                                <div class="register">
-                                    <ul class="d-flex">
-                                        <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
-                                        <li>/</li>
-                                        <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
-                                    </ul>
-                                </div>
-                                <div class="flat-bt-top">
-                                    <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-                                </div>  
-                                <a href="#sidebarMenu" class="btn-menu-nav" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft"><span class="icon icon-categories"></span></a> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section>
-            <div class="container">
+    <!-- popup search -->
+    
+    <div class="search-popup-wrapper">
+        <div class="box-form-search">
+            <div class="flat-tab flat-tab-form">
+                <ul class="nav-tab-form style-2" role="tablist">
+                    <li class="nav-tab-item" role="presentation">   
+                        <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
+                    </li>
+                    <li class="nav-tab-item" role="presentation">
+                        <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">For Sale</a>
+                    </li>
+                </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade active show" role="tabpanel">
                         <div class="form-sl">
                             <form method="post">
-                                <div class="wd-find-select style-3">
+                                <div class="wd-find-select style-2">
                                     <div class="inner-group">
                                         <div class="form-group-1 search-form form-style">
-                                            <label>Keyword</label>
-                                            <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">
-                                        </div>
-                                        <div class="form-group-2 form-style">
-                                            <label>Location</label>
-                                            <div class="group-ip">
-                                                <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
-                                                <a href="#" class="icon icon-location"></a>
-                                            </div>
-                                        </div>
-                                        <div class="form-group-3 form-style">
                                             <label>Type</label>
                                             <div class="group-select">
                                                 <div class="nice-select" tabindex="0"><span class="current">All</span>
@@ -826,29 +740,49 @@
                                                         <li data-value="studio" class="option">Studio</li>
                                                         <li data-value="office" class="option">Office</li>
                                                         <li data-value="house" class="option">House</li>
+
+
                                                     </ul>
                                                 </div>
-                                            </div>                                                    
+                                            </div> 
+                                   
                                         </div>
+                                        <div class="form-group-2 form-style">
+                                            <label>Location</label>
+                                            <div class="group-ip">
+                                                <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
+                                                <a href="#" class="icon icon-location">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-3 form-style">
+                                            <label>Keyword</label>
+                                            <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">                                                   
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="box-btn-advanced">
                                         <div class="form-group-4 box-filter">
-                                            <a class="filter-advanced pull-right">
-                                                 <span class="icon icon-faders"></span> 
-                                                 <span class="text-1">Advanced</span>                                                                      
+                                            <a class="tf-btn btn-line filter-advanced pull-right">
+                                                <span class="text-1">Search advanced</span>
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.5 12.375V3.4375M5.5 12.375C5.86467 12.375 6.21441 12.5199 6.47227 12.7777C6.73013 13.0356 6.875 13.3853 6.875 13.75C6.875 14.1147 6.73013 14.4644 6.47227 14.7223C6.21441 14.9801 5.86467 15.125 5.5 15.125M5.5 12.375C5.13533 12.375 4.78559 12.5199 4.52773 12.7777C4.26987 13.0356 4.125 13.3853 4.125 13.75C4.125 14.1147 4.26987 14.4644 4.52773 14.7223C4.78559 14.9801 5.13533 15.125 5.5 15.125M5.5 15.125V18.5625M16.5 12.375V3.4375M16.5 12.375C16.8647 12.375 17.2144 12.5199 17.4723 12.7777C17.7301 13.0356 17.875 13.3853 17.875 13.75C17.875 14.1147 17.7301 14.4644 17.4723 14.7223C17.2144 14.9801 16.8647 15.125 16.5 15.125M16.5 12.375C16.1353 12.375 15.7856 12.5199 15.5277 12.7777C15.2699 13.0356 15.125 13.3853 15.125 13.75C15.125 14.1147 15.2699 14.4644 15.5277 14.7223C15.7856 14.9801 16.1353 15.125 16.5 15.125M16.5 15.125V18.5625M11 6.875V3.4375M11 6.875C11.3647 6.875 11.7144 7.01987 11.9723 7.27773C12.2301 7.53559 12.375 7.88533 12.375 8.25C12.375 8.61467 12.2301 8.96441 11.9723 9.22227C11.7144 9.48013 11.3647 9.625 11 9.625M11 6.875C10.6353 6.875 10.2856 7.01987 10.0277 7.27773C9.76987 7.53559 9.625 7.88533 9.625 8.25C9.625 8.61467 9.76987 8.96441 10.0277 9.22227C10.2856 9.48013 10.6353 9.625 11 9.625M11 9.625V18.5625" stroke="#161E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                                          
                                             </a>
                                         </div>
+                                        <button type="submit" class="tf-btn btn-search primary" href="#">Search <i class="icon icon-search"></i> </button>
                                     </div>
-                                    <button type="submit" class="tf-btn primary" href="#">Search</button>
+                                    
                                 </div>
                                 <div class="wd-search-form">
                                     <div class="grid-2 group-box group-price">
                                         <div class="widget-price">
                                             <div class="box-title-price">
-                                                <span class="title-price">Price Range</span>
+                                                <span class="title-price fw-6">Price:</span>
                                                 <div class="caption-price">
-                                                    <span>from</span>
-                                                    <span id="slider-range-value1" class="fw-7"></span>
-                                                    <span>to</span>
-                                                    <span id="slider-range-value2" class="fw-7"></span>
+                                                    <span id="slider-range-value1" class="fw-6"></span>
+                                                    <span>-</span>
+                                                    <span id="slider-range-value2" class="fw-6"></span>
                                                 </div>
                                             </div>
                                             <div id="slider-range"></div>
@@ -862,11 +796,10 @@
                                         
                                         <div class="widget-price">
                                             <div class="box-title-price">
-                                                <span class="title-price">Size Range</span>
+                                                <span class="title-price fw-6">Size:</span>
                                                 <div class="caption-price">
-                                                    <span>from</span>
                                                     <span id="slider-range-value01" class="fw-7"></span>
-                                                    <span>to</span>
+                                                    <span>-</span>
                                                     <span id="slider-range-value02" class="fw-7"></span>
                                                 </div>
                                             </div>
@@ -882,7 +815,7 @@
                                     <div class="grid-2 group-box">
                                         <div class="group-select grid-2">
                                             <div class="box-select">
-                                                <label class="title-select text-variant-1">Rooms</label>
+                                                <label class="title-select fw-6">Rooms</label>
                                                 <div class="nice-select" tabindex="0"><span class="current">2</span>
                                                     <ul class="list"> 
                                                         <li data-value="1" class="option">1</li>
@@ -899,7 +832,7 @@
                                                 </div>
                                             </div>
                                             <div class="box-select">
-                                                <label class="title-select text-variant-1">Bathrooms</label>
+                                                <label class="title-select fw-6">Bathrooms</label>
                                                 <div class="nice-select" tabindex="0"><span class="current">2</span>
                                                     <ul class="list"> 
                                                         <li data-value="1" class="option">1</li>
@@ -918,7 +851,7 @@
                                         </div>
                                         <div class="group-select grid-2">
                                             <div class="box-select">
-                                                <label class="title-select text-variant-1">Bedrooms</label>
+                                                <label class="title-select fw-6">Bedrooms</label>
                                                 <div class="nice-select" tabindex="0"><span class="current">2</span>
                                                     <ul class="list"> 
                                                         <li data-value="1" class="option">1</li>
@@ -935,7 +868,7 @@
                                                 </div>
                                             </div>
                                             <div class="box-select">
-                                                <label class="title-select fw-5">Type</label>
+                                                <label class="title-select fw-6">Type</label>
                                                 <div class="nice-select" tabindex="0"><span class="current">2</span>
                                                     <ul class="list"> 
                                                         <li data-value="1" class="option">1</li>
@@ -956,22 +889,22 @@
                                     </div>
                                    
                                     <div class="group-checkbox">
-                                        <div class="text-1">Amenities:</div>
-                                        <div class="group-amenities mt-8 grid-6">
+                                        <div class="text-1 text-black-2">Amenities:</div>
+                                        <div class="group-amenities grid-6">
                                             <div class="box-amenities">
                                                 <fieldset class="amenities-item">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb1" checked> 
                                                     <label for="cb1" class="text-cb-amenities">Air Condition</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb2"> 
                                                     <label for="cb2" class="text-cb-amenities">Cable TV</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb3"> 
                                                     <label for="cb3" class="text-cb-amenities">Ceiling Height</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb4"> 
                                                     <label for="cb4" class="text-cb-amenities">Fireplace</label>
                                                 </fieldset>
@@ -981,15 +914,15 @@
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb5"> 
                                                     <label for="cb5" class="text-cb-amenities">Disabled Access</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb6" checked> 
                                                     <label for="cb6" class="text-cb-amenities">Elevator</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb7"> 
                                                     <label for="cb7" class="text-cb-amenities">Fence</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb8"> 
                                                     <label for="cb8" class="text-cb-amenities">Garden</label>
                                                 </fieldset>
@@ -999,15 +932,15 @@
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb9" checked> 
                                                     <label for="cb9" class="text-cb-amenities">Floor</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb10"> 
                                                     <label for="cb10" class="text-cb-amenities">Furnishing</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb11" checked> 
                                                     <label for="cb11" class="text-cb-amenities">Garage</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb12"> 
                                                     <label for="cb12" class="text-cb-amenities">Pet Friendly</label>
                                                 </fieldset>
@@ -1017,15 +950,15 @@
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb13"> 
                                                     <label for="cb13" class="text-cb-amenities">Heating</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb14"> 
                                                     <label for="cb14" class="text-cb-amenities">Intercom</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb15"> 
                                                     <label for="cb15" class="text-cb-amenities">Parking</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb16"> 
                                                     <label for="cb16" class="text-cb-amenities">WiFi</label>
                                                 </fieldset>
@@ -1035,11 +968,11 @@
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb17"> 
                                                     <label for="cb17" class="text-cb-amenities">Renovation</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb18"> 
                                                     <label for="cb18" class="text-cb-amenities">Security</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb19"> 
                                                     <label for="cb19" class="text-cb-amenities">Swimming Pool</label>
                                                 </fieldset>
@@ -1050,11 +983,11 @@
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb20"> 
                                                     <label for="cb20" class="text-cb-amenities">Window Type</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb21"> 
                                                     <label for="cb21" class="text-cb-amenities">Search property</label>
                                                 </fieldset>
-                                                <fieldset class="amenities-item mt-12">
+                                                <fieldset class="amenities-item mt-16">
                                                     <input type="checkbox" class="tf-checkbox style-1" id="cb22"> 
                                                     <label for="cb22" class="text-cb-amenities">Construction Year</label>
                                                 </fieldset>
@@ -1067,269 +1000,37 @@
                             </form>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-        </section>
-           
-          
-    </div>
-    <!-- End canvas filter -->
-
-    <!-- canvas filter -->
-    <div class="offcanvas offcanvas-start canvas-filter-mb" id="filterSearchMb">
-        <div class="flat-tab flat-tab-form">
-            <ul class="nav-tab-form style-4 justify-content-center" role="tablist">
-                <li class="nav-tab-item" role="presentation">   
-                    <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
-                </li>
-                <li class="nav-tab-item" role="presentation">
-                    <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">For Sale</a>
-                </li>
-            </ul>
-            <div class="canvas-content">
-                <div class="tab-content">
-                    <div class="tab-pane fade active show" role="tabpanel">
-                        <div class="form-sl">
-                            <form method="post">
-                                <div class="wd-find-select style-3">
-                                    <div class="inner-group inner-filter">
-                                        <div class="form-style">
-                                            <label class="title-select">Keyword</label>
-                                            <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">
-                                        </div>
-                                        <div class="form-style">
-                                            <label class="title-select">Location</label>
-                                            <div class="group-ip ip-icon">
-                                                <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
-                                                <a href="#" class="icon-right icon-location"></a>
-                                            </div>
-                                        </div>
-                                        <div class="form-style">
-                                            <label class="title-select">Type</label>
-                                            <div class="group-select">
-                                                <div class="nice-select" tabindex="0"><span class="current">All</span>
-                                                    <ul class="list">  
-                                                        <li data-value class="option selected">All</li>                                                        
-                                                        <li data-value="villa" class="option">Villa</li>
-                                                        <li data-value="studio" class="option">Studio</li>
-                                                        <li data-value="office" class="option">Office</li>
-                                                    </ul>
-                                                </div>
-                                            </div>                                                    
-                                        </div>
-                                        
-                                        <div class="form-style btn-show-advanced-mb">
-                                            <span class="icon icon-faders"></span> 
-                                            <span class="text-advanced">Advanced</span>                                                                      
-                                        </div>
-                                        <div class="form-style wd-amenities wd-show-filter-mb">
-                                            <div class="form-style box-select">
-                                                <label class="title-select">Rooms</label>
-                                                <div class="nice-select" tabindex="0"><span class="current">2</span>
-                                                    <ul class="list"> 
-                                                        <li data-value="2" class="option">1</li>
-                                                        <li data-value="2" class="option selected">2</li>
-                                                        <li data-value="3" class="option">3</li>
-                                                        <li data-value="4" class="option">4</li>
-                                                        <li data-value="5" class="option">5</li>
-                                                        <li data-value="6" class="option">6</li>
-                                                        <li data-value="7" class="option">7</li>
-                                                        <li data-value="8" class="option">8</li>
-                                                        <li data-value="9" class="option">9</li>
-                                                        <li data-value="10" class="option">10</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="form-style box-select">
-                                                <label class="title-select">Bathrooms</label>
-                                                <div class="nice-select" tabindex="0"><span class="current">4</span>
-                                                    <ul class="list"> 
-                                                        <li data-value="all" class="option">All</li>
-                                                        <li data-value="1" class="option">1</li>
-                                                        <li data-value="2" class="option">2</li>
-                                                        <li data-value="3" class="option">3</li>
-                                                        <li data-value="4" class="option selected">4</li>
-                                                        <li data-value="5" class="option">5</li>
-                                                        <li data-value="6" class="option">6</li>
-                                                        <li data-value="7" class="option">7</li>
-                                                        <li data-value="8" class="option">8</li>
-                                                        <li data-value="9" class="option">9</li>
-                                                        <li data-value="10" class="option">10</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="form-style box-select">
-                                                <label class="title-select">Bedrooms</label>
-                                                <div class="nice-select" tabindex="0"><span class="current">4</span>
-                                                    <ul class="list"> 
-                                                        <li data-value="1" class="option">All</li>
-                                                        <li data-value="1" class="option">1</li>
-                                                        <li data-value="2" class="option">2</li>
-                                                        <li data-value="3" class="option">3</li>
-                                                        <li data-value="4" class="option selected">4</li>
-                                                        <li data-value="5" class="option">5</li>
-                                                        <li data-value="6" class="option">6</li>
-                                                        <li data-value="7" class="option">7</li>
-                                                        <li data-value="8" class="option">8</li>
-                                                        <li data-value="9" class="option">9</li>
-                                                        <li data-value="10" class="option">10</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="form-style widget-price">
-                                                <div class="box-title-price">
-                                                    <span class="title-price">Price Range</span>
-                                                        <div class="caption-price">
-                                                            <span>from</span>
-                                                            <span id="slider-range-value3" class="fw-7"></span>
-                                                            <span>to</span>
-                                                            <span id="slider-range-value4" class="fw-7"></span>
-                                                        </div>
-                                                </div>
-                                                <div id="slider-range3"></div>
-                                                <div class="slider-labels">
-                                                    <input type="hidden" name="min-value3" value="">
-                                                    <input type="hidden" name="max-value3" value="">                                                                                  
-                                                </div>
-                                            </div>
-                                            <div class="form-style widget-price wd-price-2">
-                                                <div class="box-title-price">
-                                                    <span class="title-price">Size Range</span>
-                                                    <div class="caption-price">
-                                                        <span>from</span>
-                                                        <span id="slider-range-value03" class="fw-7"></span>
-                                                        <span>to</span>
-                                                        <span id="slider-range-value04" class="fw-7"></span>
-                                                    </div>
-                                                </div>
-                                                <div id="slider-range4"></div>
-                                                <div class="slider-labels">
-                                                    <input type="hidden" name="min-value4" value="">
-                                                    <input type="hidden" name="max-value4" value="">      
-                                                </div>
-                                            </div>
-                                            <div class="form-style group-checkbox">
-                                                <div class="text-1">Amenities:</div>
-                                                <div class="group-amenities">
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs1" checked> 
-                                                        <label for="cbs1" class="text-cb-amenities">Air Condition</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs2"> 
-                                                        <label for="cbs2" class="text-cb-amenities">Disabled Access</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs3"> 
-                                                        <label for="cbs3" class="text-cb-amenities">Ceiling Height</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs4" checked> 
-                                                        <label for="cbs4" class="text-cb-amenities">Floor</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs5"> 
-                                                        <label for="cbs5" class="text-cb-amenities">Heating</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs6"> 
-                                                        <label for="cbs6" class="text-cb-amenities">Renovation</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs7"> 
-                                                        <label for="cbs7" class="text-cb-amenities">Window Type</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs8"> 
-                                                        <label for="cbs8" class="text-cb-amenities">Cable TV</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs9" checked> 
-                                                        <label for="cbs9" class="text-cb-amenities">Elevator</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs10"> 
-                                                        <label for="cbs10" class="text-cb-amenities">Furnishing</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs11"> 
-                                                        <label for="cbs11" class="text-cb-amenities">Intercom</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs12"> 
-                                                        <label for="cbs12" class="text-cb-amenities">Security</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs13"> 
-                                                        <label for="cbs13" class="text-cb-amenities">Search property</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs14"> 
-                                                        <label for="cbs14" class="text-cb-amenities">Ceiling Height</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs15"> 
-                                                        <label for="cbs15" class="text-cb-amenities">Fence</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs16"> 
-                                                        <label for="cbs16" class="text-cb-amenities">Fence</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs17" checked> 
-                                                        <label for="cbs17" class="text-cb-amenities">Garage</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs18"> 
-                                                        <label for="cbs18" class="text-cb-amenities">Parking</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs19"> 
-                                                        <label for="cbs19" class="text-cb-amenities">Swimming Pool</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs20"> 
-                                                        <label for="cbs20" class="text-cb-amenities">Construction Year</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs21"> 
-                                                        <label for="cbs21" class="text-cb-amenities">Fireplace</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs22"> 
-                                                        <label for="cbs22" class="text-cb-amenities">Garden</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs23"> 
-                                                        <label for="cbs23" class="text-cb-amenities">Pet Friendly</label>
-                                                    </fieldset>
-                                                    <fieldset class="amenities-item">
-                                                        <input type="checkbox" class="tf-checkbox style-1" id="cbs24"> 
-                                                        <label for="cbs24" class="text-cb-amenities">WiFi</label>
-                                                    </fieldset>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-style">
-                                            <button type="submit" class="tf-btn primary" href="#">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    
+            <div class="wrap-search-link">
+                <p class="body-2">What are you looking for:</p>
+                <div class="categories-list">
+                    <a href="#"><i class="icon icon-house-fill"></i> Houses</a>
+                    <a href="#"><i class="icon icon-villa-fill"></i> Villa</a>
+                    <a href="#"><i class="icon icon-office-fill"></i> Office</a>
+                    <a href="#"><i class="icon icon-apartment"></i> Apartments</a>
                 </div>
             </div>
-                
         </div>
-           
-          
-    </div>
-    <!-- End canvas filter -->
+        <div class="box-search-result">
+            <div class="title spaceX-lg-100">
+                <h3>Recommended for you</h3>
+                <div>hhh</div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+            
+      </div>
+      
+      <!-- overlay -->
+      <div class="overlay2"></div>
+
+
+
+
+
 
     <!-- popup login -->
     <div class="modal fade" id="modalLogin">
