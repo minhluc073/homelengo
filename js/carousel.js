@@ -277,14 +277,14 @@ if ($(".tf-sw-auto").length > 0) {
   var loop = $(".tf-sw-auto").data("loop");
 
   var swiper = new Swiper(".tf-sw-auto", {
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   delay: 1500,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     speed: 2000,
     slidesPerView: "auto",
-    spaceBetween: 0,
+    spaceBetween: 20,
     loop: loop,
     navigation: {
       clickable: true,
@@ -365,6 +365,38 @@ if ($(".tf-latest-property").length > 0) {
       1550: {
         slidesPerView: previewLg,
         spaceBetween: spacing,
+      },
+    },
+  });
+}
+
+if ($(".tf-sw-result").length > 0) {
+  var swiper = new Swiper(".tf-sw-result", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    navigation: {
+      clickable: true,
+      nextEl: ".nav-next-result",
+      prevEl: ".nav-prev-result",
+    },
+    loop: true,
+    pagination: {
+      el: ".sw-pagination-result",
+      clickable: true,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+
+      1550: {
+        slidesPerView: 5.2,
+        spaceBetween: 30,
       },
     },
   });

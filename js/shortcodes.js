@@ -268,7 +268,7 @@
       if ($(".search-popup-wrapper").hasClass("open")) {
         $(".search-popup-wrapper").removeClass("open");
         $(".overlay2").fadeOut();
-        $(".search-popup-wrapper").css("top", "-100%");
+        $(".search-popup-wrapper").css("top", "-200%");
       } else {
         $(".search-popup-wrapper").addClass("open");
         $(".overlay2").fadeIn();
@@ -279,7 +279,7 @@
     $(".close-btn, .overlay2").on("click", function () {
       $(".search-popup-wrapper").removeClass("open");
       $(".overlay2").fadeOut();
-      $(".search-popup-wrapper").css("top", "-100%");
+      $(".search-popup-wrapper").css("top", "-200%");
     });
   };
 

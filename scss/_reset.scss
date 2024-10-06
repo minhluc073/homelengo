@@ -180,7 +180,13 @@ li {
     padding-right: 15px;
 }
 .container-full {
+    width: 100%;
     max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+    .tf-sw-result {
+        margin-right: 0px;
+    }
 }
 
 .cus-layout-1 {
@@ -614,10 +620,7 @@ label {
 .pb-30 {
     padding-bottom: 30px;
 }
-.spaceX-lg-100{
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 // radius
 .round-8 {
     border-radius: 8px;
