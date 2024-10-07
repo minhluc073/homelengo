@@ -484,7 +484,7 @@
         padding-left: 20px;
     }
     .layout-wrap .main-content-inner {
-        padding: 80px 15px;
+        padding: 40px 30px;
     }
 }
 
@@ -837,6 +837,10 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .layout-wrap .main-content-inner {
+        padding: 40px 15px;
+    }
+
     .sidebar-privacy {
         margin-top: 30px;
     }
