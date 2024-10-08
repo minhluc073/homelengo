@@ -228,6 +228,11 @@
         .wd-listing {
             margin-bottom: 30px;
         }
+        .box-btn {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
     }
 
     &.full-width {
@@ -608,10 +613,11 @@ tr {
             }
         }
     }
-    .map-single {
-        margin-top: 16px;
-        height: 364px;
-        border-radius: 8px;
+    .map {
+        margin-top: 20px;
+        height: 456px;
+        border-radius: 16px;
+        overflow: hidden;
     }
     .textarea {
         height: 130px;
@@ -634,15 +640,17 @@ tr {
         }
     }
     .fieldset-radio {
-        margin-top: 8px;
         display: flex;
         align-items: center;
         gap: 8px;
-        .text-radio {
-            color: $variant-1;
+        input {
+            border-radius: 50%;
         }
-        .tf-radio:checked ~ .text-radio {
-            color: $on-surface;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: 400;
         }
     }
     .box-radio-check:not(:last-child) {
@@ -650,6 +658,21 @@ tr {
     }
     .btn-add-floor {
         margin-top: 20px;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        color: $primary;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
     }
 }
 .box-info-property {
@@ -682,33 +705,36 @@ tr {
 }
 
 .box-amenities-property {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    flex-wrap: wrap;
-    padding-right: 100px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
     .title-amenities {
-        margin-bottom: 12px;
+        margin-bottom: 20px;
+    }
+    .list-amenities {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
     .amenities-item {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
+        input {
+            flex-shrink: 0;
+        }
 
         .text-cb-amenities {
-            color: $variant-1;
-        }
-        .tf-checkbox:checked ~ .text-cb-amenities {
-            color: $on-surface;
+            font-weight: 400;
         }
     }
-    .box-amenities {
-        .amenities-item {
-            &:not(:last-child) {
-                margin-bottom: 8px;
-            }
-        }
-    }
+    // .box-amenities {
+    //     .amenities-item {
+    //         &:not(:last-child) {
+    //             margin-bottom: 16px;
+    //         }
+    //     }
+    // }
 }
 
 .box-floor-property {
@@ -720,15 +746,22 @@ tr {
         align-items: center;
         flex-wrap: wrap;
         gap: 16px;
-        padding: 36px 30px;
+        padding: 38px 30px;
         background-color: $white;
         border-radius: 12px;
+        margin-bottom: 0;
         .btn-upload {
             margin-bottom: 0;
         }
     }
-    .textarea {
-        height: 120px;
+
+    .top {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $outline;
+        .icon {
+            font-size: 20px;
+        }
     }
 }
 

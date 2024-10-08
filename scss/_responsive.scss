@@ -24,6 +24,9 @@
             }
         }
     }
+    .box-amenities-property {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (min-width: 768px) {
     .tf-marquee {
@@ -42,6 +45,9 @@
         &.md-col-2 {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+    .box-amenities-property {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media (min-width: 992px) {
@@ -474,6 +480,14 @@
             &.swiper-nav-prev {
                 right: -30px;
             }
+        }
+    }
+}
+
+@media (min-width: 1801px) {
+    .box-amenities-property {
+        .list-amenities {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
