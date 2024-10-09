@@ -222,6 +222,13 @@
 }
 
 @media (min-width: 1200px) {
+    .layout-wrap {
+        .wrapper-content {
+            .mess-box {
+                margin-left: -10px;
+            }
+        }
+    }
     .tf-marquee {
         -webkit-animation: slide-har 15s linear infinite;
         animation: slide-har 15s linear infinite;

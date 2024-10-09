@@ -212,6 +212,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
+    font-family: $font-1;
     border: 1px solid $outline;
     outline: 0;
     -webkit-box-shadow: none;
