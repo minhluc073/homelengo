@@ -8819,7 +8819,7 @@ label {
   padding-right: 30px;
 }
 .layout-wrap .wrap-table thead tr th:nth-child(1) {
-  width: 64%;
+  width: 55%;
 }
 .layout-wrap .wrap-table thead tr th:not(:last-child) {
   position: relative;
@@ -8871,31 +8871,42 @@ label {
 }
 .layout-wrap .wrap-table .listing-box {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 .layout-wrap .wrap-table .listing-box .images {
-  width: 180px;
+  width: 168px;
   border-radius: 8px;
   overflow: hidden;
 }
 .layout-wrap .wrap-table .listing-box .content .title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 16px;
+  line-height: 21.86px;
+  font-weight: 600;
 }
 .layout-wrap .wrap-table .listing-box .content .text-date {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3a3a3c;
 }
 .layout-wrap .wrap-table .status-wrap .btn-status {
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
+  width: 78px;
+  padding: 0px 6px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 23px;
+  height: 23px;
+  font-weight: 800;
   color: #ffffff;
-  background-color: #198754;
+  background-color: #25c55b;
+  text-align: center;
+}
+.layout-wrap .wrap-table .status-wrap .btn-status.pending {
+  background-color: #ee6742;
+}
+.layout-wrap .wrap-table .status-wrap .btn-status.sold {
+  background-color: #6e55ff;
 }
 .layout-wrap .wrap-table .list-action li:not(:last-child) {
   margin-bottom: 8px;
@@ -8904,15 +8915,13 @@ label {
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .layout-wrap .wrap-table .list-action .item .icon {
   font-size: 20px;
 }
 .layout-wrap .wrap-table .wd-navigation {
-  padding: 20px;
+  padding-top: 16px;
 }
 .layout-wrap .wd-chart .wd-filter-date {
   display: flex;
@@ -9050,6 +9059,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 }
 .mess-box .mess-item:not(:last-child) {
   margin-bottom: 20px;
@@ -9321,6 +9331,9 @@ tr {
 }
 .ip-group .ip-datepicker::placeholder {
   color: #A3ABB0;
+}
+.ip-group .ip-datepicker.style-2 {
+  height: 54px;
 }
 .ip-group.icon {
   background-color: #ffffff;
